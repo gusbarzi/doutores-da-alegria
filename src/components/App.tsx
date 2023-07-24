@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
+import { AppRoutes } from "../routes/routes";
 
 export const App: React.FC = () => {
-  return (
-    <h1>Doutores da alegria</h1>
-  )
+  return <AppRoutes />;
 };
