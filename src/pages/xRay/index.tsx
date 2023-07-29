@@ -1,12 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { HomeContainer } from "./home.styles";
+import { XRayContainer } from "./xRay.styles";
 import { useNavigate } from "react-router-dom";
-import { Notion } from "../../utils/notion";
 import { GlobalNextButton } from "../../styles/global.styles";
 import { ReactComponent as NextButton } from '../../../public/assets/setinha-direita.svg'
 
-export const Home: React.FC = () => {
+export const XRay: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -17,12 +16,11 @@ export const Home: React.FC = () => {
 
 
   return (
-    <HomeContainer>
-      <h1>Abertura</h1>
-      <GlobalNextButton onClick={() => navigate('/proposito')}>
+    <XRayContainer>
+      <h1>Raio-x</h1>
+      <GlobalNextButton onClick={() => navigate('/restrospectiva-2022')}>
         <NextButton width={50} height={50}/>
       </GlobalNextButton>
-      {/* <Notion /> */}
-    </HomeContainer>
+    </XRayContainer>
   )
 }

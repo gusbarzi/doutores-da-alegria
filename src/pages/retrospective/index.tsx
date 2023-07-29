@@ -1,12 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { HomeContainer } from "./home.styles";
+import { RetrospectiveContainer } from "./retrospective.styles";
 import { useNavigate } from "react-router-dom";
-import { Notion } from "../../utils/notion";
 import { GlobalNextButton } from "../../styles/global.styles";
 import { ReactComponent as NextButton } from '../../../public/assets/setinha-direita.svg'
 
-export const Home: React.FC = () => {
+export const Retrospective: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -17,12 +16,11 @@ export const Home: React.FC = () => {
 
 
   return (
-    <HomeContainer>
-      <h1>Abertura</h1>
-      <GlobalNextButton onClick={() => navigate('/proposito')}>
+    <RetrospectiveContainer>
+      <h1>Retrospectiva 2022</h1>
+      <GlobalNextButton onClick={() => navigate('/doutores-da-alegria-na-midia')}>
         <NextButton width={50} height={50}/>
       </GlobalNextButton>
-      {/* <Notion /> */}
-    </HomeContainer>
+    </RetrospectiveContainer>
   )
 }

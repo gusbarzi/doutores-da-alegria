@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+import { DalegriaColorsEnum } from "../utils/colors";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -94,4 +95,11 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
   }
+`;
+
+export const GlobalNextButton = styled.button`
+  background-color: transparent;
+  color: ${DalegriaColorsEnum.LightBlue};
+  border: none;
+  outline: none;
 `;

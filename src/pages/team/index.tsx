@@ -1,12 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { HomeContainer } from "./home.styles";
+import { TeamContainer } from "./team.styles";
 import { useNavigate } from "react-router-dom";
-import { Notion } from "../../utils/notion";
 import { GlobalNextButton } from "../../styles/global.styles";
 import { ReactComponent as NextButton } from '../../../public/assets/setinha-direita.svg'
 
-export const Home: React.FC = () => {
+export const Team: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -17,12 +16,11 @@ export const Home: React.FC = () => {
 
 
   return (
-    <HomeContainer>
-      <h1>Abertura</h1>
-      <GlobalNextButton onClick={() => navigate('/proposito')}>
+    <TeamContainer>
+      <h1>Equipe</h1>
+      <GlobalNextButton onClick={() => navigate('/parceiros')}>
         <NextButton width={50} height={50}/>
       </GlobalNextButton>
-      {/* <Notion /> */}
-    </HomeContainer>
+    </TeamContainer>
   )
 }
