@@ -8,5 +8,6 @@ export enum DalegriaColorsEnum {
   Pink = "#FF61B5",
   Purple = "#7A72D2",
   Black = "#000000",
-  White = "#FFFFFF"
+  White = "#FFFFFF",
+  Gray = "#59595B"
 }

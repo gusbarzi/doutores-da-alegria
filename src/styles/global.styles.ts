@@ -97,9 +97,23 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const GlobalBackButton = styled.button`
+  background-color: transparent;
+  color: ${DalegriaColorsEnum.LightBlue};
+  border: none;
+  outline: none;
+  transform: scaleX(-1);
+`;
+
 export const GlobalNextButton = styled.button`
   background-color: transparent;
   color: ${DalegriaColorsEnum.LightBlue};
   border: none;
   outline: none;
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+`
