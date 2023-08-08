@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import {
   BannerContainer,
   DescriptionContainer,
-  DescriptionItemText,
   DescriptionTitle,
   JokersImageContainer,
   PurposeContainer,
@@ -13,7 +12,6 @@ import {
   ValuesContainer,
 } from "./purpose.styles";
 import { useNavigate } from "react-router-dom";
-import { Notion } from "../../utils/notion";
 import {
   ButtonContainer,
   GlobalBackButton,
@@ -21,11 +19,83 @@ import {
 } from "../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../public/assets/setinha-direita.svg";
 import jokerImage from "../../../public/assets/Links/mobile-recortes2.png";
-import { CustomListItem } from "../../components/CustomListItem";
+import { DalegriaColorsEnum } from "../../utils/colors";
+import { DalegriaFontesEnum } from "../../utils/fontes";
+import { IList } from "../../components/CustomList/customList.types";
+import { CustomList } from "../../components/CustomList";
 
 export const Purpose: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+
+  const taskInstList: IList[] = [
+    {
+      itemId: 1,
+      text: t("purpose_text_01"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+    {
+      itemId: 2,
+      text: t("purpose_text_02"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+  ];
+
+  const valuesItemList: IList[] = [
+    {
+      itemId: 1,
+      text: t("purpose_values.art_culture"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+    {
+      itemId: 2,
+      text: t("purpose_values.liberty_expression"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+    {
+      itemId: 3,
+      text: t("purpose_values.transparent"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+    {
+      itemId: 4,
+      text: t("purpose_values.art_education"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+    {
+      itemId: 5,
+      text: t("purpose_values.search-simplicity"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+    {
+      itemId: 6,
+      text: t("purpose_values.happy_state"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+    {
+      itemId: 7,
+      text: t("purpose_values.search_multscadule"),
+      color: DalegriaColorsEnum.Yellow,
+      fontFamily: DalegriaFontesEnum.StdLight,
+      fontSize: 16,
+    },
+  ];
 
   return (
     <PurposeContainer>
@@ -40,18 +110,11 @@ export const Purpose: React.FC = () => {
       </JokersImageContainer>
       <DescriptionContainer>
         <DescriptionTitle>Tarefa Institucional</DescriptionTitle>
-        <CustomListItem width={100} height={24} text={t("purpose_text_01")} />
-        <CustomListItem width={100} height={24} text={t("purpose_text_02")} />
+        <CustomList list={taskInstList} />
       </DescriptionContainer>
       <ValuesContainer>
         <DescriptionTitle>Valores</DescriptionTitle>
-        <CustomListItem width={12} height={20} text={t("purpose_values.art_culture")} />
-        <CustomListItem width={20} height={20} text={t("purpose_values.liberty_expression")} />
-        <CustomListItem width={12} height={20} text={t("purpose_values.transparent")} />
-        <CustomListItem width={32} height={20} text={t("purpose_values.art_education")} />
-        <CustomListItem width={12} height={20} text={t("purpose_values.search-simplicity")} />
-        <CustomListItem width={24} height={20} text={t("purpose_values.happy_state")} />
-        <CustomListItem width={28} height={20} text={t("purpose_values.search_multscadule")} />
+        <CustomList list={valuesItemList} />
       </ValuesContainer>
       <ButtonContainer>
         <GlobalBackButton onClick={() => navigate(-1)}>
@@ -62,7 +125,6 @@ export const Purpose: React.FC = () => {
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>
-      {/* <Notion /> */}
     </PurposeContainer>
   );
 };

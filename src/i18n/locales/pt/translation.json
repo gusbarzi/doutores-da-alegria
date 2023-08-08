@@ -10,7 +10,85 @@
     "happy_state": "Alegria é um estado que se constrói a partir do outro - afetar e ser afetado;",
     "search_multscadule": "Busca pela multidisciplinaridade entre cultura, saúde, educação e assistência social."
   },
+  "social_impacts_values": {
+    "item1": "96% dos profissionais de saúde afirmam que as crianças ficam mais à vontade com o ambiente do hospital;",
+    "item2": "95% dos profissionais de saúde afirmam que as crianças ficam mais ativas, movimentadas e falantes;",
+    "item3": "89% dos profissionais de saúde afirmam que as crianças ficam mais colaborativas com os profissionais de saúde;",
+    "item4": "85% dos profissionais de saúde afirmam que as crianças apresentam evidências clínicas de melhora;",
+    "item5": "72% dos profissionais de saúde afirmam que as famílias ficam mais confiantes no tratamento."
+  },
+  "text_board_text": "O texto da diretoria, assinado por Daiane Carina, Luis Vieira da Rocha, Ronaldo Aguiar e Simone Ribeiro, esmiuça os mecanismos utilizados para a manutenção da associação Doutores da Alegria durante os últimos anos de crise política e sanitária, reafirma os valores da instituição e faz um breve relato das principais iniciativas empreendidas no ano de 2022. Boa leitura!",
+  "director_text": "Em seu texto, Luis Vieira da Rocha comenta os desafios enfrentados pela associação Doutores da Alegria, a importância das políticas públicas voltadas à cultura e os nossos desejos como associação para o futuro do país.",
+  "social_impact_text_01": {
+    "first_stanza": "Foi no início da década de 1990, ao voltar de uma experiência no The Big Apple Circus Clown Care Unit, iniciativa pioneira que levava palhaços para hospitais em Nova York, que Wellington Nogueira decidiu lançar o trabalho dos Doutores da Alegria no Brasil.",
+    "second_stanza": "O projeto era inédito no país e acompanhou as discussões e os processos de humanização nos hospitais ao longo das últimas três décadas. Além disso, a escolha de trabalhar com artistas profissionais abriu um campo até então desconhecido para os artistas da cena."
+  },
+  "social_impact_text_02": "Doutores da Alegria transita nos campos da arte, da saúde e da assistência social e o impacto da sua atuação é comprovado não só pela experiência prática, mas por meio de estudos e pesquisas.",
+  "social_impact_text_03": "A partir do trabalho dos Doutores da Alegria nos hospitais:",
   "purpose_text_01": "Doutores da Alegria tem o propósito de intervir na sociedade propondo a arte como mínimo social para crianças, adolescentes e outros públicos em situação de vulnerabilidade e risco social, privilegiando hospitais públicos e ambientes adversos, tendo a linguagem do palhaço como referência.",
   "purpose_text_02": "A partir dessa intervenção, ampliar canais de diálogos reflexivos com a sociedade, compartilhando o conhecimento produzido por meio de formação, pesquisa, publicações e manifestações artísticas, contribuindo para a promoção da cultura e da saúde e inspirando políticas públicas universais e democráticas para o desenvolvimento social sustentável.",
-  "home_text": "Em 2022, as atividades presenciais foram finalmente retomadas, com poucas interrupções. Estivemos o ano inteiro nos hospitais, pelo ao menos duas vezes por semana, usando duas máscaras: a menordo mundo, o nariz de palhaço, e a máscaraque protege os próprios artistas e as pessoas que vão ser impactadas pelo nosso trabalho. Voltamos a ver os olhinhos brilharem na interação com os palhaços nos hospitaisde Recife e de São Paulo. Crianças, seus acompanhantes e profissionais de saúde assistindo à apresentações artísticas de variadas linguagens no Plateias Hospitalares, no Rio de Janeiro. Os teatros e centros culturais foram ocupados com plateias cheias de crianças de todas as idades.Neste balanço, que apresenta os resultados e impactos do trabalho realizado pela associação Doutores da Alegria, você vai conhecer os desafios que enfrentamos nessa retomada e como conseguimos superá-los.Vai conhecer um pouco das bandeiras que defendemos - como a cultura como direito de todos -, como contamos com toda a sociedade para manter o nosso trabalho no últimoano e o que faremos daqui por diante.Há ainda uma retrospectiva de todas as atividades que realizamos em 2022 porque, apesar de tudo, o showtem que continuar! E queremos você participando do show junto conosco!"
+  "home_text": "Em 2022, as atividades presenciais foram finalmente retomadas, com poucas interrupções. Estivemos o ano inteiro nos hospitais, pelo ao menos duas vezes por semana, usando duas máscaras: a menordo mundo, o nariz de palhaço, e a máscaraque protege os próprios artistas e as pessoas que vão ser impactadas pelo nosso trabalho. Voltamos a ver os olhinhos brilharem na interação com os palhaços nos hospitaisde Recife e de São Paulo. Crianças, seus acompanhantes e profissionais de saúde assistindo à apresentações artísticas de variadas linguagens no Plateias Hospitalares, no Rio de Janeiro. Os teatros e centros culturais foram ocupados com plateias cheias de crianças de todas as idades.Neste balanço, que apresenta os resultados e impactos do trabalho realizado pela associação Doutores da Alegria, você vai conhecer os desafios que enfrentamos nessa retomada e como conseguimos superá-los.Vai conhecer um pouco das bandeiras que defendemos - como a cultura como direito de todos -, como contamos com toda a sociedade para manter o nosso trabalho no últimoano e o que faremos daqui por diante.Há ainda uma retrospectiva de todas as atividades que realizamos em 2022 porque, apesar de tudo, o showtem que continuar! E queremos você participando do show junto conosco!",
+  "inside_out": {
+    "titles": {
+      "title_01": "Jeito de ser",
+      "title_02": "Código de Integridade e Conduta Ética"
+    },
+    "main_description": "Duas ações estratégicas lideradas pela diretoria se concretizaram nos últimos anos. São diretrizes internas, construídas coletivamente sob a luz da tarefa e dos valores institucionais, que orientam a gestão de pessoas e a ética comum empregada em todas as nossas ações.",
+    "way_being": {
+      "first_stanza": "A publicação estabelece uma base comum para processos de gestão de pessoas. Iniciado em 2019 com a construção de competências e comportamentos, em parceria com a Arquitetura RH, o processo se desenvolveu com a participação de um grupo multidisciplinar. O documento ganhou versão final em setembro de 2020.",
+      "second_stanza": "O Jeito de Ser estabelece condutas e reúne seis competências que são esperadas dos colaboradores da associação. São elas: respeito à diversidade, cuidado, coerência, diálogo, cocriação e “mais é menos e menos é mais”."
+    },
+    "integraty_code": {
+      "first_stanza": "Fruto de construção coletiva, o documento reflete discussões internas iniciadas em 2019 e estabelece parâmetros e comportamentos aplicados ao ambiente da Doutores da Alegria. O código debate temas como direitos autorais, recursos públicos, humor na atualidade, ações afirmativas, conflito de interesses e relações de trabalho.",
+      "second_stanza": "No item \"O Palhaço e o Humor\", por exemplo, a associação espera que palhaços não utilizem o humor para reforçar preconceitos e não criem piadas de conteúdos machista, racista ou sexista.",
+      "third_stanza": "Em \"Crianças e Adolescentes: Público Prioritário\", o documento reforça que os colaboradores da associação têm o compromisso de respeitar e promover a defesa dos direitos de crianças e adolescentes, em especial aquelas em situação de hospitalização, em consonância com a Declaração Universal dos Direitos da Criança.",
+      "fourth_stanza": "Em \"Direitos Humanos e Ações Afirmativas\", a associação se compromete a adotar políticas éticas e transparentes para preenchimento de vagas e de representatividade em todos os seus segmentos.",
+      "fifth_stanza": "Nesse sentido, busca contemplar a maior diversidade e pluralidade de pessoas possível entre negros, mulheres, pessoa com deficiência, idosos, imigrantes e pessoas que se reconheçam como membros da comunidade LGBTQUIAPN+.",
+      "sixth_stanza": "choosePaddingTambém pretende criar políticas internas para garantir e resguardar a igualdade de salários e de benefícios para cargos e funções com atribuições semelhantes, entre outras ações."
+    }
+  },
+  "x_ray": {
+    "list_item": {
+      "first": "Apoia e defende o SUS, um dos maiores sistemas de saúde do mundo, ao atuar em hospitais públicos de Recife, São Paulo e Rio de Janeiro;",
+      "second": "Atua em hospitais periféricos e/ou de grande importância para populações em situação de vulnerabilidade social com pelo menos 50 leitos pediátricos;",
+      "thirth": "Defende a cultura como um direito básico para toda a sociedade;",
+      "fourth": "Inspirou mais de 1.500 iniciativas semelhantes em hospitais por todo o país;",
+      "fifth": "Compartilha sua experiência nos hospitais com toda a sociedade por meio de espetáculos, eventos especiais, palestras, documentários e cursos;",
+      "sixth": "Criou uma escola com uma metodologia única no país de formação de jovens palhaços;",
+      "seventh": "Possui canais de comunicação com a sociedade, como as redes sociais da associação, que alcançam juntas 2,6 milhões de pessoas."
+    },
+    "impacted_people_list": {
+      "title": "Quantas pessoas foram impactadas",
+      "first": "Em 31 anos, atendemos cerca de 2,5 milhões de crianças hospitalizadas;",
+      "second": "O projeto Plateias Hospitalares, programa dos Doutores da Alegria no Rio de Janeiro, alcançou mais de 140 mil pessoas;"
+    },
+    "who_goes_hospital_list": {
+      "title": "Quem vai ao hospital?",
+      "first": "Artistas profissionais com experiência na linguagem do palhaço;",
+      "second": "Artistas que estão em treinamento e aprendizado contínuos;",
+      "thirth": "65% dos palhaços estão no elenco há pelo menos 15 anos."
+    },
+    "have_school_list": {
+      "title": "Temos uma escola!",
+      "first": "Escola de arte, com pedagogia própria no ensino da máscara do palhaço;",
+      "second": "Promove palestras, aulas e debates sobre arte, cultura, filosofia e assistência social, entre outros temas relevantes para a sociedade;",
+      "thirth": "Criou o Programa de Formação de Palhaço para Jovens (PFPJ), um curso de 1.600 horas-aulas em dois anos, voltado para jovens em situação de vulnerabilidade social;",
+      "fourth": "Em 19 anos, mais de 300 jovens foram formados pelo PFPJ;",
+      "fifth": "A cada R$ 1 investido no PFPJ, R$ 2,61 retornam em benefícios sociais com a inclusão produtiva de artistas periféricos na Economia da Cultura;",
+      "sixth": "Realizou 31 turmas do curso Palhaço para Curiosos, que oferece uma aproximação com a linguagem do palhaço para profissionais de formações diversas."
+    },
+    "see_us_list": {
+      "title": "Vem ver a gente no teatro!",
+      "first": "Espetáculos e intervenções urbanas inspiradas na experiência do hospital;",
+      "second": "Repertório: Banda Doutores da Alegria, Aquele Momento Em Que..., Numvaiduê, O Médico é o Monstro?, O Homem que Fala, Palhaços em ConSerto, Roda Besteirológica, Conta Causos, entre outros;",
+      "third": "Desde 2007, na quinta-feira antes do carnaval, o Bloco do Miolo Mole desfila pelas ruas do Recife."
+    },
+    "we_won_prizes_list": {
+      "title": "Ganhamos prêmios!",
+      "subtitle": "(alguns deles)",
+      "first": "Prêmio Criança (Fundação Abrinq);",
+      "second": "Prêmio Cultura e Saúde (Ministério da Cultura e Ministério da Saúde);",
+      "third": "Prêmio Melhores ONGs (Instituto Doar)."
+    }
+  }
 }

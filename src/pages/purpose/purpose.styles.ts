@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import { DalegriaColorsEnum } from "../../utils/colors";
-import { ReactComponent as LosangoIcon} from "../../../public/assets/losangulo.svg";
 
 export const PurposeContainer = styled.div`
   display: flex;
@@ -61,12 +60,6 @@ export const DescriptionTitle = styled.span`
   color: ${DalegriaColorsEnum.Red};
   font-size: 24px;
 `;
-
-export const DescriptionItemText = styled.li`
-  font-family: ${DalegriaFontesEnum.StdLight};
-  color: ${DalegriaColorsEnum.Black};
-  font-size: 16px;
-`
 
 export const ValuesContainer = styled.div`
   width: 100%;
