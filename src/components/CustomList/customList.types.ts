@@ -8,4 +8,5 @@ export interface IList {
   color: string;
   fontFamily: string;
   fontSize: number;
+  fontColor?: string;
 }

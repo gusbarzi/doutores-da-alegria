@@ -6,6 +6,7 @@ export interface ICustomListItemStyles {
   chooseColor?: string;
   chooseFontFamily?: string;
   chooseFontSize?: number;
+  chooseFontColor?: string;
 }
 
 export const List = styled.ul`
@@ -21,6 +22,7 @@ export const ListItem = styled.li<ICustomListItemStyles>`
   text-indent: 15px;
   font-family: ${({ chooseFontFamily }) => chooseFontFamily ? chooseFontFamily : DalegriaFontesEnum.StdLight};
   font-size: ${({ chooseFontSize }) => chooseFontSize ? `${chooseFontSize}px` : '12px'};
+  color: ${({ chooseFontColor }) => chooseFontColor ? chooseFontColor : DalegriaColorsEnum.Black};
 
   &::before {
     content: "";

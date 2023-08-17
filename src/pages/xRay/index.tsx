@@ -10,7 +10,7 @@ import {
   Typography,
 } from "../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../public/assets/setinha-direita.svg";
-import { ColorideBackground, List, ListItem } from "./xRay.styles";
+import { ColorideBackground} from "./xRay.styles";
 import { IList } from "../../components/CustomList/customList.types";
 import { DalegriaColorsEnum } from "../../utils/colors";
 import { DalegriaFontesEnum } from "../../utils/fontes";
@@ -294,7 +294,7 @@ export const XRay: React.FC = () => {
         <GlobalBackButton onClick={() => navigate(-1)}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/restrospectiva-2022")}>
+        <GlobalNextButton onClick={() => navigate("/restrospectiva-01")}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

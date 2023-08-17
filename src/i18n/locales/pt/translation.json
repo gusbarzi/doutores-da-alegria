@@ -90,5 +90,251 @@
       "second": "Prêmio Cultura e Saúde (Ministério da Cultura e Ministério da Saúde);",
       "third": "Prêmio Melhores ONGs (Instituto Doar)."
     }
+  },
+  "retrospective": {
+    "people": "pessoas",
+    "were_beneficied": "foram beneficiadas com as ações da organização em 2022",
+    "employed_more": "para que todas as nossas ações fossem realizadas, doutores da alegria empregou mais de",
+    "workers": "trabalhadores/",
+    "family": "famílias",
+    "direct_indirect": "DIRETA OU INDIRETAMENTE",
+    "retrospective": "retrospectiva 2022",
+    "news": "Novidades:",
+    "get_knew": "Vem saber quais novidades criamos em 2022!",
+    "march_april": "março a abril, no teatro morumbi shopping, e outubro, no sesc itaquera",
+    "joker_music": "música de palhaços",
+    "doctors_band": "A Banda Doutores da Alegria fez uma temporada de shows no Teatro MorumbiShopping no primeiro semestre e colocou a plateia para dançar e cantar as músicas criadas pelos próprios palhaços. As situações que acontecem nos hospitais inspiram os nossos palhaços-músicos- cantores, responsáveis por sucessos como “A dança da ambulância”. No segundo semestre, a Banda voltou a se reunir para uma apresentação especial no Sesc Itaquera.",
+    "season": "TEMPORADA NO TEATRO MORUMBI SHOPPING",
+    "date_01": "DE 12 DE MARÇO A 3 DE ABRIL",
+    "many_people": "1.052 PESSOAS",
+    "see_show": "assistiram ao espetáculo",
+    "agoust": "agosto",
+    "joker_writer": "palhaços escritores",
+    "joker_writer_stanza": {
+      "stanza_01": "Os palhaços do elenco do Recife escreveram um livro! A publicação “Coletânea Conta Causos – Volume 1” foi lançada no dia 11 de agosto numa live especial e nas unidades de saúde atendidas na cidade.",
+      "stanza_02": "O livro reúne 13 contos, com histórias inspiradas nos encontros de hospital.",
+      "stanza_03": "As ilustrações são da aquarelista Simone Mendes, o prefácio é do médico e escritor Ronaldo Correia de Brito, a apresentação é de Ronaldo Aguiar, diretor artístico dos Doutores da Alegria, e a organização é assinada por Arilson Lopes, coordenador artístico da unidade Recife, e Luciano Pontes, ator, palhaço e escritor que também integra o elenco.",
+      "stanza_04": "Hospitais, ONGs e bibliotecas públicas do Recife, do Rio de Janeiro e São Paulo receberam os livros impressos.",
+      "stanza_05": "O público em geral pode baixar a versão digital em pdf ou conferir a versão digital acessível, com a audiodescrição de todas as ilustrações e a tradução/interpretação em Libras dos contos e demais textos do livro, uma parceria com a VouSer Acessibilidade."
+    },
+    "november": "novembro",
+    "hospital_for_theater": "do hospital para o palco do teatro",
+    "two_shows": "Dois dos espetáculos que circulam pelos hospitais do Rio de Janeiro no programa Plateias Hospitalares puderam ser vistos pelo público no palco do teatro Oi Futuro no dia 26 de novembro. O palhaço Funil apresentou “O menor picadeiro” do mundo e a companhia Circo Dux fez uma sessão de “Telepático”.",
+    "one_hundred": "120 pessoas",
+    "watch_place": "assistiram ao Plateias no Palco",
+    "san_paulo": "São Paulo",
+    "recife": "Recife",
+    "activity_year": "atividades que acontecem o ano inteiro: ",
+    "activity_year_description": "Realizamos algumas atividades durante o ano inteiro! vem cá!",
+    "joker_place": {
+      "title": "Lugar de palhaço é no hospital!",
+      "stanza_01": "Em 2022, Doutores da Alegria levou o programa Palhaços nos hospitais para 13 unidades de saúde pública em Recife e em São Paulo. A regularidade das visitas da dupla de palhaços a cada hospital permite que os besteirologistas possam cultivar relações e acompanhar as crianças ao longo do período de internação.",
+      "stanza_02": "crianças ao longo do período de internação. Dra. Lola e Dr. Valdisney, por exemplo, tiveram que prometer que levariam figurinhas repetidas do álbum da Copa do Mundo para trocar com uma criança que ficou internada na UTI do Hospital do Campo Limpo.",
+      "stanza_03": "Já Dr. Fritz e Dra. Pamplona atenderam uma criança que tinha tino de comerciante no Hospital do Mandaqui.",
+      "stanza_04": "No Hospital da Restauração, Dr. Marmelo e Dr. Micolino fizeram fofoca sobre o pai de uma criança, que entrou na brincadeira, só para ver o filho feliz.",
+      "stanza_05": "No Hospital Barão de Lucena, Dr. Eu_Zébio e Dr. Lui conseguiram descobrir o talento para a música de um médico residente.",
+      "stanza_06": "São histórias reais, que fazem diferença no cotidiano das crianças, das suas famílias e dos profissionais de saúde, construídas a partir da sensibilidade e da preparação do nosso elenco."
+    },
+    "joker_act": "34 PALHAÇOS E PALHAÇAS ATUARAM NO PROGRAMA PALHAÇOS PARA HOSPITAIS",
+    "hospitals_served": "hospitais atendidos:",
+    "hospitals_served_sp": {
+      "first": "Itaci – Instituto de Tratamento do Câncer Infantil",
+      "second": "Instituto da Criança – Hospital das Clínicas",
+      "third": "Hospital do Mandaqui",
+      "fourth": "Hospital Santa Marcelina",
+      "fiveth": "Hospital do Campo Limpo",
+      "sixth": "Hospital Geral do Grajaú",
+      "seventh": "Hospital Universitário de São Paulo",
+      "eighth": "Hospital Municipal Dr. Moyses Deutsch - MBoi Mirim"
+    },
+    "hospitals_served_rj": {
+      "first": "Hospital Barão de Lucena",
+      "second": "Hospital Universitário Oswaldo Cruz",
+      "third": "Pronto Socorro Cardiológico de Pernambuco Prof. Luiz Tavares - Procape",
+      "fourth": "Hospital da Restauração",
+      "fiveth": "Instituto de Medicina Integral Professor Fernando Figueira - Imip"
+    },
+    "how_many_people_impacted": "quantas pessoas foram impactadas: ",
+    "how_many_child_sp": "31.148 crianças",
+    "how_many_child_rc": "18.866 crianças",
+    "how_many_people_sp": "77.526 acompanhantes, profissionais de saúde e outros públicos",
+    "how_many_people_rc": "54.788 acompanhantes, profissionais de saúde e outros públicos",
+    "direct_public": "(público direto)",
+    "indirect_public": "(público indireto)",
+    "art_to_hospitals": {
+      "title": "Plateias Hospitalares leva arte aos hospitais do Rio de Janeiro",
+      "stanza_01": "Os espetáculos que circularam ao longo do ano por seis hospitais do estado do Rio de Janeiro no programa Plateias Hospitalares foram selecionados por meio de um edital que teve o seu resultado divulgado no mês de fevereiro. No total, 19 projetos de contação de histórias, circo e palhaçaria foram escolhidos e participam do programa até julho de 2023.",
+      "stanza_02": "Depois da divulgação dos selecionados, ainda em fevereiro, os grupos foram recebidos com a “Conversa mole”, um encontro presencial entre os artistas e a equipe Doutores da Alegria no Rio de Janeiro.",
+      "stanza_03": "Em abril, começaram as apresentações que mudam a rotina de quem está no hospital e, muitas vezes, são o primeiro contato de crianças e adultos com as artes da cena. Foi o que aconteceu, por exemplo, na apresentação da peça “Circo do Seu Léo”, no Hospital Estadual Alberto Torres, em São Gonçalo, em que quatro crianças reagiram de modo tímido às falhas nas mágicas do palhaço MortaNdela. Já no Hospital Municipal da Piedade, o palhaço Funil interagiu com duas crianças gêmeas que roubaram a cena na peça “O menor picadeiro do mundo”.",
+      "stanza_04": "No São João, a Orquestra Circônica apresentou “Circo Junino”, misturando a linguagem do circo à festa popular.",
+      "stanza_05": "No Natal, a Cia Sapato Velho levou “Hohoho com Hahaha” aos hospitais: uma dupla de palhaços e um músico cantaram paródias de músicas natalinas e narraram curiosidades sobre as origens das festas e tradições."
+    },
+    "square_retrospective_six": {
+      "text_01": "quantas pessoas foram impactadas: ",
+      "text_02": "9.235 pessoas"
+    },
+    "hospitals_list_retrospective_six": {
+      "title": "19 PROJETOS ARTÍSTICOS PARTICIPARAM DO PROGRAMA PLATEIAS HOSPITALARES",
+      "sub_title": "REALIZAMOS 51 APRESENTAÇÕES DE TEATRO, CONTAÇÃO DE HISTÓRIAS, MÚSICA, DANÇA E CIRCO.",
+      "first": "Hospital Municipalizado Adão Pereira Nunes – Saracuruna/ Duque de Caxias",
+      "second": "Hospital Estadual Alberto Torres – São Gonçalo",
+      "third": "Hospital Estadual Azevedo Lima – Niterói",
+      "fourth": "Hospital Estadual Eduardo Rabello – Campo Grande/ Rio de Janeiro",
+      "fiveth": "Hospital Municipal da Piedade – Piedade",
+      "sixth": "Hospital Estadual da Mulher Heloneida Studart – São João de Meriti/ RJ",
+      "footer": "COMPANHIAS OU ARTISTAS SELECIONADOS: Bagunço, Cia de 2, Cia de Palhaços Etcétera e Tal, Cia Doispralá Doispracá, Cia Sapato Velho, Cia Teatral Milongas, Circo Dux, Conexão do Bem, Estrela Prateada, Ilana Pogrebinschi, Juliana Correia, Léo Gaviole, Maravilhá, Núcleo Na Gema, Orquestra Circônica, Os Ciclomáticos Cia de Teatro, Palhaço Funil e Papa Vento."
+    },
+    "month_to_month": "O QUE ACONTECEU MÊS A MÊS: ",
+    "month_to_month_description": "DEIXA A GENTE TE CONTAR AS AÇÕES QUE REALIZAMOS MÊS A MÊS EM 2022!",
+    "january_to_abril": "JANEIRO A ABRIL",
+    "retrospective_seven": {
+      "background_container": {
+        "doctors_school": {
+          "title": "Escola Doutores da Alegria é parceira do projeto Hospitais Musicais",
+          "stanza_01": "Por mais um ano, a Escola Doutores da Alegria foi a responsável pela formação dos alunos do projeto Hospitais Musicais, promovido pelo Santa Marcelina Cultura e pela Escola de Música do Estado de São Paulo – Tom Jobim (Emesp).",
+          "stanza_02": "Desde 2016, a experiência dos Doutores da Alegria nos hospitais e a pedagogia da Escola Doutores da Alegria são aliadas nessa formação, cujo objetivo é preparar jovens músicos para se apresentarem nos hospitais, nas UBSs e nas UPAs.",
+          "stanza_03": "As aulas incluem temáticas e práticas como jogos de integração, improvisação, presença cênica e adequação do repertório aos espaços, para que eles realizem boas intervenções artísticas nos espaços de saúde.",
+          "stanza_04": "Além das aulas com os artistas-formadores da Escola Doutores da Alegria, os estudantes têm aulas com um professor de música.",
+          "stanza_05": "Depois da formação em sala de aula, os jovens músicos fazem uma intervenção na própria Emesp, no bairro da Luz, em São Paulo, e vão às unidades de saúde, recebendo cachê."
+        }
+      }
+    },
+    "retrospective_eight": {
+      "background_container": {
+        "doctors_school": {
+          "title": "Histórias de hospital para todos!",
+          "stanza_01": "O que acontece no hospital não fica no hospital! Em 2022, 5 edições do espetáculo “Conta Causos”, com histórias de hospital foram aos palcos. No primeiro semestre, os palhaços levaram o espetáculo para as Fábricas de Cultura Sapopemba, Cidade Tiradentes e Itaim Paulista, e no segundo semestre,foram para as Fábricas de Cultura São Bernardo do Campo e Parque Belém, espaços de cultura promovidos pelo governo do Estado de São Paulo."
+        }
+      }
+    },
+    "retrospective_nine": {
+      "background_container": {
+        "doctors_school": {
+          "title": "Palhaços estão sempre em formação!",
+          "stanza_01": "O curso Formação Básica de Palhaço foi prorrogado para o primeiro quadrimestre, encerrando assim o processo formativo, iniciado em 2021. No ano anterior, as aulas aconteceram em modelo híbrido - online e presencial - e, em 2022, 16 encontros presenciais foram realizados com os alunos para aprofundar a arte do palhaço. O curso gratuito oferece formação especializada para artistas e estudantes de arte, tendo o palhaço como território e expressão. Ao longo desse processo, formadores e alunos puderam experimentar e realizar trocas a partir de um olhar comum sobre a linguagem do palhaço, entendendo que a formação é uma prática cumulativa e ininterrupta."
+        }
+      }
+    },
+    "retrospective_ten": {
+      "background_container": {
+        "doctors_school": {
+          "title": "Teve carnaval em Recife, mas sem aglomeração!",
+          "date": "Fevereiro",
+          "stanza_01": "Antes da pandemia de Covid-19, as festas de carnaval, São João e o Natal eram comemoradas pelos palhaços com cortejos que reuniam os elencos e passavam por todos os hospitais.",
+          "stanza_02": "Em 2022, ano de transições e retomadas, o carnaval e o São João foram lembrados nos hospitais, mas reunindo menos palhaços. Em Recife, os hospitais receberam grupos de três palhaços, como Dr. Dud Grud “Homem da Meia-Noite”, Dra. Baju “Rainha da Tradicional Clube Vassourinhas” e Dr. Wago Ninguém “Rei do Maracatu”.",
+          "square": {
+            "text_01": "BLOCO MIOLINHO MOLE",
+            "text_02": "QUANTAS PESSOAS FORAM IMPACTADAS:",
+            "text_03": "PÚBLICO DIRETO",
+            "text_04": "PÚBLICO INDIRETO",
+            "text_05": "(RECIFE)",
+            "text_06": "185 pessoas",
+            "text_07": "593 pessoas"
+          }
+        }
+      }
+    },
+    "retrospective_eleven": {
+      "background_container": {
+        "doctors_school": {
+          "title": "Viva o circo! Viva Benjamim de Oliveira!",
+          "stanza_01": "Para homenagear o circo e o palhaço Benjamim de Oliveira, o Itaú Cultural montou uma programação especial no mês de fevereiro. Participamos com a exibição on-line do espetáculo “Aquele Momento Em Que...” e um debate com o elenco da peça. Além disso, o webinário Memória e Reinvenção – o que mantém o circo vivo? contou com a colaboração de Ronaldo Aguiar, diretor artístico dos Doutores da Alegria."
+        }
+      }
+    },
+    "retrospective_twelve": {
+      "background_container": {
+        "doctors_school": {
+          "date": "Março",
+          "title": "Doutores da Alegria recebe homenagem na Câmara Municipal do Recife",
+          "stanza_01": "A unidade Recife foi homenageada pela Câmara Municipal do Recife nas comemorações do Dia Nacional do Circo pelos 19 anos de atuação na capital pernambucana. O reconhecimento foi proposto pela vereadora Cida Pedrosa e a homenagem foi recebida pelos coordenadores Arilson Lopes e Nice Vasconcelos durante uma sessão especial."
+        }
+      }
+    },
+    "retrospective_thirteen": {
+      "background_container": {
+        "doctors_school": {
+          "date": "junho",
+          "title": "Forró no miudinho",
+          "stanza_01": "Comemoramos o São João nos hospitais, mas com ações que envolveram menos palhaços. Em Recife, trios de palhaços foram acompanhados pelo sanfoneiro Dudu do Acordeon nas visitas especiais.",
+          "stanza_02": "Em São Paulo, o São Joãozinho teve vários formatos: alguns hospitais receberam cinco palhaços, outros tiveram trios ou a própria dupla que já atendia o hospital puxou o forró, a pescaria e o correio elegante.",
+          "square": {
+            "text_01": "QUANTAS PESSOAS FORAM IMPACTADAS:",
+            "text_02": "são paulo",
+            "text_03": "recife",
+            "text_04": "público direto - ",
+            "text_05": "público indireto - ",
+            "text_06": "397 pessoas",
+            "text_07": "1.131 pessoas",
+            "text_08": "271 pessoas",
+            "text_09": "813 pessoas"
+          }
+        }
+      }
+    },
+    "retrospective_fourteen": {
+      "background_container": {
+        "doctors_school": {
+          "date": "setembro e outubro",
+          "title": "Peça de suspense, mágica e risada",
+          "stanza_01": "Os universos do circo e do hospital se misturam na peça “O médico é o monstro?”, que reestreou no Teatro Marco Camarotti, no Recife, no mês de setembro. O espetáculo, de suspense e muito humor, conta o que aconteceu depois que a equipe de um hospital-picadeiro recebeu a visita de uma paciente misteriosa."
+        }
+      }
+    },
+    "retrospective_fiveteen": {
+      "background_container": {
+        "doctors_school": {
+          "title": "Antes, você podia ouvir! Agora, dá para ver e ouvir!",
+          "stanza_01": "Em sua 2a temporada, lançada no mês de outubro, o podcast O palhaço: O que é?, da Escola Doutores da Alegria, virou videocast. Raul Figueiredo, palhaço e artista-formador da Escola, recebeu convidados especiais para discutir o arquétipo do palhaço e a sua função social. Os seis episódios – Bufão, Commedia Dell’Arte, Cultura Popular – Ritos e Estéticas, Circo, Artistas na Rua e Palhaço no Hospital - estão disponíveis nas principais plataformas de áudio e no YouTube. A série em videocast no Youtube teve 611 visualizações, 672 reproduções no Spotify e alcançou cerca de 4,6 mil pessoas no instagram."
+        }
+      }
+    },
+    "retrospective_sixteen": {
+      "background_container": {
+        "doctors_school": {
+          "date": "setembro a dezembro",
+          "title": "Time reforçado com sucesso!",
+          "stanza_01": "Uma das perguntas que a gente mais escuta é: como faz para ser um Doutor da Alegria? Na associação Doutores da Alegria, é preciso ser artista com registro profissional, ter experiência na linguagem do palhaço e passar por um processo de seleção com várias etapas. De setembro a dezembro, realizamos uma seleção em São Paulo e nove artistas foram escolhidos para atuar como substitutos. O nosso elenco agora é mais rico e diverso com a participação de Ana Luiza Bellacosta, Éric de Oliveira, Fagner Saraiva, Guilherme Carvalho, Jojo Brow-nie (Josiene Silva De Souza), Jussara Freitas, Lilyan Teles, Loi Lima e Luan Luando (Luan de Jesus)."
+        }
+      }
+    },
+    "retrospective_seventeen": {
+      "background_container": {
+        "doctors_school": {
+          "date": "novembro",
+          "title": "Escola Doutores da Alegria forma 9a turma de jovens palhaços",
+          "stanza_01": "A 9ª turma do Programa de Formação de Palhaços para Jovens (PFPJ) encerrou o período de formação na Escola Doutores da Alegria apresentando o experimento cênico “Corre-Ria: Águas que Vêm de Nós”. Os jovens artistas levaram ao palco cenas de palhaçaria que traçavam metáforas entre a força dos rios e dos mares e as relações com as suas raízes e ancestralidades. Os alunos da 9a turma passaram por uma formação com 1.600 horas-aula, treinamentos e experimentos cênicos até conquistarem os seus diplomas de palhaços."
+        }
+      }
+    },
+    "retrospective_eighteen": {
+      "background_container": {
+        "doctors_school": {
+          "date": "outubro a dezembro",
+          "title": "Mais uma turma de curiosos sobre palhaços!",
+          "stanza_01": "Dezessete pessoas de várias idades e formações profissionais participaram da 31a turma do curso Palhaço para curiosos, realizado pela Escola Doutores da Alegria. O curso propicia uma aproximação com a linguagem da palhaçaria ao longo de oito encontros presenciais, totalizando 26 horas de formação. Quem participou, identifica como o palhaço consegue subverter as situações do cotidiano e como as características dessa figura milenar podem ser incorporadas no dia a dia de alguém que não é artista."
+        }
+      }
+    },
+    "retrospective_nineteen": {
+      "background_container": {
+        "doctors_school": {
+          "date": "dezembro",
+          "title": "Palhaços reunidos para celebrar o Natal nos hospitais",
+          "stanza_01": "Depois de dois anos de pandemia, os palhaços puderam percorrer os hospitais em grupos maiores durante as festividades do Natal.",
+          "stanza_02": "Em Recife, o elenco reestreou o espetáculo “Auto de Natal”, que conta a história tradicional do nascimento de uma criança, mas pelo olhar transgressor do palhaço, e foi apresentado nos cinco hospitais atendidos pela associação.",
+          "stanza_03": "Em São Paulo, grupos de seis palhaços circularam pelas alas pediátricas com figurino, música e brincadeiras para celebrar a data no Hospital Santa Marcelina, Hospital Municipal M’boi Mirim – Dr. Moysés Deutsch, Hospital do Mandaqui, Hospital do Campo Limpo e Hospital Universitário da Faculdade de Medicina da USP. No Hospital Geral do Grajaú, no Instituto da Criança do Hospital das Clínicas e no Instituto de Tratamento do Câncer Infantil (Itaci), as duplas de palhaços que já atendiam no hospital fizeram uma visita temática especial."
+        }
+      }
+    },
+    "retrospective_twenty": {
+      "background_container": {
+        "doctors_school": {
+          "title": "Oficina para profissionais de assistência social",
+          "stanza_01": "No dia 6 de dezembro de 2022, os artistas-formadores da Escola Doutores da Alegria, Raul Figueiredo e Roberta Calza, fizeram uma oficina para funcionários do Centro de Referência Especializado da Assistência Social (CREAS), em São Paulo, dentro da programação da IV Semana de Direitos Humanos. 20 profissionais, entre assistentes sociais, psicólogos e recepcionistas, participaram da atividade, que propôs o brincar como base para a construção de relações saudáveis."
+        }
+      }
+    },
+    "doctors_joy_media": {}
   }
 }

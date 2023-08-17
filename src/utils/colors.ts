@@ -1,5 +1,6 @@
 export enum DalegriaColorsEnum {
-  Yellow = "#FFFF01",
+  LightYellow = "#FFFF01",
+  Yellow = "#fbeb05",
   Salmon = "#FF8E66",
   Red = "#FF3732",
   Green = "#5FF065",

@@ -7,16 +7,25 @@ interface ITextContainerStylesProps {
   justifyContent?: string;
   chooseGap?: number;
   flexDirection?: string;
+  marginTop?: number;
+  marginBottom?: number;
+  marginRight?: number;
+  marginLeft?: number;
+  chooseWidth?: number;
 }
 
 interface ITypographyStylesProps {
   fontFamily?: string;
   textColor?: string;
   fontSize?: number;
+  height?: number;
+  width?: number;
+  textTransform?: string;
 }
 
 interface IDelegriaContainerStylesProps {
   choosePadding?: number;
+  chooseGap?: number;
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -134,26 +143,44 @@ export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 12px;
-`
+`;
 
 export const TextContainer = styled.div<ITextContainerStylesProps>`
   display: flex;
-  width: 100%;
-  
-  ${({ align, textAlign, justifyContent, chooseGap, flexDirection}) => css`
-    align-items: ${align ? align : 'center'};
-    justify-content: ${justifyContent ? justifyContent : 'center'};
-    text-align: ${textAlign ? textAlign : 'center'};
+
+  ${({
+    align,
+    textAlign,
+    justifyContent,
+    chooseGap,
+    flexDirection,
+    marginTop,
+    marginBottom,
+    marginLeft,
+    marginRight,
+    chooseWidth,
+  }) => css`
+    align-items: ${align ? align : "center"};
+    justify-content: ${justifyContent ? justifyContent : "center"};
+    text-align: ${textAlign ? textAlign : "center"};
     gap: ${chooseGap ? `${chooseGap}px` : 0};
-    flex-direction: ${flexDirection ? flexDirection : 'column'};
+    width: ${chooseWidth ? `${chooseWidth}px` : "100%"};
+    flex-direction: ${flexDirection ? flexDirection : "column"};
+    margin-top: ${`${marginTop}px`};
+    margin-left: ${`${marginLeft}px`};
+    margin-bottom: ${`${marginBottom}px`};
+    margin-right: ${`${marginRight}px`};
   `}
 `;
 
 export const Typography = styled.span<ITypographyStylesProps>`
-  ${({ fontFamily, fontSize, textColor }) => css`
+  ${({ fontFamily, fontSize, textColor, height, width, textTransform }) => css`
     font-family: ${fontFamily};
     color: ${textColor};
     font-size: ${`${fontSize}px`};
+    height: ${`${height}px`};
+    width: ${`${width}px`};
+    text-transform: ${textTransform};
   `};
 `;
 
@@ -162,9 +189,19 @@ export const DalegriaContainer = styled.div<IDelegriaContainerStylesProps>`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 16px;
-  
-  ${({ choosePadding }) => css`
-    padding: ${`${choosePadding}px`}
+
+  ${({ choosePadding, chooseGap }) => css`
+    padding: ${`${choosePadding}px`};
+    gap: ${`${chooseGap}px`};
   `}
+`;
+
+export const BackgroundBlueContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: ${DalegriaColorsEnum.LightBlue};
+  padding: 16px;
 `;

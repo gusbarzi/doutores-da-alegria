@@ -11,6 +11,7 @@ export const CustomList: React.FC<ICustomList> = ({ list }) => {
           chooseColor={item.color}
           chooseFontFamily={item.fontFamily}
           chooseFontSize={item.fontSize}
+          chooseFontColor={item.fontColor}
         >{item.text}</ListItem>
       ))}
     </List>
