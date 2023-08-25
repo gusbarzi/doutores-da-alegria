@@ -8,15 +8,15 @@ import {
   GlobalNextButton,
   TextContainer,
   Typography,
-} from "../../styles/global.styles";
-import { ReactComponent as NextButton } from "../../../public/assets/setinha-direita.svg";
-import { ColorideBackground} from "./xRay.styles";
-import { IList } from "../../components/CustomList/customList.types";
-import { DalegriaColorsEnum } from "../../utils/colors";
-import { DalegriaFontesEnum } from "../../utils/fontes";
-import { CustomList } from "../../components/CustomList";
+} from "../../../../styles/global.styles";
+import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
+import { ColorideBackground} from "../../xRay.styles";
+import { IList } from "../../../../components/CustomList/customList.types";
+import { DalegriaColorsEnum } from "../../../../utils/colors";
+import { DalegriaFontesEnum } from "../../../../utils/fontes";
+import { CustomList } from "../../../../components/CustomList";
 
-export const XRay: React.FC = () => {
+export const XRayOne: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -291,10 +291,10 @@ export const XRay: React.FC = () => {
       </ColorideBackground>
 
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate(-1)}>
+        <GlobalBackButton onClick={() => navigate('/de-dentro-para-fora')}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/restrospectiva-01")}>
+        <GlobalNextButton onClick={() => navigate('/raio-x-02')}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

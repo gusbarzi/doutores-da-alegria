@@ -121,10 +121,10 @@ export const InsideOut: React.FC = () => {
       </TextContainer>
 
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate(-1)}>
+        <GlobalBackButton onClick={() => navigate('/texto-diretoria')}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/raio-x")}>
+        <GlobalNextButton onClick={() => navigate("/raio-x-01")}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

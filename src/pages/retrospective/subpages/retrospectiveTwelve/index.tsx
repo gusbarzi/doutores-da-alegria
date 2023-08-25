@@ -78,7 +78,6 @@ export const RetrospectiveTwelve: React.FC = () => {
               fontFamily={DalegriaFontesEnum.ManualBasic}
               textColor={DalegriaColorsEnum.Yellow}
               fontSize={20}
-              textTransform="uppercase"
             >
               {t(
                 "retrospective.retrospective_twelve.background_container.doctors_school.title"
@@ -96,7 +95,6 @@ export const RetrospectiveTwelve: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
               {t(
                 "retrospective.retrospective_twelve.background_container.doctors_school.stanza_01"

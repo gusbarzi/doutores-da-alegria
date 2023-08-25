@@ -6,10 +6,10 @@ import { SocialImpact } from "../pages/socialImpact";
 import { TextDirectorPresident } from "../pages/textDirectorPresident";
 import { TextBoard } from "../pages/textBoard";
 import { InsideOut } from "../pages/insideOut";
-import { XRay } from "../pages/xRay";
+import { XRayOne } from "../pages/xRay/subpages/xRayOne";
 import { DoctorsJoyMedia } from "../pages/doctorsJoyMedia";
 import { EmbranceCause } from "../pages/embranceCause";
-import { Accountability } from "../pages/accountability";
+import { AccountabilityOne } from "../pages/accountability/components/subpages/accontabilityOne";
 import { Team } from "../pages/team";
 import { Partners } from "../pages/partners";
 import { Files } from "../pages/files";
@@ -34,16 +34,23 @@ import { RetrospectiveSeventeen } from "../pages/retrospective/subpages/retrospe
 import { RetrospectiveEighteen } from "../pages/retrospective/subpages/retrospectiveEighteen";
 import { RetrospectiveNineteen } from "../pages/retrospective/subpages/retrospectiveNineteen";
 import { RetrospectiveTwenty } from "../pages/retrospective/subpages/retrospectiveTwenty";
+import { AccountabilityTwo } from "../pages/accountability/components/subpages/accontabilityTwo";
+import { AccountabilityTree } from "../pages/accountability/components/subpages/accontabilityTree";
+import { XRayTwo } from "../pages/xRay/subpages/xRayTwo";
+import { Ending } from "../pages/ending";
+import { Opening } from "../pages/opening";
 
 export const AppRoutes: React.FC = () => (
   <Routes>
     <Route path={PathEnum.HOME} element={<Home />} />
+    <Route path={PathEnum.OPENING} element={<Opening />} />
     <Route path={PathEnum.PURPOSE} element={<Purpose />} />
     <Route path={PathEnum.SOCIAL_IMPACT} element={<SocialImpact />} />
     <Route path={PathEnum.TEXT_DIRECTOR_PRESIDENT} element={<TextDirectorPresident />}/>
     <Route path={PathEnum.TEXT_BOARD} element={<TextBoard />} />
     <Route path={PathEnum.INSIDE_OUT} element={<InsideOut />} />
-    <Route path={PathEnum.X_RAY_ONE} element={<XRay />} />
+    <Route path={PathEnum.X_RAY_ONE} element={<XRayOne />} />
+    <Route path={PathEnum.X_RAY_TWO} element={<XRayTwo />} />
     <Route path={PathEnum.RETROSPECTIVE_ONE} element={<RetrospectiveOne />} />
     <Route path={PathEnum.RETROSPECTIVE_TWO} element={<RetrospectiveTwo />} />
     <Route path={PathEnum.RETROSPECTIVE_THREE} element={<RetrospectiveThree />} />
@@ -66,9 +73,12 @@ export const AppRoutes: React.FC = () => (
     <Route path={PathEnum.RETROSPECTIVE_TWENTY} element={<RetrospectiveTwenty />} />
     <Route path={PathEnum.DOCTORS_JOY_MEDIA} element={<DoctorsJoyMedia />} />
     <Route path={PathEnum.EMBRANCE_CAUSE} element={<EmbranceCause />} />
-    <Route path={PathEnum.ACCOUNTABILITY} element={<Accountability />} />
+    <Route path={PathEnum.ACCOUNTABILITY_ONE} element={<AccountabilityOne />} />
+    <Route path={PathEnum.ACCOUNTABILITY_TWO} element={<AccountabilityTwo />} />
+    <Route path={PathEnum.ACCOUNTABILITY_TREE} element={<AccountabilityTree />} />
     <Route path={PathEnum.TEAM} element={<Team />} />
     <Route path={PathEnum.PARTNERS} element={<Partners />} />
     <Route path={PathEnum.FILES} element={<Files />} />
+    <Route path={PathEnum.END} element={<Ending />} />
   </Routes>
 );

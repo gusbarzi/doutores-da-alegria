@@ -335,6 +335,197 @@
         }
       }
     },
-    "doctors_joy_media": {}
+    "doctors_joy_media": {
+      "title": "Doutores da alegria na midia",
+      "press": "imprensa",
+      "social_media": {
+        "title": "Redes sociais",
+        "stanza_01": "Entre as ONGs brasileiras, Doutores da Alegria possui a segunda maior audiência no Facebook no país.",
+        "stanza_02": "Além do Facebook, estamos presentes ativamente no Instagram, YouTube e LinkedIn, divulgando as nossas ações nos campos da arte, da saúde e da assistência social.",
+        "stanza_03": "Acreditamos que as redes sociais nos ajudam a ampliar o diálogo com a sociedade e a compartilhar a nossa missão."
+      },
+      "number_social_media": {
+        "title": "Número nas redes sociais",
+        "static_01": "+ 2,4 milhões de fãs no Facebook",
+        "static_02": "+ 114 mil seguidores no Instagram",
+        "static_03": "+ 11 mil seguidores no YouTube",
+        "static_04": "+ 7,8 mil seguidores no Linkedin"
+      },
+      "text_01": "Os veículos de comunicação ajudam a divulgar as iniciativas da associação Doutores da Alegria, mostrando a relevância do nosso trabalho para a sociedade.",
+      "stanza_01": "Em 2022, tivemos um aumento de 270% na publicação de matérias jornalísticas em relação ao ano anterior.",
+      "stanza_02": "As principais ações abordadas pelos veículos de imprensa foram o retorno aos hospitais do projeto Plateias Hospitalares, no Rio de Janeiro; as apresentações da Banda Doutores da Alegria em São Paulo; e o lançamento do livro Coletânea Conta Causos – Volume 1, no Recife.",
+      "stanza_03": "As nossas ações foram divulgadas nos principais jornais do Rio de Janeiro, São Paulo e Recife e, na televisão, tivemos matérias divulgadas em telejornais locais e nacionais, como o Jornal Nacional e o Jornal Hoje."
+    },
+    "embrance_cause": {
+      "title_01": "Abrace a causa",
+      "text_02": "Doutores da Alegria conta com a doação de empresas e de pessoas para manter seus projetos nas áreas de saúde, cultura e assistência social. Nossas ações são destinadas a públicos em situação de vulnerabilidade e risco social.",
+      "text_03": "Como uma organização da sociedade civil sem fins lucrativos, atuamos com transparência na prestação de contas, cumprindo com a legislação brasileira e priorizando o bom uso dos recursos públicos e privados. Recebemos auditoria externa de todas as contas anualmente.",
+      "title_02": "Escolha sua forma de abraçar a causa:",
+      "title_03": "Empresas também podem ajudar:",
+      "embrance_cause_list": {
+        "first": "Fazer uma doação única ou se tornar sócio mantenedor;",
+        "second": "Doar imposto de renda;",
+        "third": "Doar pontos de milhagens;",
+        "fourth": "Fazer um curso;",
+        "fiveth": "Presentear com doação."
+      },
+      "embrance_cause_list_02": {
+        "first": "Patrocinar via leis de incentivo ou recursos próprios;",
+        "second": "Fazer uma doação;",
+        "third": "Contratar intervenções e palestras;",
+        "fourth": "Fazer licenciamento de marca;",
+        "fiveth": "Apoiar institucionalmente;",
+        "sixth": "Fazer uma campanha de marketing."
+      },
+      "contact": "Entre em contato para informações sobre doações e parcerias:",
+      "email": "empresas@doutoresdaalegria.org.br",
+      "partner": "sócios:"
+    },
+    "accountability": {
+      "title_01": "prestação de contas",
+      "subtitle_01": "Nossas contas são auditadas anualmente por auditorias independentes. Em 2022, a Singolare Consultoria e Auditoria realizou este trabalho.",
+      "sub_description": "* Em 2016, o evento Gala Doutores da Alegria mobilizou empresas e pessoas, gerando recursos pela venda de convites, cotas de patrocínio e leilão. Os recursos foram utilizados na produção do próprio evento e seu superávit foi integralmente aplicado nos projetos da associação.",
+      "title_02": "recursos arrecadados",
+      "period": "período: janeiro a dezembro/22 | Valores em Reais",
+      "subtitle_02": "ORIGEM DOS RECURSOS",
+      "january_to_december": "janeiro a dezembro 2022",
+      "percents": {
+        "item_01": "DOADORES EMPRESAS POR LEI INCENTIVO",
+        "item_02": "FOMENTO",
+        "sub_item_02": "(FUMCAD e Funcultura)",
+        "item_03": "GERAÇÃO DE RECURSOS",
+        "sub_item_03": "(produtos, serviços, intervenções em empresas e cursos)",
+        "item_04": "CAMPANHAS DE MKT E LICENÇA DE MARCA",
+        "item_05": "DOADORES PESSOAS FÍSICAS SEM LEI DE INCENTIVO",
+        "item_06": "DOADORES PESSOAS FÍSICAS COM LEI DE INCENTIVO",
+        "item_07": "PARCERIAS COM CARTÕES DE CRÉDITO",
+        "sub_item_07": "Programas de Relacionamento (produtos, serviços, intervenções em empresas e cursos)",
+        "item_08": "DOAÇÕES EMPRESAS SEM LEI DE INCENTIVO",
+        "sub_item_08": "(Investimento Social)"
+      },
+      "title_03": "APLICAÇÃO DOS RECURSOS",
+      "subtitle_03": "período: janeiro a dezembro/22",
+      "projects": {
+        "item_01": "PROGRAMA DE HOSPITAIS/ SUSTENTABILIDADE",
+        "item_02": "PFPJ",
+        "item_03": "ESCOLA",
+        "item_04": "ESPETÁCULOS",
+        "item_05": "10 ANOS PLATEIAS"
+      },
+      "title_04": "projetos:",
+      "title_05": "administrativo/ operacional:",
+      "operational": {
+        "item_01": "OCUPAÇÃO E CONSERVAÇÃO DE IMÓVEIS",
+        "item_02": "COMUNICAÇÃO",
+        "item_03": "AGENCIAMENTO DE CAPTAÇÃO DE RECURSOS",
+        "item_04": "ASSESSORIA DE IMPRENSA",
+        "item_05": "ASSESSORIA CONTÁBIL / AUDITORIA / JURÍDICA",
+        "item_06": "DESPESAS OPERACIONAIS ÁREAS DE APOIO",
+        "item_07": "OUTROS",
+        "item_08": "PESSOAL",
+        "item_09": "TECNOLOGIA DA INFORMAÇÃO"
+      }
+    },
+    "team": {
+      "title": "equipe",
+      "description": "A associação conta com profissionais de diversas formações nas cidades de São Paulo, Rio de Janeiro e Recife. Essa multidisciplinaridade garante uma atuação incisiva nas áreas de saúde, cultura e assistência social.",
+      "date": "JANEIRO A DEZEMBRO DE 2022"
+    },
+    "partners": {
+      "titles": {
+        "one": "Parceiros governamentais",
+        "two": "patrocinadores e parceiros em 2022",
+        "tree": "patrocinador cócega",
+        "four": "patrocinador gentileza",
+        "five": "MARKETING RELACIONADO À CAUSA",
+        "six": "NOTA FISCAL PAULISTA",
+        "seven": "SITES/ CROWDFUNDING",
+        "eight": "APOIO TÉCNICO",
+        "nine": "APOIOS REGULARES",
+        "ten": "CAMPANHAS REGULARES",
+        "eleven": "programas de milhagem",
+        "twelve": "são paulo",
+        "thirteen": "recife"
+      },
+      "list_01": {
+        "item_01": "BLUECYCLE",
+        "item_02": "FABER CASTELL",
+        "item_03": "IBIÚNA INVEST",
+        "item_04": "PRICE WATERHOUSE",
+        "item_05": "TORRA TORRA",
+        "item_06": "PREMIER PET",
+        "item_07": "TRANSUNION",
+        "item_08": "CASA SANTA LUZIA",
+        "item_09": "MONTANA QUÍMICA",
+        "item_10": "GALZERANO"
+      },
+      "list_02": {
+        "item_01": "OLIVEIRA TRUST",
+        "item_02": "GAREN",
+        "item_03": "BENSIS HEALT",
+        "item_04": "COMBUSTRAM",
+        "item_05": "WLM SCANIA"
+      },
+      "list_03": {
+        "item_01": "Atacadão",
+        "item_02": "Visa Causas",
+        "item_03": "Arredondar",
+        "item_04": "FAIRFAX"
+      },
+      "list_04": {
+        "item_01": "Latampass",
+        "item_02": "Livelo",
+        "item_03": "Itaucard/IUPP"
+      },
+      "list_05": {
+        "item_01": "Sorveteria Oggi",
+        "item_02": "Las Chicas"
+      },
+      "list_06": {
+        "item_01": "PayPal",
+        "item_02": "Presente Consciente"
+      },
+      "list_07": {
+        "item_01": "Ambiente",
+        "item_02": "Arcabuzz consultoria",
+        "item_03": "Artur Restaurante",
+        "item_04": "Bit Defender",
+        "item_05": "Site Blindado",
+        "item_06": "Clipping Service",
+        "item_07": "Cultura Inglesa",
+        "item_08": "Gusmão & Labrunie",
+        "item_09": "Handtalk",
+        "item_10": "Hostgator",
+        "item_11": "Kasi",
+        "item_12": "Microsoft",
+        "item_13": "QS do Brasil",
+        "item_14": "Symantec",
+        "item_15": "Trama"
+      },
+      "list_08": {
+        "item_01": "Transportadora",
+        "item_02": "Asa de Prata"
+      }
+    },
+    "file": {
+      "titles": {
+        "one": "expediente",
+        "two": "Coordenação",
+        "tree": "Redação e Edição",
+        "four": "Projeto Gráfico e Diagramação",
+        "five": "Desenvolvimento de hotsite",
+        "six": "Revisão",
+        "seven": "Impressão",
+        "eight": "Colaboração",
+        "nine": "Fechamento desta edição:",
+        "ten": "SÃO PAULO",
+        "eleven": "RECIFE",
+        "twelve": "RIO DE JANEIRO",
+        "thirteen": "MAIO 2023"
+      }
+    },
+    "ending": {
+      "title": "até 2023!"
+    }
   }
 }

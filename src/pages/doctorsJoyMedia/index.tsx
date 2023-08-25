@@ -1,26 +1,258 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { DoctorsJoyMediaContainer } from "./doctorsJoyMedia.styles";
+import {
+  BackgroundYellow,
+  DoctorsJoyMediaContainer,
+  DoctorsJoyMediaContent,
+  LeftSide,
+  NumbersContainer,
+  RightSide,
+  TextSquare,
+} from "./doctorsJoyMedia.styles";
 import { useNavigate } from "react-router-dom";
-import { GlobalNextButton } from "../../styles/global.styles";
-import { ReactComponent as NextButton } from '../../../public/assets/setinha-direita.svg'
+import {
+  ButtonContainer,
+  GlobalBackButton,
+  GlobalNextButton,
+  TextContainer,
+  Typography,
+} from "../../styles/global.styles";
+import { ReactComponent as NextButton } from "../../../public/assets/setinha-direita.svg";
+import { DalegriaFontesEnum } from "../../utils/fontes";
+import { DalegriaColorsEnum } from "../../utils/colors";
 
 export const DoctorsJoyMedia: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
-  /* const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng)
-        .catch(error => console.error('Failed to change language: ', error));
-  }; */
-
-
   return (
-    <DoctorsJoyMediaContainer>
-      <h1>Doutores da alegria na mídia</h1>
-      <GlobalNextButton onClick={() => navigate('/abrace-a-causa')}>
-        <NextButton width={50} height={50}/>
-      </GlobalNextButton>
-    </DoctorsJoyMediaContainer>
-  )
-}
+    <>
+      <DoctorsJoyMediaContainer>
+        <TextContainer
+          textAlign="left"
+          justifyContent="flex-start"
+          align="flex-start"
+          marginBottom={12}
+        >
+          <Typography
+            fontFamily={DalegriaFontesEnum.ManualBasicS}
+            textColor={DalegriaColorsEnum.Yellow}
+            fontSize={60}
+          >
+            {t("retrospective.doctors_joy_media.title")}
+          </Typography>
+        </TextContainer>
+        <DoctorsJoyMediaContent>
+          <LeftSide>
+            <TextContainer
+              textAlign="left"
+              justifyContent="flex-start"
+              align="flex-start"
+              marginBottom={12}
+            >
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Black}
+                lineHeight={1.5}
+                fontSize={16}
+              >
+                {t("retrospective.doctors_joy_media.text_01")}
+              </Typography>
+            </TextContainer>
+          </LeftSide>
+          <RightSide>
+            <TextContainer
+              textAlign="center"
+              justifyContent="flex-start"
+              align="flex-start"
+              marginBottom={4}
+            >
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasic}
+                textColor={DalegriaColorsEnum.Pink}
+                fontSize={28}
+              >
+                {t("retrospective.doctors_joy_media.press")}
+              </Typography>
+            </TextContainer>
+            <TextContainer
+              textAlign="left"
+              justifyContent="flex-start"
+              align="flex-start"
+              marginBottom={12}
+            >
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Black}
+                lineHeight={1.35}
+                fontSize={14}
+              >
+                {t("retrospective.doctors_joy_media.stanza_01")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Black}
+                lineHeight={1.35}
+                fontSize={14}
+              >
+                {t("retrospective.doctors_joy_media.stanza_02")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Black}
+                lineHeight={1.35}
+                fontSize={14}
+              >
+                {t("retrospective.doctors_joy_media.stanza_03")}
+              </Typography>
+            </TextContainer>
+          </RightSide>
+        </DoctorsJoyMediaContent>
+        <BackgroundYellow>
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            marginBottom={4}
+          >
+            <Typography
+              fontFamily={DalegriaFontesEnum.ManualBasic}
+              textColor={DalegriaColorsEnum.Pink}
+              fontSize={28}
+            >
+              {t("retrospective.doctors_joy_media.social_media.title")}
+            </Typography>
+          </TextContainer>
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            marginBottom={12}
+          >
+            <Typography
+              fontFamily={DalegriaFontesEnum.StdLight}
+              textColor={DalegriaColorsEnum.Black}
+              fontSize={16}
+            >
+              {t("retrospective.doctors_joy_media.social_media.stanza_01")}
+            </Typography>
+            <Typography
+              fontFamily={DalegriaFontesEnum.StdLight}
+              textColor={DalegriaColorsEnum.Black}
+              fontSize={16}
+            >
+              {t("retrospective.doctors_joy_media.social_media.stanza_02")}
+            </Typography>
+            <Typography
+              fontFamily={DalegriaFontesEnum.StdLight}
+              textColor={DalegriaColorsEnum.Black}
+              fontSize={16}
+            >
+              {t("retrospective.doctors_joy_media.social_media.stanza_03")}
+            </Typography>
+          </TextContainer>
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            marginBottom={12}
+          >
+            <TextSquare>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.White}
+                fontSize={20}
+                textTransform="uppercase"
+                lineHeight={1}
+              >
+                {t("retrospective.doctors_joy_media.number_social_media.title")}
+              </Typography>
+            </TextSquare>
+          </TextContainer>
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            marginBottom={4}
+          >
+            <NumbersContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                marginBottom={16}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.ManualBasic}
+                  textColor={DalegriaColorsEnum.Pink}
+                  fontSize={28}
+                >
+                  {t(
+                    "retrospective.doctors_joy_media.number_social_media.static_01"
+                  )}
+                </Typography>
+              </TextContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                marginBottom={16}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.ManualBasic}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={28}
+                >
+                  {t(
+                    "retrospective.doctors_joy_media.number_social_media.static_02"
+                  )}
+                </Typography>
+              </TextContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                marginBottom={16}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.ManualBasic}
+                  textColor={DalegriaColorsEnum.Red}
+                  fontSize={28}
+                >
+                  {t(
+                    "retrospective.doctors_joy_media.number_social_media.static_03"
+                  )}
+                </Typography>
+              </TextContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                marginBottom={16}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.ManualBasic}
+                  textColor={DalegriaColorsEnum.Purple}
+                  fontSize={28}
+                >
+                  {t(
+                    "retrospective.doctors_joy_media.number_social_media.static_04"
+                  )}
+                </Typography>
+              </TextContainer>
+            </NumbersContainer>
+          </TextContainer>
+        </BackgroundYellow>
+        <ButtonContainer>
+          <GlobalBackButton onClick={() => navigate("/restrospectiva-20")}>
+            <NextButton width={50} height={50} />
+          </GlobalBackButton>
+
+          <GlobalNextButton onClick={() => navigate("/abrace-a-causa")}>
+            <NextButton width={50} height={50} />
+          </GlobalNextButton>
+        </ButtonContainer>
+      </DoctorsJoyMediaContainer>
+    </>
+  );
+};

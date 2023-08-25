@@ -1,55 +1,61 @@
 import { styled } from "styled-components";
-import { DalegriaFontesEnum } from "../../utils/fontes";
 import { DalegriaColorsEnum } from "../../utils/colors";
+import textura from "../../../public/assets/textura.svg";
 
 export const HomeContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 24px;
-  gap: 16px;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;  
+  background-color: ${DalegriaColorsEnum.LightBlue};
 `;
 
-export const HomeTitle = styled.div`
-  width: 100%;
+export const HomeHeader = styled.div`
+  display: flex;
+  width: 100vw;
+  height: 150px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 16px 0 0;
+  position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(${textura});
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        opacity: 0.3;
+        z-index: 1;
+    }
+`;
+
+export const LogoContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 100px;
+  padding-right: 60px;
+  
+  position: relative;
 `;
 
-export const HomeDescription = styled.div`
+export const TextContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  position: absolute;
+  top: 240px;
+  right: 100px;
 `;
 
-export const HomeText = styled.span`
-  &::first-letter {
-    float: left;
-    font-size: 80px;
-    line-height: 0.6;
-    padding-bottom: 16px;
-    padding-right: 8px;
-    padding-left: 3px;
-    color: ${DalegriaColorsEnum.LightBlue};
-    font-family: ${DalegriaFontesEnum.StdLight};
-  }
-  font-family: ${DalegriaFontesEnum.StdLight};
-  color: ${DalegriaColorsEnum.Black};
-  font-size: 20px;  
-`;
-
-export const GoodReadingContainer = styled.span`
-  width: 100%;
+export const ImageContainer = styled.img`
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  position: absolute;
+  top: 250px;
+  right: 20px;
 `;
-
-export const GoodReadingText = styled.span`
-  font-family: ${DalegriaFontesEnum.SimplesBasic};
-  color: ${DalegriaColorsEnum.LightBlue};
-  font-size: 32px;
-  text-transform: uppercase;
-`

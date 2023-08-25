@@ -30,8 +30,11 @@ export enum PathEnum {
   RETROSPECTIVE_TWENTY = '/restrospectiva-20',
   DOCTORS_JOY_MEDIA = '/doutores-da-alegria-na-midia',
   EMBRANCE_CAUSE = '/abrace-a-causa',
-  ACCOUNTABILITY = '/prestacao-de-contas',
+  ACCOUNTABILITY_ONE = '/prestacao-de-contas-01',
+  ACCOUNTABILITY_TWO = '/prestacao-de-contas-02',
+  ACCOUNTABILITY_TREE = '/prestacao-de-contas-03',
   TEAM = '/equipe',
   PARTNERS = '/parceiros',
   FILES = '/expedientes',
+  END = '/fim'
 }

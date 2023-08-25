@@ -21,6 +21,7 @@ interface ITypographyStylesProps {
   height?: number;
   width?: number;
   textTransform?: string;
+  lineHeight?: number;
 }
 
 interface IDelegriaContainerStylesProps {
@@ -45,6 +46,8 @@ export const GlobalStyle = createGlobalStyle`
       cursor: not-allowed;
     }
   };
+
+
 
   @font-face {
     font-family: 'DalegriaManualBasic';
@@ -140,9 +143,18 @@ export const GlobalNextButton = styled.button`
 `;
 
 export const ButtonContainer = styled.div`
+  width: 100%;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
   gap: 12px;
+`;
+
+export const ButtonContainerTwo = styled.div`
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  padding: 16px;
 `;
 
 export const TextContainer = styled.div<ITextContainerStylesProps>`
@@ -174,13 +186,14 @@ export const TextContainer = styled.div<ITextContainerStylesProps>`
 `;
 
 export const Typography = styled.span<ITypographyStylesProps>`
-  ${({ fontFamily, fontSize, textColor, height, width, textTransform }) => css`
+  ${({ fontFamily, fontSize, textColor, height, width, textTransform, lineHeight }) => css`
     font-family: ${fontFamily};
     color: ${textColor};
     font-size: ${`${fontSize}px`};
     height: ${`${height}px`};
     width: ${`${width}px`};
     text-transform: ${textTransform};
+    line-height: ${lineHeight};
   `};
 `;
 
@@ -204,4 +217,11 @@ export const BackgroundBlueContainer = styled.div`
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.LightBlue};
   padding: 16px;
+`;
+
+export const FooterContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
 `;
