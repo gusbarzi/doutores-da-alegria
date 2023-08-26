@@ -35,8 +35,8 @@ export const OpeningText = styled.span`
     color: ${DalegriaColorsEnum.LightBlue};
     font-family: ${DalegriaFontesEnum.StdLight};
   }
-  font-family: ${DalegriaFontesEnum.StdLight};
-  color: ${DalegriaColorsEnum.Black};
+  font-family: ${DalegriaFontesEnum.StdBold};
+  color: ${DalegriaColorsEnum.Gray};
   font-size: 20px;  
 `;
 

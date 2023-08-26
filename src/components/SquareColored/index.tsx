@@ -6,19 +6,22 @@ interface ISquareColoredProps {
   type: "primary" | "outlined";
   backgroundColor?: string;
   borderColor?: string;
+  chooseWidth?: number;
 }
 
 export const SquareColored: React.FC<ISquareColoredProps> = ({
   children,
   type,
   backgroundColor,
-  borderColor
+  borderColor,
+  chooseWidth
 }) => {
   return (
     <SquareColoredContainer
       type={type}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
+      chooseWidth={chooseWidth}
     >
       {children}
     </SquareColoredContainer>

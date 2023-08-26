@@ -4,11 +4,7 @@ import {
   BannerContainer,
   DescriptionContainer,
   DescriptionTitle,
-  JokersImageContainer,
   PurposeContainer,
-  PurposeLightBlueTitle,
-  PurposePinkTitle,
-  PurposePurpleTitle,
   ValuesContainer,
 } from "./purpose.styles";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +14,7 @@ import {
   GlobalNextButton,
 } from "../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../public/assets/setinha-direita.svg";
-import jokerImage from "../../../public/assets/Links/mobile-recortes2.png";
+import { ReactComponent as PurposeImage } from "../../../public/assets/Links/purpose.svg";
 import { DalegriaColorsEnum } from "../../utils/colors";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import { IList } from "../../components/CustomList/customList.types";
@@ -100,14 +96,8 @@ export const Purpose: React.FC = () => {
   return (
     <PurposeContainer>
       <BannerContainer>
-        <PurposeLightBlueTitle>Qual</PurposeLightBlueTitle>
-        <PurposeLightBlueTitle>o nosso</PurposeLightBlueTitle>
-        <PurposePinkTitle>propósito</PurposePinkTitle>
-        <PurposePurpleTitle>?</PurposePurpleTitle>
+        <PurposeImage width="100vw" height="100vh"/>
       </BannerContainer>
-      <JokersImageContainer>
-        <img src={jokerImage} width={350} height={800} />
-      </JokersImageContainer>
       <DescriptionContainer>
         <DescriptionTitle>Tarefa Institucional</DescriptionTitle>
         <CustomList list={taskInstList} />

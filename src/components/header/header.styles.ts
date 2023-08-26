@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { DalegriaColorsEnum } from "../../utils/colors";
 import { DalegriaFontesEnum } from "../../utils/fontes";
+import textura from "../../../public/assets/textura.svg";
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -11,6 +12,22 @@ export const HeaderContainer = styled.div`
   height: 100px;
   background-color: ${DalegriaColorsEnum.LightBlue};
   padding: 32px 16px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(${textura});
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: 1;
+  }
 `;
 
 export const HeaderTitleContainer = styled.div`
@@ -24,7 +41,7 @@ export const HeaderTitle = styled.span`
   font-family: ${DalegriaFontesEnum.SimplesBasic};
   color: ${DalegriaColorsEnum.White};
   font-size: 24px;
-`
+`;
 
 export const Logo = styled.div`
   display: flex;

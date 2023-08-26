@@ -7,6 +7,7 @@ export const TextBoardContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 16px;
   gap: 16px;
 `;
 
@@ -21,5 +22,5 @@ export const BoardDescriptionText = styled.div`
 export const BoardText = styled.span`
   font-family: ${DalegriaFontesEnum.StdLight};
   color: ${DalegriaColorsEnum.Black};
-  font-size: 20px;
+  font-size: 16px;
 `;

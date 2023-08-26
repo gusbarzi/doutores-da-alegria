@@ -10,7 +10,9 @@ import {
   Typography,
 } from "../../../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
-import { ColorideBackground} from "../../xRay.styles";
+import { ReactComponent as Artboard } from "../../../../../public/assets/Links/artboard-6.svg";
+import { ReactComponent as Caveira } from "../../../../../public/assets/caveira.svg";
+import { ColorideBackground } from "../../xRay.styles";
 import { IList } from "../../../../components/CustomList/customList.types";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -19,58 +21,6 @@ import { CustomList } from "../../../../components/CustomList";
 export const XRayTwo: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-
-  const xRayListItens: IList[] = [
-    {
-      itemId: 1,
-      text: t("x_ray.list_item.first"),
-      color: DalegriaColorsEnum.Purple,
-      fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
-    },
-    {
-      itemId: 2,
-      text: t("x_ray.list_item.second"),
-      color: DalegriaColorsEnum.LightBlue,
-      fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
-    },
-    {
-      itemId: 3,
-      text: t("x_ray.list_item.thirth"),
-      color: DalegriaColorsEnum.LightBlue,
-      fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
-    },
-    {
-      itemId: 4,
-      text: t("x_ray.list_item.fourth"),
-      color: DalegriaColorsEnum.LightBlue,
-      fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
-    },
-    {
-      itemId: 5,
-      text: t("x_ray.list_item.fifth"),
-      color: DalegriaColorsEnum.LightBlue,
-      fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
-    },
-    {
-      itemId: 6,
-      text: t("x_ray.list_item.sixth"),
-      color: DalegriaColorsEnum.LightBlue,
-      fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
-    },
-    {
-      itemId: 7,
-      text: t("x_ray.list_item.seventh"),
-      color: DalegriaColorsEnum.LightBlue,
-      fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
-    },
-  ];
 
   const impactedPeopleList: IList[] = [
     {
@@ -110,7 +60,7 @@ export const XRayTwo: React.FC = () => {
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
       fontSize: 16,
-    }
+    },
   ];
 
   const haveSchoolList: IList[] = [
@@ -155,7 +105,7 @@ export const XRayTwo: React.FC = () => {
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
       fontSize: 16,
-    }
+    },
   ];
 
   const seeUsList: IList[] = [
@@ -204,100 +154,109 @@ export const XRayTwo: React.FC = () => {
       fontFamily: DalegriaFontesEnum.StdLight,
       fontSize: 16,
     },
-  ]
+  ];
 
   return (
-    <DalegriaContainer choosePadding={0}>
-      <h1>Raio-x</h1>
-      <ColorideBackground>
-        <CustomList list={xRayListItens} />
-      </ColorideBackground>
-
-      <ColorideBackground>
-        <TextContainer
-          textAlign="left"
-          justifyContent="flex-start"
-          align="flex-start"
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasic}
-            textColor={DalegriaColorsEnum.Purple}
-            fontSize={24}
+    <>
+      <Artboard width={390} height={410}/>
+      <DalegriaContainer choosePadding={0}>
+        <ColorideBackground>
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            chooseGap={4}
           >
-            {t("x_ray.impacted_people_list.title")}
-          </Typography>
-          <CustomList list={impactedPeopleList} />
-        </TextContainer>
+            <Typography
+              fontFamily={DalegriaFontesEnum.ManualBasic}
+              textColor={DalegriaColorsEnum.Purple}
+              fontSize={24}
+            >
+              {t("x_ray.impacted_people_list.title")}
+            </Typography>
+            <CustomList list={impactedPeopleList} />
+          </TextContainer>
 
-        <TextContainer
-          textAlign="left"
-          justifyContent="flex-start"
-          align="flex-start"
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasic}
-            textColor={DalegriaColorsEnum.Purple}
-            fontSize={24}
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            chooseGap={4}
           >
-            {t("x_ray.who_goes_hospital_list.title")}
-          </Typography>
-          <CustomList list={whoGoesHospitalList} />
-        </TextContainer>
+            <Typography
+              fontFamily={DalegriaFontesEnum.ManualBasic}
+              textColor={DalegriaColorsEnum.Purple}
+              fontSize={24}
+            >
+              {t("x_ray.who_goes_hospital_list.title")}
+            </Typography>
+            <CustomList list={whoGoesHospitalList} />
+          </TextContainer>
 
-        <TextContainer
-          textAlign="left"
-          justifyContent="flex-start"
-          align="flex-start"
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasic}
-            textColor={DalegriaColorsEnum.Purple}
-            fontSize={24}
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            chooseGap={4}
           >
-            {t("x_ray.have_school_list.title")}
-          </Typography>
-          <CustomList list={haveSchoolList} />
-        </TextContainer>
+            <Typography
+              fontFamily={DalegriaFontesEnum.ManualBasic}
+              textColor={DalegriaColorsEnum.Purple}
+              fontSize={24}
+            >
+              {t("x_ray.have_school_list.title")}
+            </Typography>
+            <CustomList list={haveSchoolList} />
+          </TextContainer>
 
-        <TextContainer
-          textAlign="left"
-          justifyContent="flex-start"
-          align="flex-start"
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasic}
-            textColor={DalegriaColorsEnum.Purple}
-            fontSize={24}
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            chooseGap={4}
           >
-            {t("x_ray.see_us_list.title")}
-          </Typography>
-          <CustomList list={seeUsList} />
-        </TextContainer>
+            <Typography
+              fontFamily={DalegriaFontesEnum.ManualBasic}
+              textColor={DalegriaColorsEnum.Purple}
+              fontSize={24}
+            >
+              {t("x_ray.see_us_list.title")}
+            </Typography>
+            <CustomList list={seeUsList} />
+          </TextContainer>
 
-        <TextContainer
-          textAlign="left"
-          justifyContent="flex-start"
-          align="flex-start"
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasic}
-            textColor={DalegriaColorsEnum.Purple}
-            fontSize={24}
+          <TextContainer
+            textAlign="left"
+            justifyContent="flex-start"
+            align="flex-start"
+            chooseGap={4}
           >
-            {t("x_ray.we_won_prizes_list.title")}
-          </Typography>
-          <CustomList list={weWonPrizesList} />
-        </TextContainer> 
-      </ColorideBackground>
+            <Typography
+              fontFamily={DalegriaFontesEnum.ManualBasic}
+              textColor={DalegriaColorsEnum.Purple}
+              fontSize={24}
+            >
+              {t("x_ray.we_won_prizes_list.title")}
+            </Typography>
+            <CustomList list={weWonPrizesList} />
+          </TextContainer>
+        </ColorideBackground>
 
-      <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate('/raio-x-01')}>
-          <NextButton width={50} height={50} />
-        </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/restrospectiva-01")}>
-          <NextButton width={50} height={50} />
-        </GlobalNextButton>
-      </ButtonContainer>
-    </DalegriaContainer>
+        <Caveira
+          width={120}
+          height={120}
+          style={{ position: "absolute", bottom: "-1000px" }}
+        />
+
+        <ButtonContainer>
+          <GlobalBackButton onClick={() => navigate("/raio-x-01")}>
+            <NextButton width={50} height={50} />
+          </GlobalBackButton>
+          <GlobalNextButton onClick={() => navigate("/restrospectiva-01")}>
+            <NextButton width={50} height={50} />
+          </GlobalNextButton>
+        </ButtonContainer>
+      </DalegriaContainer>
+    </>
   );
 };

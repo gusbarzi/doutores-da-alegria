@@ -29,7 +29,7 @@ export const Opening: React.FC = () => {
         <GoodReadingText>{t("good_reading")}</GoodReadingText>
       </GoodReadingContainer>
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate(-1)}>
+        <GlobalBackButton onClick={() => navigate("/")}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 

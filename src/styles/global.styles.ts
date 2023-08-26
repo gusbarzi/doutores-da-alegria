@@ -12,6 +12,7 @@ interface ITextContainerStylesProps {
   marginRight?: number;
   marginLeft?: number;
   chooseWidth?: number;
+  chooseHeight?: number;
 }
 
 interface ITypographyStylesProps {
@@ -147,7 +148,7 @@ export const ButtonContainer = styled.div`
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  padding: 8px 12px;
 `;
 
 export const ButtonContainerTwo = styled.div`
@@ -171,12 +172,14 @@ export const TextContainer = styled.div<ITextContainerStylesProps>`
     marginLeft,
     marginRight,
     chooseWidth,
+    chooseHeight
   }) => css`
     align-items: ${align ? align : "center"};
     justify-content: ${justifyContent ? justifyContent : "center"};
     text-align: ${textAlign ? textAlign : "center"};
     gap: ${chooseGap ? `${chooseGap}px` : 0};
     width: ${chooseWidth ? `${chooseWidth}px` : "100%"};
+    height: ${chooseHeight ? `${chooseHeight}px` : ""};
     flex-direction: ${flexDirection ? flexDirection : "column"};
     margin-top: ${`${marginTop}px`};
     margin-left: ${`${marginLeft}px`};

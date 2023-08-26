@@ -7,6 +7,7 @@ export const TextDirectorPresidentContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 8px;
   gap: 16px;
 `;
 
@@ -22,4 +23,10 @@ export const DirectorText = styled.span`
   font-family: ${DalegriaFontesEnum.StdLight};
   color: ${DalegriaColorsEnum.Black};
   font-size: 20px;
+`;
+
+export const BannerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: ${DalegriaColorsEnum.Pink};
 `;

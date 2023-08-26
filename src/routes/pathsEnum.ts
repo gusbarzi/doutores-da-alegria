@@ -1,5 +1,5 @@
 export enum PathEnum {
-  HOME = '/',
+  HOME = '',
   OPENING = '/abertura',
   PURPOSE = '/proposito',
   SOCIAL_IMPACT = '/impacto-social',

@@ -1,21 +1,14 @@
 import React from "react";
-import {
-  HomeContainer,
-  HomeHeader,
-  ImageContainer,
-  LogoContainer,
-  TextContainer,
-} from "./home.styles";
-import { NavigationDropdown } from "../../components/header/components/dropdown";
+import { HomeContainer, LogoContainer } from "./home.styles";
 import { ReactComponent as TwentTwo } from "../../../public/assets/twenttwo.svg";
 import {
   ButtonContainerTwo,
   GlobalNextButton,
+  TextContainer,
   Typography,
 } from "../../styles/global.styles";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import { DalegriaColorsEnum } from "../../utils/colors";
-import LogoVertical from "../../../public/assets/logo-vertical-b.png";
 import { ReactComponent as NextButton } from "../../../public/assets/setinha-direita.svg";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -27,21 +20,18 @@ export const Home: React.FC = () => {
   return (
     <>
       <HomeContainer>
-        <HomeHeader>
-          <NavigationDropdown hamburgerheight={65} hamburgerWidth={70} />
-        </HomeHeader>
-        <TextContainer>
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasic}
-            textColor={DalegriaColorsEnum.White}
-          >
-            Balanço anual - 2022
-          </Typography>
-        </TextContainer>
         <LogoContainer>
           <TwentTwo width={250} height={250} />
+          <TextContainer justifyContent="flex-start" textAlign="flex-start">
+            <Typography
+              fontFamily={DalegriaFontesEnum.ManualBasic}
+              textColor={DalegriaColorsEnum.White}
+              fontSize={24}
+            >
+              Balanço anual - 2022
+            </Typography>
+          </TextContainer>
         </LogoContainer>
-        <ImageContainer src={LogoVertical} width={100} />
       </HomeContainer>
       <ButtonContainerTwo>
         <GlobalNextButton onClick={() => navigate("/abertura")}>
