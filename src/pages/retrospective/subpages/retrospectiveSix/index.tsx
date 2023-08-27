@@ -10,6 +10,7 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt4 from "../../../../../public/assets/photos/originalart-4.png";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -95,13 +96,13 @@ export const RetrospectiveSix: React.FC = () => {
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.Black}
-            fontSize={10}
+            fontSize={11}
             textTransform="uppercase"
           >
             {t("retrospective.activity_year_description")}
           </Typography>
         </TextContainer>
-
+        <img src={OriginalArt4} width={360} height={250} style={{ marginBottom: "16px"}}/>
         <TextContainer
           textAlign="left"
           justifyContent="flex-start"
@@ -128,7 +129,6 @@ export const RetrospectiveSix: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.art_to_hospitals.stanza_01")}
           </Typography>
@@ -136,7 +136,6 @@ export const RetrospectiveSix: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.art_to_hospitals.stanza_02")}
           </Typography>
@@ -144,7 +143,6 @@ export const RetrospectiveSix: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.art_to_hospitals.stanza_03")}
           </Typography>
@@ -152,7 +150,6 @@ export const RetrospectiveSix: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.art_to_hospitals.stanza_04")}
           </Typography>
@@ -160,13 +157,12 @@ export const RetrospectiveSix: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.art_to_hospitals.stanza_05")}
           </Typography>
         </TextContainer>
 
-        <SquareColored borderColor={DalegriaColorsEnum.Yellow} type="outlined">
+        <SquareColored borderColor={DalegriaColorsEnum.Yellow} type="outlined" style={{ height: "50px"}}>
           <TextContainer
             textAlign="center"
             justifyContent="center"
@@ -231,6 +227,7 @@ export const RetrospectiveSix: React.FC = () => {
             textAlign="left"
             justifyContent="flex-start"
             align="flex-start"
+            chooseGap={8}
             marginBottom={12}
           >
             <Typography
@@ -254,7 +251,6 @@ export const RetrospectiveSix: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={12}
-              textTransform="uppercase"
             >
               {t("retrospective.hospitals_list_retrospective_six.footer")}
             </Typography>

@@ -10,6 +10,9 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt10 from "../../../../../public/assets/photos/originalart-10.jpg";
+import OriginalArt11 from "../../../../../public/assets/photos/originalart-11.jpg";
+import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
@@ -49,10 +52,13 @@ export const RetrospectiveThirteen: React.FC = () => {
 
         <TextContainer
           textAlign="left"
-          justifyContent="left"
-          align="left"
+          justifyContent="flex-start"
+          align="center"
+          chooseGap={4}
           marginBottom={12}
+          flexDirection="row"
         >
+          <BlueHeart width={40} height={30} />
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.LightBlue}
@@ -66,6 +72,12 @@ export const RetrospectiveThirteen: React.FC = () => {
         </TextContainer>
 
         <BackgroundBlueContainer>
+          <img
+            src={OriginalArt10}
+            width={380}
+            height={250}
+            style={{ marginBottom: "16px" }}
+          />
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
@@ -94,7 +106,6 @@ export const RetrospectiveThirteen: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
               {t(
                 "retrospective.retrospective_thirteen.background_container.doctors_school.stanza_01"
@@ -104,7 +115,6 @@ export const RetrospectiveThirteen: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
               {t(
                 "retrospective.retrospective_thirteen.background_container.doctors_school.stanza_02"
@@ -115,6 +125,7 @@ export const RetrospectiveThirteen: React.FC = () => {
           <SquareColored
             borderColor={DalegriaColorsEnum.Yellow}
             type="outlined"
+            style={{ marginBottom: "16px" }}
           >
             <TextContainer
               textAlign="left"
@@ -288,6 +299,11 @@ export const RetrospectiveThirteen: React.FC = () => {
               </Typography>
             </TextContainer>
           </SquareColored>
+          <img
+            src={OriginalArt11}
+            width={330}
+            height={200}
+          />
         </BackgroundBlueContainer>
         <ButtonContainer>
           <GlobalBackButton onClick={() => navigate(-1)}>

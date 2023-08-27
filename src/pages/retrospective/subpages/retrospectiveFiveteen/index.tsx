@@ -11,6 +11,8 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt13 from "../../../../../public/assets/photos/originalart-13.jpg";
+import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -24,7 +26,7 @@ export const RetrospectiveFiveteen: React.FC = () => {
     <>
       <RetrospectiveHeader />
       <DalegriaContainer choosePadding={16}>
-      <TextContainer
+        <TextContainer
           textAlign="center"
           justifyContent="center"
           align="center"
@@ -51,10 +53,13 @@ export const RetrospectiveFiveteen: React.FC = () => {
 
         <TextContainer
           textAlign="left"
-          justifyContent="left"
-          align="left"
+          justifyContent="flex-start"
+          align="center"
+          chooseGap={4}
           marginBottom={12}
+          flexDirection="row"
         >
+          <BlueHeart width={40} height={30} />
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.LightBlue}
@@ -68,6 +73,12 @@ export const RetrospectiveFiveteen: React.FC = () => {
         </TextContainer>
 
         <BackgroundBlueContainer>
+          <img
+            src={OriginalArt13}
+            width={380}
+            height={500}
+            style={{ marginBottom: "16px" }}
+          />
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
@@ -96,7 +107,6 @@ export const RetrospectiveFiveteen: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
               {t(
                 "retrospective.retrospective_fiveteen.background_container.doctors_school.stanza_01"
@@ -108,9 +118,7 @@ export const RetrospectiveFiveteen: React.FC = () => {
           <GlobalBackButton onClick={() => navigate("/restrospectiva-14")}>
             <NextButton width={50} height={50} />
           </GlobalBackButton>
-          <GlobalNextButton
-            onClick={() => navigate("/restrospectiva-16")}
-          >
+          <GlobalNextButton onClick={() => navigate("/restrospectiva-16")}>
             <NextButton width={50} height={50} />
           </GlobalNextButton>
         </ButtonContainer>

@@ -10,6 +10,7 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt6 from "../../../../../public/assets/photos/originalart-6.png";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -41,7 +42,7 @@ export const RetrospectiveEight: React.FC = () => {
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.Black}
-            fontSize={10}
+            fontSize={11}
             textTransform="uppercase"
           >
             {t("retrospective.activity_year_description")}
@@ -49,6 +50,12 @@ export const RetrospectiveEight: React.FC = () => {
         </TextContainer>
 
         <BackgroundPinkContainer style={{ marginTop: "16px" }}>
+          <img
+            src={OriginalArt6}
+            width={380}
+            height={250}
+            style={{ marginBottom: "16px" }}
+          />
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
@@ -58,7 +65,7 @@ export const RetrospectiveEight: React.FC = () => {
             <Typography
               fontFamily={DalegriaFontesEnum.ManualBasic}
               textColor={DalegriaColorsEnum.Yellow}
-              fontSize={24}
+              fontSize={23}
               textTransform="uppercase"
             >
               {t(
@@ -77,7 +84,6 @@ export const RetrospectiveEight: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
               {t(
                 "retrospective.retrospective_eight.background_container.doctors_school.stanza_01"

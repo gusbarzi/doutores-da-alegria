@@ -11,6 +11,8 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt9 from "../../../../../public/assets/photos/originalart-9.jpeg";
+import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
@@ -51,10 +53,13 @@ export const RetrospectiveTwelve: React.FC = () => {
 
         <TextContainer
           textAlign="left"
-          justifyContent="left"
-          align="left"
+          justifyContent="flex-start"
+          align="center"
+          chooseGap={4}
           marginBottom={12}
+          flexDirection="row"
         >
+          <BlueHeart width={40} height={30} />
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.LightBlue}
@@ -68,6 +73,12 @@ export const RetrospectiveTwelve: React.FC = () => {
         </TextContainer>
 
         <BackgroundBlueContainer>
+          <img
+            src={OriginalArt9}
+            width={335}
+            height={450}
+            style={{ marginBottom: "16px" }}
+          />
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"

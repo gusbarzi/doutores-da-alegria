@@ -9,6 +9,7 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt5 from "../../../../../public/assets/photos/originalart-5.png";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -40,7 +41,7 @@ export const RetrospectiveSeven: React.FC = () => {
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.Black}
-            fontSize={10}
+            fontSize={11}
             textTransform="uppercase"
           >
             {t("retrospective.activity_year_description")}
@@ -48,6 +49,13 @@ export const RetrospectiveSeven: React.FC = () => {
         </TextContainer>
 
         <BackgroundPinkContainer style={{ marginTop: "16px" }}>
+          <img
+            src={OriginalArt5}
+            width={380}
+            height={250}
+            style={{ marginBottom: "16px" }}
+          />
+
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
@@ -60,7 +68,9 @@ export const RetrospectiveSeven: React.FC = () => {
               fontSize={24}
               textTransform="uppercase"
             >
-              {t("retrospective.retrospective_seven.background_container.doctors_school.title")}
+              {t(
+                "retrospective.retrospective_seven.background_container.doctors_school.title"
+              )}
             </Typography>
           </TextContainer>
 
@@ -74,41 +84,46 @@ export const RetrospectiveSeven: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
-              {t("retrospective.retrospective_seven.background_container.doctors_school.stanza_01")}
+              {t(
+                "retrospective.retrospective_seven.background_container.doctors_school.stanza_01"
+              )}
             </Typography>
             <Typography
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
-              {t("retrospective.retrospective_seven.background_container.doctors_school.stanza_02")}
+              {t(
+                "retrospective.retrospective_seven.background_container.doctors_school.stanza_02"
+              )}
             </Typography>
             <Typography
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
-              {t("retrospective.retrospective_seven.background_container.doctors_school.stanza_03")}
+              {t(
+                "retrospective.retrospective_seven.background_container.doctors_school.stanza_03"
+              )}
             </Typography>
             <Typography
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
-              {t("retrospective.retrospective_seven.background_container.doctors_school.stanza_04")}
+              {t(
+                "retrospective.retrospective_seven.background_container.doctors_school.stanza_04"
+              )}
             </Typography>
             <Typography
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
-              {t("retrospective.retrospective_seven.background_container.doctors_school.stanza_05")}
+              {t(
+                "retrospective.retrospective_seven.background_container.doctors_school.stanza_05"
+              )}
             </Typography>
           </TextContainer>
         </BackgroundPinkContainer>
