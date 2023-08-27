@@ -17,6 +17,8 @@ import {
   Typography,
 } from "../../../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
+import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
+import OriginalArt1 from "../../../../../public/assets/photos/originalart-1.png";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
@@ -55,9 +57,12 @@ export const RetrospectiveTwo: React.FC = () => {
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
-            align="flex-start"
+            align="center"
+            chooseGap={8}
             marginBottom={12}
+            flexDirection="row"
           >
+            <BlueHeart width={70} height={50}/>
             <Typography
               fontFamily={DalegriaFontesEnum.StdBold}
               textColor={DalegriaColorsEnum.LightBlue}
@@ -67,7 +72,7 @@ export const RetrospectiveTwo: React.FC = () => {
               {t("retrospective.march_april")}
             </Typography>
           </TextContainer>
-          {/* imagem */}
+          <img src={OriginalArt1} width={325} height={200} />
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
@@ -134,8 +139,7 @@ export const RetrospectiveTwo: React.FC = () => {
                 textAlign="left"
                 justifyContent="flex-start"
                 align="flex-start"
-                marginRight={4
-                }
+                marginRight={4}
               >
                 <Typography
                   fontFamily={DalegriaFontesEnum.ManualBasic}
@@ -151,6 +155,7 @@ export const RetrospectiveTwo: React.FC = () => {
                 textAlign="left"
                 justifyContent="flex-end"
                 align="flex-end"
+                chooseWidth={400}
               >
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}

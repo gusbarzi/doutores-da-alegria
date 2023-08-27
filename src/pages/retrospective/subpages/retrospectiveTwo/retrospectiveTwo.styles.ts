@@ -14,6 +14,7 @@ export const NewsContainer = styled.div`
   align-items: flex-end;
   justify-content: center;
   margin-top: 12px;
+  margin-bottom: 16px;
   gap: 8px;
 `;
 

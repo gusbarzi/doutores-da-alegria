@@ -158,7 +158,7 @@ export const XRayTwo: React.FC = () => {
 
   return (
     <>
-      <Artboard width={390} height={410}/>
+      <Artboard width={390} height={410} />
       <DalegriaContainer choosePadding={0}>
         <ColorideBackground>
           <TextContainer

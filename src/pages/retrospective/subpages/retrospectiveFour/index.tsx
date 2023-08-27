@@ -9,6 +9,8 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt2 from "../../../../../public/assets/photos/originalart-2.png";
+import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import {
@@ -55,9 +57,12 @@ export const RetrospectiveFour: React.FC = () => {
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
-            align="flex-start"
+            align="center"
+            chooseGap={4}
             marginBottom={12}
+            flexDirection="row"
           >
+            <BlueHeart width={40} height={30} />
             <Typography
               fontFamily={DalegriaFontesEnum.StdBold}
               textColor={DalegriaColorsEnum.LightBlue}
@@ -67,6 +72,7 @@ export const RetrospectiveFour: React.FC = () => {
               {t("retrospective.november")}
             </Typography>
           </TextContainer>
+          <img src={OriginalArt2} width={325} height={200} />
 
           <TextContainer
             textAlign="left"
@@ -120,6 +126,7 @@ export const RetrospectiveFour: React.FC = () => {
                 textAlign="left"
                 justifyContent="flex-end"
                 align="flex-end"
+                chooseWidth={600}
               >
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}

@@ -13,6 +13,7 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import OriginalArt3 from "../../../../../public/assets/photos/originalart-3.png";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { IList } from "../../../../components/CustomList/customList.types";
@@ -156,13 +157,13 @@ export const RetrospectiveFive: React.FC = () => {
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.Black}
-            fontSize={10}
+            fontSize={11}
             textTransform="uppercase"
           >
             {t("retrospective.activity_year_description")}
           </Typography>
         </TextContainer>
-
+        <img src={OriginalArt3} width={360} height={250} style={{ marginBottom: "16px"}}/>
         <TextContainer
           textAlign="left"
           justifyContent="flex-start"
@@ -189,7 +190,6 @@ export const RetrospectiveFive: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.joker_place.stanza_01")}
           </Typography>
@@ -197,7 +197,6 @@ export const RetrospectiveFive: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.joker_place.stanza_02")}
           </Typography>
@@ -205,7 +204,6 @@ export const RetrospectiveFive: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.joker_place.stanza_03")}
           </Typography>
@@ -213,7 +211,6 @@ export const RetrospectiveFive: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.joker_place.stanza_04")}
           </Typography>
@@ -221,7 +218,6 @@ export const RetrospectiveFive: React.FC = () => {
             fontFamily={DalegriaFontesEnum.StdLight}
             textColor={DalegriaColorsEnum.Gray}
             fontSize={16}
-            textTransform="uppercase"
           >
             {t("retrospective.joker_place.stanza_05")}
           </Typography>
@@ -265,6 +261,7 @@ export const RetrospectiveFive: React.FC = () => {
             justifyContent="flex-start"
             align="flex-start"
             marginBottom={12}
+            chooseGap={8}
           >
             <Typography
               fontFamily={DalegriaFontesEnum.StdBold}
@@ -298,6 +295,7 @@ export const RetrospectiveFive: React.FC = () => {
             justifyContent="flex-start"
             align="flex-start"
             marginBottom={12}
+            chooseGap={8}
           >
             <Typography
               fontFamily={DalegriaFontesEnum.StdBold}
@@ -313,6 +311,7 @@ export const RetrospectiveFive: React.FC = () => {
           <SquareColored
             borderColor={DalegriaColorsEnum.Yellow}
             type="outlined"
+            style={{ marginBottom: "16px"}}
           >
             <TextContainer
               textAlign="left"

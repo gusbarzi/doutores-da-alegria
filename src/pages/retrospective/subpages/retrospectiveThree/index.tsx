@@ -9,7 +9,9 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
+import pngArt1 from "../../../../../public/assets/photos/pngart-1.png";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { BackgroundContainer, LeftText, NewsContainer, RightText } from "../retrospectiveTwo/retrospectiveTwo.styles";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -48,9 +50,12 @@ export const RetrospectiveThree: React.FC = () => {
           <TextContainer
             textAlign="left"
             justifyContent="flex-start"
-            align="flex-start"
+            align="center"
+            chooseGap={4}
             marginBottom={12}
+            flexDirection="row"
           >
+            <BlueHeart width={40} height={30}/>
             <Typography
               fontFamily={DalegriaFontesEnum.StdBold}
               textColor={DalegriaColorsEnum.LightBlue}
@@ -116,6 +121,7 @@ export const RetrospectiveThree: React.FC = () => {
               {t("retrospective.joker_writer_stanza.stanza_05")}
             </Typography>
           </TextContainer>
+          {/* TODO: rever imagem */}
         </BackgroundContainer>
 
         <ButtonContainer>
