@@ -11,6 +11,7 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
+import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -51,10 +52,12 @@ export const RetrospectiveEighteen: React.FC = () => {
 
         <TextContainer
           textAlign="left"
-          justifyContent="left"
-          align="left"
+          justifyContent="flex-start"
+          align="center"
           marginBottom={12}
+          flexDirection="row"
         >
+          <BlueHeart width={40} height={30} />
           <Typography
             fontFamily={DalegriaFontesEnum.StdBold}
             textColor={DalegriaColorsEnum.LightBlue}
@@ -96,7 +99,6 @@ export const RetrospectiveEighteen: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.White}
               fontSize={16}
-              textTransform="uppercase"
             >
               {t(
                 "retrospective.retrospective_eighteen.background_container.doctors_school.stanza_01"
