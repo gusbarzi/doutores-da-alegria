@@ -1,5 +1,6 @@
 export interface ICustomList {
   list: IList[];
+  chooseWidth?: number;
 }
 
 export interface IList {

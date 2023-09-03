@@ -7,3 +7,20 @@ export const RetrospectiveContainer = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+
+export const RetrospectiveHiperContainerDesktop = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+export const RetroLeftSide = styled.div`
+  width: 100%;
+`;
+
+export const RetroRightSide = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightcyan;
+`;

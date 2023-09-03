@@ -5,5 +5,25 @@ import { styled } from "styled-components";
 export const RetrospectiveContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0 60px;
+  margin-bottom: 50px;
   gap: 16px;
+`;
+
+export const BackgroundPinkContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: ${DalegriaColorsEnum.Pink};
+  padding: 16px;
+  position: relative;
+`;
+
+export const BlueBox = styled.div`
+  width: 450px;
+  position: absolute;
+  right: 580px;
+  bottom: -610px;
 `;

@@ -7,3 +7,7 @@ export const RetrospectiveContainer = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+
+export const OriginalArtTwelve = styled.img`
+  width: 770px;
+`;

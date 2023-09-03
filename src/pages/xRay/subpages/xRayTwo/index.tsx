@@ -10,7 +10,6 @@ import {
   Typography,
 } from "../../../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
-import { ReactComponent as Artboard } from "../../../../../public/assets/Links/artboard-6.svg";
 import { ReactComponent as Caveira } from "../../../../../public/assets/caveira.svg";
 import { ColorideBackground } from "../../xRay.styles";
 import { IList } from "../../../../components/CustomList/customList.types";
@@ -158,7 +157,6 @@ export const XRayTwo: React.FC = () => {
 
   return (
     <>
-      <Artboard width={390} height={410} />
       <DalegriaContainer choosePadding={0}>
         <ColorideBackground>
           <TextContainer

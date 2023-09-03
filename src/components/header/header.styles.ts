@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { DalegriaColorsEnum } from "../../utils/colors";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import textura from "../../../public/assets/textura.svg";
+import breakpoints from "../../utils/breakpoints";
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -27,6 +28,12 @@ export const HeaderContainer = styled.div`
     background-repeat: repeat;
     opacity: 0.3;
     z-index: 1;
+
+    ${breakpoints.higherThan('desktop')} {
+      background-size: contain;
+      background-position: center;
+      background-repeat: repeat;
+    }
   }
 `;
 

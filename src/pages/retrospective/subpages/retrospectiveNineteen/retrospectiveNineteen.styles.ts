@@ -7,3 +7,14 @@ export const RetrospectiveContainer = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+
+export const OriginalArtNineteen = styled.img`
+  width: 100%;
+`;
+
+export const YellowBox = styled.div`
+  width: 600px;
+  position: absolute;
+  right: 450px;
+  bottom: -1070px;
+`;

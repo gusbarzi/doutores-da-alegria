@@ -2,9 +2,9 @@ import React from "react";
 import { List, ListItem } from "./customList.styles";
 import { ICustomList } from "./customList.types";
 
-export const CustomList: React.FC<ICustomList> = ({ list }) => {
+export const CustomList: React.FC<ICustomList> = ({ list, chooseWidth }) => {
   return (
-    <List>
+    <List chooseWidth={chooseWidth}>
       {list.map((item) => (
         <ListItem
           key={item.itemId}

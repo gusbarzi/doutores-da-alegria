@@ -11,17 +11,44 @@ export const OpeningContainer = styled.div`
   gap: 16px;
 `;
 
-export const OpeningTitle = styled.div`
+export const OpeningContainerDesktop = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 16px;
+`;
+
+export const FlexRightSide = styled.div`
+  width: 1200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;
+
+export const FlexLeftSide = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  `;
+
+export const OpeningTitle = styled.div`
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 `;
 
 export const OpeningDescription = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 700px;
 `;
 
 export const OpeningText = styled.span`

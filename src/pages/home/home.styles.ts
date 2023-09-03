@@ -4,7 +4,6 @@ import { DalegriaColorsEnum } from "../../utils/colors";
 export const HomeContainer = styled.div`
   display: flex;
   width: 100vw;
-  height: 100vh;
   flex-direction: column;  
   background-color: ${DalegriaColorsEnum.LightBlue};
 `;
@@ -16,4 +15,5 @@ export const LogoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 32px;
 `;

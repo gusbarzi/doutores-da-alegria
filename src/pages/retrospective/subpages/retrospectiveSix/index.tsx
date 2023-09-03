@@ -1,6 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { RetrospectiveContainer } from "./retrospectiveSix.styles";
+import {
+  OriginalArtFour,
+  RetrospectiveContainer,
+} from "./retrospectiveSix.styles";
 import { useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
@@ -16,13 +19,20 @@ import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
 import { SquareColored } from "../../../../components/SquareColored";
-import { BackgroundPinkContainer } from "../retrospectiveFive/retrospectiveFive.styles";
+import {
+  BackgroundPinkContainer,
+  TextDivision,
+  TextSideDivision,
+} from "../retrospectiveFive/retrospectiveFive.styles";
 import { CustomList } from "../../../../components/CustomList";
 import { IList } from "../../../../components/CustomList/customList.types";
+import useMediaQuery from "../../../../hooks/useMediaQuery";
+import breakpoints from "../../../../utils/breakpoints";
 
 export const RetrospectiveSix: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const hospitalsList: IList[] = [
     {
@@ -77,195 +87,405 @@ export const RetrospectiveSix: React.FC = () => {
 
   return (
     <>
-      <RetrospectiveHeader />
-      <DalegriaContainer choosePadding={16}>
-        <TextContainer
-          textAlign="center"
-          justifyContent="center"
-          align="center"
-          marginBottom={12}
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasicS}
-            textColor={DalegriaColorsEnum.Pink}
-            fontSize={30}
-            textTransform="uppercase"
-          >
-            {t("retrospective.activity_year")}
-          </Typography>
-          <Typography
-            fontFamily={DalegriaFontesEnum.StdBold}
-            textColor={DalegriaColorsEnum.Black}
-            fontSize={11}
-            textTransform="uppercase"
-          >
-            {t("retrospective.activity_year_description")}
-          </Typography>
-        </TextContainer>
-        <img src={OriginalArt4} width={360} height={250} style={{ marginBottom: "16px"}}/>
-        <TextContainer
-          textAlign="left"
-          justifyContent="flex-start"
-          align="flex-start"
-          marginBottom={12}
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.ManualBasic}
-            textColor={DalegriaColorsEnum.Pink}
-            fontSize={24}
-            textTransform="uppercase"
-          >
-            {t("retrospective.art_to_hospitals.title")}
-          </Typography>
-        </TextContainer>
-
-        <TextContainer
-          textAlign="left"
-          justifyContent="flex-start"
-          align="flex-start"
-          marginBottom={12}
-        >
-          <Typography
-            fontFamily={DalegriaFontesEnum.StdLight}
-            textColor={DalegriaColorsEnum.Gray}
-            fontSize={16}
-          >
-            {t("retrospective.art_to_hospitals.stanza_01")}
-          </Typography>
-          <Typography
-            fontFamily={DalegriaFontesEnum.StdLight}
-            textColor={DalegriaColorsEnum.Gray}
-            fontSize={16}
-          >
-            {t("retrospective.art_to_hospitals.stanza_02")}
-          </Typography>
-          <Typography
-            fontFamily={DalegriaFontesEnum.StdLight}
-            textColor={DalegriaColorsEnum.Gray}
-            fontSize={16}
-          >
-            {t("retrospective.art_to_hospitals.stanza_03")}
-          </Typography>
-          <Typography
-            fontFamily={DalegriaFontesEnum.StdLight}
-            textColor={DalegriaColorsEnum.Gray}
-            fontSize={16}
-          >
-            {t("retrospective.art_to_hospitals.stanza_04")}
-          </Typography>
-          <Typography
-            fontFamily={DalegriaFontesEnum.StdLight}
-            textColor={DalegriaColorsEnum.Gray}
-            fontSize={16}
-          >
-            {t("retrospective.art_to_hospitals.stanza_05")}
-          </Typography>
-        </TextContainer>
-
-        <SquareColored borderColor={DalegriaColorsEnum.Yellow} type="outlined" style={{ height: "50px"}}>
+      {isDesktop ? (
+        <>
+          <RetrospectiveHeader />
           <TextContainer
             textAlign="center"
             justifyContent="center"
             align="center"
-            marginBottom={16}
+            marginBottom={12}
           >
             <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Black}
-              fontSize={12}
+              fontFamily={DalegriaFontesEnum.ManualBasicS}
+              textColor={DalegriaColorsEnum.Pink}
+              fontSize={48}
               textTransform="uppercase"
             >
-              {t("retrospective.square_retrospective_six.text_01")}
-              <span
-                style={{
-                  color: DalegriaColorsEnum.Black,
-                  fontFamily: DalegriaFontesEnum.ManualBasic,
-                  marginLeft: "2px",
-                  fontSize: "16px",
-                }}
+              {t("retrospective.activity_year")}
+            </Typography>
+            <Typography
+              fontFamily={DalegriaFontesEnum.StdBold}
+              textColor={DalegriaColorsEnum.Gray}
+              fontSize={20}
+              textTransform="uppercase"
+            >
+              {t("retrospective.activity_year_description")}
+            </Typography>
+          </TextContainer>
+          <RetrospectiveContainer>
+            <OriginalArtFour src={OriginalArt4} />
+            <TextContainer
+              textAlign="left"
+              justifyContent="flex-start"
+              align="flex-start"
+              marginBottom={12}
+            >
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasic}
+                textColor={DalegriaColorsEnum.Pink}
+                fontSize={40}
+                textTransform="uppercase"
               >
-                {t("retrospective.square_retrospective_six.text_02")}
-              </span>
-            </Typography>
-          </TextContainer>
-        </SquareColored>
+                {t("retrospective.art_to_hospitals.title")}
+              </Typography>
+            </TextContainer>
+            <TextDivision>
+              <TextSideDivision>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={12}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdLight}
+                    textColor={DalegriaColorsEnum.Gray}
+                    fontSize={24}
+                  >
+                    {t("retrospective.art_to_hospitals.stanza_01")}
+                  </Typography>
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdLight}
+                    textColor={DalegriaColorsEnum.Gray}
+                    fontSize={24}
+                  >
+                    {t("retrospective.art_to_hospitals.stanza_02")}
+                  </Typography>
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdLight}
+                    textColor={DalegriaColorsEnum.Gray}
+                    fontSize={24}
+                  >
+                    {t("retrospective.art_to_hospitals.stanza_03")}
+                  </Typography>
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdLight}
+                    textColor={DalegriaColorsEnum.Gray}
+                    fontSize={24}
+                  >
+                    {t("retrospective.art_to_hospitals.stanza_04")}
+                  </Typography>
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdLight}
+                    textColor={DalegriaColorsEnum.Gray}
+                    fontSize={24}
+                  >
+                    {t("retrospective.art_to_hospitals.stanza_05")}
+                  </Typography>
+                </TextContainer>
+                <SquareColored
+                  borderColor={DalegriaColorsEnum.Yellow}
+                  type="outlined"
+                  style={{ height: "50px" }}
+                >
+                  <TextContainer
+                    textAlign="center"
+                    justifyContent="center"
+                    align="center"
+                    marginBottom={16}
+                  >
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Black}
+                      fontSize={16}
+                      textTransform="uppercase"
+                    >
+                      {t("retrospective.square_retrospective_six.text_01")}
+                      <span
+                        style={{
+                          color: DalegriaColorsEnum.Black,
+                          fontFamily: DalegriaFontesEnum.ManualBasic,
+                          marginLeft: "2px",
+                          fontSize: "20px",
+                        }}
+                      >
+                        {t("retrospective.square_retrospective_six.text_02")}
+                      </span>
+                    </Typography>
+                  </TextContainer>
+                </SquareColored>
+              </TextSideDivision>
+              <TextSideDivision chooseWidth={600}>
+                <BackgroundPinkContainer>
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    align="flex-start"
+                    marginBottom={12}
+                  >
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Yellow}
+                      fontSize={24}
+                      textTransform="uppercase"
+                    >
+                      {t(
+                        "retrospective.hospitals_list_retrospective_six.title"
+                      )}
+                    </Typography>
+                  </TextContainer>
 
-        <BackgroundPinkContainer style={{ marginTop: '16px' }}>
-          <TextContainer
-            textAlign="left"
-            justifyContent="flex-start"
-            align="flex-start"
-            marginBottom={12}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Yellow}
-              fontSize={16}
-              textTransform="uppercase"
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    align="flex-start"
+                    marginBottom={12}
+                  >
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.White}
+                      fontSize={16}
+                      textTransform="uppercase"
+                    >
+                      {t(
+                        "retrospective.hospitals_list_retrospective_six.sub_title"
+                      )}
+                    </Typography>
+                  </TextContainer>
+
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    align="flex-start"
+                    chooseGap={8}
+                    marginBottom={12}
+                  >
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.White}
+                      textTransform="uppercase"
+                      fontSize={16}
+                    >
+                      {t("retrospective.hospitals_served")}
+                    </Typography>
+                    <CustomList list={hospitalsList} />
+                  </TextContainer>
+
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    align="flex-start"
+                    marginBottom={12}
+                  >
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.White}
+                      fontSize={12}
+                    >
+                      {t(
+                        "retrospective.hospitals_list_retrospective_six.footer"
+                      )}
+                    </Typography>
+                  </TextContainer>
+                </BackgroundPinkContainer>
+              </TextSideDivision>
+            </TextDivision>
+          </RetrospectiveContainer>
+        </>
+      ) : (
+        <>
+          <RetrospectiveHeader />
+          <DalegriaContainer choosePadding={16}>
+            <TextContainer
+              textAlign="center"
+              justifyContent="center"
+              align="center"
+              marginBottom={12}
             >
-              {t("retrospective.hospitals_list_retrospective_six.title")}
-            </Typography>
-          </TextContainer>
-
-          <TextContainer
-            textAlign="left"
-            justifyContent="flex-start"
-            align="flex-start"
-            marginBottom={12}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdLight}
-              textColor={DalegriaColorsEnum.White}
-              fontSize={14}
-              textTransform="uppercase"
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
+                textColor={DalegriaColorsEnum.Pink}
+                fontSize={30}
+                textTransform="uppercase"
+              >
+                {t("retrospective.activity_year")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Black}
+                fontSize={11}
+                textTransform="uppercase"
+              >
+                {t("retrospective.activity_year_description")}
+              </Typography>
+            </TextContainer>
+            <img
+              src={OriginalArt4}
+              width={360}
+              height={250}
+              style={{ marginBottom: "16px" }}
+            />
+            <TextContainer
+              textAlign="left"
+              justifyContent="flex-start"
+              align="flex-start"
+              marginBottom={12}
             >
-              {t("retrospective.hospitals_list_retrospective_six.sub_title")}
-            </Typography>
-          </TextContainer>
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasic}
+                textColor={DalegriaColorsEnum.Pink}
+                fontSize={24}
+                textTransform="uppercase"
+              >
+                {t("retrospective.art_to_hospitals.title")}
+              </Typography>
+            </TextContainer>
 
-          <TextContainer
-            textAlign="left"
-            justifyContent="flex-start"
-            align="flex-start"
-            chooseGap={8}
-            marginBottom={12}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.White}
-              textTransform="uppercase"
-              fontSize={16}
+            <TextContainer
+              textAlign="left"
+              justifyContent="flex-start"
+              align="flex-start"
+              marginBottom={12}
             >
-              {t("retrospective.hospitals_served")}
-            </Typography>
-            <CustomList list={hospitalsList} />
-          </TextContainer>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={16}
+              >
+                {t("retrospective.art_to_hospitals.stanza_01")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={16}
+              >
+                {t("retrospective.art_to_hospitals.stanza_02")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={16}
+              >
+                {t("retrospective.art_to_hospitals.stanza_03")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={16}
+              >
+                {t("retrospective.art_to_hospitals.stanza_04")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={16}
+              >
+                {t("retrospective.art_to_hospitals.stanza_05")}
+              </Typography>
+            </TextContainer>
 
-          <TextContainer
-            textAlign="left"
-            justifyContent="flex-start"
-            align="flex-start"
-            marginBottom={12}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdLight}
-              textColor={DalegriaColorsEnum.White}
-              fontSize={12}
+            <SquareColored
+              borderColor={DalegriaColorsEnum.Yellow}
+              type="outlined"
+              style={{ height: "50px" }}
             >
-              {t("retrospective.hospitals_list_retrospective_six.footer")}
-            </Typography>
-          </TextContainer>
-        </BackgroundPinkContainer>
+              <TextContainer
+                textAlign="center"
+                justifyContent="center"
+                align="center"
+                marginBottom={16}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.Black}
+                  fontSize={12}
+                  textTransform="uppercase"
+                >
+                  {t("retrospective.square_retrospective_six.text_01")}
+                  <span
+                    style={{
+                      color: DalegriaColorsEnum.Black,
+                      fontFamily: DalegriaFontesEnum.ManualBasic,
+                      marginLeft: "2px",
+                      fontSize: "16px",
+                    }}
+                  >
+                    {t("retrospective.square_retrospective_six.text_02")}
+                  </span>
+                </Typography>
+              </TextContainer>
+            </SquareColored>
 
-        <ButtonContainer>
-          <GlobalBackButton onClick={() => navigate("/restrospectiva-05")}>
-            <NextButton width={50} height={50} />
-          </GlobalBackButton>
-          <GlobalNextButton onClick={() => navigate("/restrospectiva-07")}>
-            <NextButton width={50} height={50} />
-          </GlobalNextButton>
-        </ButtonContainer>
-      </DalegriaContainer>
+            <BackgroundPinkContainer style={{ marginTop: "16px" }}>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                marginBottom={12}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.Yellow}
+                  fontSize={16}
+                  textTransform="uppercase"
+                >
+                  {t("retrospective.hospitals_list_retrospective_six.title")}
+                </Typography>
+              </TextContainer>
+
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                marginBottom={12}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdLight}
+                  textColor={DalegriaColorsEnum.White}
+                  fontSize={14}
+                  textTransform="uppercase"
+                >
+                  {t(
+                    "retrospective.hospitals_list_retrospective_six.sub_title"
+                  )}
+                </Typography>
+              </TextContainer>
+
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                chooseGap={8}
+                marginBottom={12}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.White}
+                  textTransform="uppercase"
+                  fontSize={16}
+                >
+                  {t("retrospective.hospitals_served")}
+                </Typography>
+                <CustomList list={hospitalsList} />
+              </TextContainer>
+
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="flex-start"
+                marginBottom={12}
+              >
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdLight}
+                  textColor={DalegriaColorsEnum.White}
+                  fontSize={12}
+                >
+                  {t("retrospective.hospitals_list_retrospective_six.footer")}
+                </Typography>
+              </TextContainer>
+            </BackgroundPinkContainer>
+          </DalegriaContainer>
+        </>
+      )}
+      <ButtonContainer>
+        <GlobalBackButton onClick={() => navigate("/restrospectiva-05")}>
+          <NextButton width={50} height={50} />
+        </GlobalBackButton>
+        <GlobalNextButton onClick={() => navigate("/restrospectiva-07")}>
+          <NextButton width={50} height={50} />
+        </GlobalNextButton>
+      </ButtonContainer>
     </>
   );
 };

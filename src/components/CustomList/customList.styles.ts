@@ -7,9 +7,11 @@ export interface ICustomListItemStyles {
   chooseFontFamily?: string;
   chooseFontSize?: number;
   chooseFontColor?: string;
+  chooseWidth?: number;
 }
 
-export const List = styled.ul`
+export const List = styled.ul<ICustomListItemStyles>`
+  width: ${({chooseWidth}) => chooseWidth ? `${chooseWidth}px` : "none"};
   list-style-type: none;
   padding: 0;
   margin: 0;
