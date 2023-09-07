@@ -13,6 +13,27 @@ export const FilesContainer = styled.div`
   gap: 16px;
 `;
 
+export const FilesContainerDesktop = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: ${DalegriaColorsEnum.White};
+  padding: 16px;
+`;
+
+export const FilesContentDesktop = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: ${DalegriaColorsEnum.Yellow};
+  padding: 32px;
+  gap: 16px;
+`;
+
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);

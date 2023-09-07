@@ -11,6 +11,15 @@ export const EmbranceCauseContainer = styled.div`
   gap: 8px;
 `;
 
+export const EmbranceCauseContainerDesktop = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px 60px;
+  gap: 8px;
+`;
+
 export const BackgroundYellow = styled.div`
   width: 100%;
   display: flex;
@@ -21,7 +30,7 @@ export const BackgroundYellow = styled.div`
   padding: 16px;
 `;
 
-export const BackgroundPink = styled.div`
+export const BackgroundPurple = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
