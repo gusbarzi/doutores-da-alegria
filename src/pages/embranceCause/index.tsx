@@ -25,13 +25,17 @@ import {
   TextDivision,
   TextSideDivision,
 } from "../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
+import { FilteredList } from "../../components/FilteredList";
+import { data } from "../../components/FilteredList/constants";
 
 export const EmbranceCause: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
-  const pathNext = isDesktop ? "/prestacao-de-contas-02" : "/prestacao-de-contas-01"
+  const pathNext = isDesktop
+    ? "/prestacao-de-contas-02"
+    : "/prestacao-de-contas-01";
 
   const hospitalsList: IList[] = [
     {
@@ -187,7 +191,7 @@ export const EmbranceCause: React.FC = () => {
                     todas as contas anualmente.
                   </Typography>
                 </TextContainer>
-                <div style={{ height: "25px"}}/>
+                <div style={{ height: "25px" }} />
               </TextSideDivision>
               <TextSideDivision
                 style={{ backgroundColor: "lightblue" }}
@@ -250,11 +254,14 @@ export const EmbranceCause: React.FC = () => {
                 lineHeight={1}
                 fontSize={20}
               >
-                Entre em contato para informações sobre doações e parcerias:{' '}
-                <span style={{ color: DalegriaColorsEnum.Purple}}>empresas@doutoresdaalegria.org.br</span>
+                Entre em contato para informações sobre doações e parcerias:{" "}
+                <span style={{ color: DalegriaColorsEnum.Purple }}>
+                  empresas@doutoresdaalegria.org.br
+                </span>
               </Typography>
             </TextContainer>
 
+            <FilteredList data={data} />
           </EmbranceCauseContainerDesktop>
         </>
       ) : (
@@ -338,6 +345,8 @@ export const EmbranceCause: React.FC = () => {
                 <CustomList list={hospitalsList2} />
               </TextContainer>
             </BackgroundPurple>
+            
+            <FilteredList data={data} />
           </EmbranceCauseContainer>
         </>
       )}

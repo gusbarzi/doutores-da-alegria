@@ -1,16 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import { AppRoutes } from "../routes/routes";
 import { Header } from "./header";
 import { Footer } from "./footer";
-import { FooterContainer } from "../styles/global.styles";
+import { FooterContainer, GlobalContainer } from "../styles/global.styles";
+
+const MainContent: React.FC = () => {
+    const location = useLocation();
+
+    return (
+        <>
+            {location.pathname !== '/' && location.pathname !== '/ending' && <Header />}
+            <GlobalContainer>
+                <AppRoutes />
+            </GlobalContainer>
+        </>
+    );
+}
 
 export const App: React.FC = () => {
-
   return (
     <Router>
-      <Header />
-      <AppRoutes />
+      <MainContent />
       <FooterContainer>
         <Footer />
       </FooterContainer>

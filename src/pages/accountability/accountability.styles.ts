@@ -110,7 +110,7 @@ export const BackgroundBlue = styled.div`
 
 export const RectangleBlue = styled.div`
   width: 15px;
-  height: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.LightBlue};
@@ -118,7 +118,7 @@ export const RectangleBlue = styled.div`
 
 export const RectanglePink = styled.div`
   width: 15px;
-  height: 400px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.Pink};
@@ -211,13 +211,18 @@ export const BarWrapperHorizon = styled.div`
 
 export const BarHorizon = styled.div`
   position: relative;
-  height: 100%;
+  height: 50px;
 `;
 
 export const BarImageHorizon = styled.img`
   height: 100%;
+  width: 190%;
   animation: ${fadeInRight} 1.5s ease-out;
   transform-origin: left;
+
+  ${breakpoints.higherThan('desktop')} {
+    width: 'none';
+  }
 `;
 
 export const YearLabelHorizon = styled.div`
@@ -231,7 +236,7 @@ export const YearLabelHorizon = styled.div`
 
 export const NumberLabelHorizon = styled.div`
   position: absolute;
-  left: 100%;
+  left: 195%;
   top: 50%;
   transform: translateY(-50%);
   font-size: 16px;

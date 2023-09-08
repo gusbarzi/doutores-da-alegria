@@ -128,6 +128,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const GlobalContainer = styled.div`
+  max-width: 1500px;
+  margin: 0 auto;
+`;
+
 export const GlobalBackButton = styled.button`
   background-color: transparent;
   color: ${DalegriaColorsEnum.LightBlue};

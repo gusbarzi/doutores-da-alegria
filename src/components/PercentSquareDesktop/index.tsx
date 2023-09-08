@@ -3,6 +3,8 @@ import { SquarePercentContainer } from "./percentSquare.styles";
 import { Typography } from "../../styles/global.styles";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import CountUp from "react-countup";
+import useMediaQuery from "../../hooks/useMediaQuery";
+import breakpoints from "../../utils/breakpoints";
 
 interface ISquarePercentDesktop {
   number: number;
@@ -21,6 +23,8 @@ export const PercentSquareDesktop: React.FC<ISquarePercentDesktop> = ({
     return `${num.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`;
   };
 
+  const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
+
   return (
     <CountUp
       end={number}
@@ -30,7 +34,7 @@ export const PercentSquareDesktop: React.FC<ISquarePercentDesktop> = ({
         backgroundColor: chooseBackgroundColor,
         fontFamily: DalegriaFontesEnum.ManualBasic,
         color: chooseTextColor,
-        fontSize: "20px",
+        fontSize: isDesktop ? "20px" : "16px",
         padding: "1px 1px",
         marginBottom: '4px'
       }}
