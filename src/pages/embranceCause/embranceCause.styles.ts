@@ -39,3 +39,16 @@ export const BackgroundPurple = styled.div`
   background-color: ${DalegriaColorsEnum.Purple};
   padding: 16px;
 `;
+
+export const JokerImage = styled.img`
+  width: 60%;
+`;
+
+export const JokerImageTwo = styled.img`
+  width: 100%;
+`
+
+export const ImagemDiv = styled.div`
+  display: flex;
+  margin-bottom: -30px;
+`;

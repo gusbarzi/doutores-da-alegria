@@ -12,7 +12,7 @@ import {
 } from "../../../../styles/global.styles";
 import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import OriginalArt17 from "../../../../../public/assets/photos/originalart-17.jpg";
-import OriginalArt16 from "../../../../../public/assets/photos/originalart-16.jpg";
+import OriginalArt16 from "../../../../../public/assets/photos/originalart-16.png";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -297,6 +297,7 @@ export const RetrospectiveNineteen: React.FC = () => {
                 </TextContainer>
               </SquareColored>
             </YellowBox>
+            <div style={{ height: '80px'}}/>
           </RetrospectiveContainer>
         </>
       ) : (
@@ -416,7 +417,7 @@ export const RetrospectiveNineteen: React.FC = () => {
               <SquareColored
                 type="primary"
                 backgroundColor={DalegriaColorsEnum.Yellow}
-                style={{ height: "185px", width: "330px" }}
+                style={{ height: "185px", width: "330px", marginBottom: "-200px"}}
               >
                 <TextContainer
                   textAlign="left"
@@ -560,6 +561,11 @@ export const RetrospectiveNineteen: React.FC = () => {
                 </TextContainer>
               </SquareColored>
             </BackgroundBlueContainer>
+            <div 
+              style={{
+                height: "200px"
+              }}
+            />
           </DalegriaContainer>
         </>
       )}

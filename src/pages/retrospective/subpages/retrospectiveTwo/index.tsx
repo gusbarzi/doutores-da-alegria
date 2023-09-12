@@ -17,6 +17,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -44,146 +45,148 @@ export const RetrospectiveTwo: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <NewsContainer>
-            <LeftText>
-              <Typography
-                fontFamily={DalegriaFontesEnum.SimplesInlineS}
-                textColor={DalegriaColorsEnum.Yellow}
-                fontSize={newsFontSize}
-              >
-                {t("retrospective.news")}
-              </Typography>
-            </LeftText>
-            <RightText>
-              <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
-                textColor={DalegriaColorsEnum.Gray}
-                fontSize={14}
-              >
-                {t("retrospective.get_knew")}
-              </Typography>
-            </RightText>
-          </NewsContainer>
-          <RetrospectiveContainerDesktop>
-            <BackgroundContainer>
-              <TextContainer
-                textAlign="left"
-                justifyContent="flex-start"
-                align="center"
-                chooseGap={8}
-                marginBottom={12}
-                flexDirection="row"
-              >
-                <img src={BlueHeartPng} width={20} height={20} />
+          <GlobalContainer>
+            <NewsContainer>
+              <LeftText>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.SimplesInlineS}
+                  textColor={DalegriaColorsEnum.Yellow}
+                  fontSize={newsFontSize}
+                >
+                  {t("retrospective.news")}
+                </Typography>
+              </LeftText>
+              <RightText>
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}
-                  textColor={DalegriaColorsEnum.LightBlue}
+                  textColor={DalegriaColorsEnum.Gray}
                   fontSize={14}
-                  textTransform="uppercase"
                 >
-                  {t("retrospective.march_april")}
+                  {t("retrospective.get_knew")}
                 </Typography>
-              </TextContainer>
-              <OriginalArtOne src={OriginalArt1} />
-              <RetrospectiveHiperContainerDesktop>
-                <RetroLeftSide>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
+              </RightText>
+            </NewsContainer>
+            <RetrospectiveContainerDesktop>
+              <BackgroundContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="center"
+                  chooseGap={8}
+                  marginBottom={12}
+                  flexDirection="row"
+                >
+                  <img src={BlueHeartPng} width={20} height={20} />
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.LightBlue}
+                    fontSize={14}
+                    textTransform="uppercase"
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.LightBlue}
-                      fontSize={28}
-                    >
-                      {t("retrospective.joker_music")}
-                    </Typography>
-                  </TextContainer>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={16}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Gray}
-                      fontSize={20}
-                    >
-                      {t("retrospective.doctors_band")}
-                    </Typography>
-                  </TextContainer>
-                </RetroLeftSide>
-                <RetroRightSide>
-                  <SquareColored
-                    type="outlined"
-                    borderColor={DalegriaColorsEnum.LightBlue}
-                  >
+                    {t("retrospective.march_april")}
+                  </Typography>
+                </TextContainer>
+                <OriginalArtOne src={OriginalArt1} />
+                <RetrospectiveHiperContainerDesktop>
+                  <RetroLeftSide>
                     <TextContainer
                       textAlign="left"
                       justifyContent="flex-start"
                       align="flex-start"
-                      marginBottom={4}
+                      marginBottom={12}
                     >
                       <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.Black}
-                        fontSize={18}
+                        fontFamily={DalegriaFontesEnum.ManualBasic}
+                        textColor={DalegriaColorsEnum.LightBlue}
+                        fontSize={28}
                       >
-                        {t("retrospective.season")}
+                        {t("retrospective.joker_music")}
                       </Typography>
                     </TextContainer>
                     <TextContainer
                       textAlign="left"
                       justifyContent="flex-start"
                       align="flex-start"
-                      marginBottom={20}
+                      marginBottom={16}
                     >
                       <Typography
                         fontFamily={DalegriaFontesEnum.StdLight}
                         textColor={DalegriaColorsEnum.Gray}
-                        fontSize={14}
+                        fontSize={20}
                       >
-                        {t("retrospective.date_01")}
+                        {t("retrospective.doctors_band")}
                       </Typography>
                     </TextContainer>
-
-                    <TextDirection>
+                  </RetroLeftSide>
+                  <RetroRightSide>
+                    <SquareColored
+                      type="outlined"
+                      borderColor={DalegriaColorsEnum.LightBlue}
+                    >
                       <TextContainer
                         textAlign="left"
                         justifyContent="flex-start"
                         align="flex-start"
-                        chooseWidth={250}
-                      >
-                        <Typography
-                          fontFamily={DalegriaFontesEnum.ManualBasic}
-                          textColor={DalegriaColorsEnum.LightBlue}
-                          fontSize={28}
-                        >
-                          {t("retrospective.many_people")}
-                        </Typography>
-                      </TextContainer>
-                      <TextContainer
-                        textAlign="left"
-                        justifyContent="flex-start"
-                        align="flex-start"
+                        marginBottom={4}
                       >
                         <Typography
                           fontFamily={DalegriaFontesEnum.StdBold}
-                          textColor={DalegriaColorsEnum.LightBlue}
-                          fontSize={16}
+                          textColor={DalegriaColorsEnum.Black}
+                          fontSize={18}
                         >
-                          {t("retrospective.see_show")}
+                          {t("retrospective.season")}
                         </Typography>
                       </TextContainer>
-                    </TextDirection>
-                  </SquareColored>
-                </RetroRightSide>
-              </RetrospectiveHiperContainerDesktop>
-            </BackgroundContainer>
-          </RetrospectiveContainerDesktop>
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={20}
+                      >
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdLight}
+                          textColor={DalegriaColorsEnum.Gray}
+                          fontSize={14}
+                        >
+                          {t("retrospective.date_01")}
+                        </Typography>
+                      </TextContainer>
+
+                      <TextDirection>
+                        <TextContainer
+                          textAlign="left"
+                          justifyContent="flex-start"
+                          align="flex-start"
+                          chooseWidth={250}
+                        >
+                          <Typography
+                            fontFamily={DalegriaFontesEnum.ManualBasic}
+                            textColor={DalegriaColorsEnum.LightBlue}
+                            fontSize={28}
+                          >
+                            {t("retrospective.many_people")}
+                          </Typography>
+                        </TextContainer>
+                        <TextContainer
+                          textAlign="left"
+                          justifyContent="flex-start"
+                          align="flex-start"
+                        >
+                          <Typography
+                            fontFamily={DalegriaFontesEnum.StdBold}
+                            textColor={DalegriaColorsEnum.LightBlue}
+                            fontSize={16}
+                          >
+                            {t("retrospective.see_show")}
+                          </Typography>
+                        </TextContainer>
+                      </TextDirection>
+                    </SquareColored>
+                  </RetroRightSide>
+                </RetrospectiveHiperContainerDesktop>
+              </BackgroundContainer>
+            </RetrospectiveContainerDesktop>
+          </GlobalContainer>
         </>
       ) : (
         <>

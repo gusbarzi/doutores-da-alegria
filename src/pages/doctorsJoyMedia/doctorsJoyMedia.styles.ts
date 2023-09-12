@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { DalegriaColorsEnum } from "../../utils/colors";
+import breakpoints from "../../utils/breakpoints";
 
 export const DoctorsJoyMediaContainer = styled.div`
   display: flex;
@@ -37,7 +38,7 @@ export const BackgroundYellow = styled.div`
   padding: 16px;
 `;
 
-export const BackgroundYellowDesktop= styled.div`
+export const BackgroundYellowDesktop = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -46,7 +47,6 @@ export const BackgroundYellowDesktop= styled.div`
   background-color: ${DalegriaColorsEnum.Yellow};
   gap: 60px;
 `;
-
 
 export const TextSquare = styled.div`
   width: 180px;
@@ -78,7 +78,23 @@ export const GridContainer = styled.div`
 `;
 
 export const GridItem = styled.div`
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+`;
+
+export const JokerImage = styled.img`
+  width: 50%;
+
+  ${breakpoints.higherThan('desktop')} {
+    width: 100%;
+  }
+`;
+
+export const JokerImageTwo = styled.img`
+  width: 100%;
+
+  ${breakpoints.higherThan('desktop')} {
+    width: 50%;
+  }
 `;

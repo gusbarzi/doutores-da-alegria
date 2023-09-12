@@ -26,5 +26,5 @@ export const RetroRightSide = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 350px;
+  width: 300px;
 `;

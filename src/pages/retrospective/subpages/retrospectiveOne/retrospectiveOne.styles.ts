@@ -29,7 +29,7 @@ export const RightTextFirstStanza = styled.div`
   text-transform: uppercase;
 
   ${breakpoints.higherThan('desktop')} {
-    width: 380px;
+    width: 75%;
   }
 `;
 
@@ -88,10 +88,8 @@ export const RightSide = styled.div`
   position: relative;
 `;
 
-export const ImageContainerDesktop = styled.div`
-  position: absolute;
-  right: 600px;
-  top: 770px;
+export const ImageContainerDesktop = styled.img`
+  width: 150px;
 `;
 
 export const RetrospectiveOneBannerContainerDesktop = styled.div`
@@ -117,4 +115,36 @@ export const RetrospectiveOneBannerDetailsContainer = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 16px 0;
+`;
+
+export const BannerContainer = styled.div`
+  width: 100%;
+  display: flex;
+  text-align: right;
+  position: relative;
+  flex-direction: column;
+`;
+
+export const JokerImage = styled.img`
+  width: 100%;
+`;
+
+export const Division = styled.div`
+  display: flex;
+`;
+
+export const Left = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 32px;
+`;
+
+export const Right = styled.div`
+  display: flex;
+  width: 100%;
+  margin-left: -200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 `;

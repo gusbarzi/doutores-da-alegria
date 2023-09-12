@@ -8,6 +8,8 @@ import {
   DoctorsJoyMediaContent,
   GridContainer,
   GridItem,
+  JokerImage,
+  JokerImageTwo,
   LeftSide,
   NumbersContainer,
   RightSide,
@@ -17,6 +19,7 @@ import { useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -31,6 +34,8 @@ import {
   TextSideDivision,
 } from "../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
 import { SquareColored } from "../../components/SquareColored";
+import jokerFiveteen from "../../../public/assets/jokersPng/mobile-recortes15.png";
+import jokerTen from "../../../public/assets/jokersPng/mobile-recortes10.png";
 
 export const DoctorsJoyMedia: React.FC = () => {
   const { t } = useTranslation();
@@ -41,7 +46,7 @@ export const DoctorsJoyMedia: React.FC = () => {
   return (
     <>
       {isDesktop ? (
-        <>
+        <GlobalContainer>
           <DoctorsJoyMediaContainerDesktop>
             <TextContainer
               align="flex-start"
@@ -143,7 +148,7 @@ export const DoctorsJoyMedia: React.FC = () => {
                         <Typography
                           fontFamily={DalegriaFontesEnum.StdLight}
                           textColor={DalegriaColorsEnum.Black}
-                          fontSize={16}
+                          fontSize={20}
                           lineHeight={1.5}
                         >
                           Entre as ONGs brasileiras, Doutores da Alegria possui
@@ -161,8 +166,12 @@ export const DoctorsJoyMedia: React.FC = () => {
                       style={{
                         width: "650px",
                         marginRight: "16px",
+                        marginTop: "-100px",
+                        marginBottom: "-60px",
                       }}
-                    ></TextSideDivision>
+                    >
+                      <JokerImage src={jokerFiveteen} />
+                    </TextSideDivision>
                   </TextDivision>
 
                   <TextDivision>
@@ -198,6 +207,16 @@ export const DoctorsJoyMedia: React.FC = () => {
                           </Typography>
                         </TextContainer>
                       </SquareColored>
+                      <div
+                        style={{
+                          position: "absolute",
+                          left: "25%",
+                          top: "70%",
+                          zIndex: "1",
+                        }}
+                      >
+                        <JokerImageTwo src={jokerTen} />
+                      </div>
                     </TextSideDivision>
                     <TextSideDivision
                       style={{
@@ -262,7 +281,7 @@ export const DoctorsJoyMedia: React.FC = () => {
                           </TextContainer>
                         </GridItem>
                         <GridItem>
-                        <TextContainer
+                          <TextContainer
                             textAlign="left"
                             align="flex-start"
                             justifyContent="flex-start"
@@ -294,7 +313,7 @@ export const DoctorsJoyMedia: React.FC = () => {
                           </TextContainer>
                         </GridItem>
                         <GridItem>
-                        <TextContainer
+                          <TextContainer
                             textAlign="left"
                             align="center"
                             justifyContent="center"
@@ -332,7 +351,7 @@ export const DoctorsJoyMedia: React.FC = () => {
               </TextSideDivision>
             </TextDivision>
           </DoctorsJoyMediaContainerDesktop>
-        </>
+        </GlobalContainer>
       ) : (
         <>
           <DoctorsJoyMediaContainer>
@@ -416,6 +435,9 @@ export const DoctorsJoyMedia: React.FC = () => {
                 </TextContainer>
               </RightSide>
             </DoctorsJoyMediaContent>
+            <div style={{ marginBottom: "-50px", marginTop: "-300px" }}>
+              <JokerImage src={jokerTen} />
+            </div>
             <BackgroundYellow>
               <TextContainer
                 textAlign="left"
@@ -552,6 +574,9 @@ export const DoctorsJoyMedia: React.FC = () => {
                   </TextContainer>
                 </NumbersContainer>
               </TextContainer>
+              <div>
+                <JokerImageTwo src={jokerFiveteen} />
+              </div>
             </BackgroundYellow>
           </DoctorsJoyMediaContainer>
         </>

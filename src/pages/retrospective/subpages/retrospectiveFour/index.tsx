@@ -5,6 +5,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -46,121 +47,123 @@ export const RetrospectiveFour: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <NewsContainer>
-            <LeftText>
-              <Typography
-                fontFamily={DalegriaFontesEnum.SimplesInlineS}
-                textColor={DalegriaColorsEnum.Yellow}
-                fontSize={newsFontSize}
-              >
-                {t("retrospective.news")}
-              </Typography>
-            </LeftText>
-            <RightText>
-              <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
-                textColor={DalegriaColorsEnum.Gray}
-                fontSize={14}
-              >
-                {t("retrospective.get_knew")}
-              </Typography>
-            </RightText>
-          </NewsContainer>
-          <RetrospectiveContainerDesktop>
-            <BackgroundContainer>
-              <TextContainer
-                textAlign="left"
-                justifyContent="flex-start"
-                align="center"
-                chooseGap={8}
-                marginBottom={12}
-                flexDirection="row"
-              >
-                <img src={BlueHeartPng} width={20} height={20} />
+          <GlobalContainer>
+            <NewsContainer>
+              <LeftText>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.SimplesInlineS}
+                  textColor={DalegriaColorsEnum.Yellow}
+                  fontSize={newsFontSize}
+                >
+                  {t("retrospective.news")}
+                </Typography>
+              </LeftText>
+              <RightText>
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}
-                  textColor={DalegriaColorsEnum.LightBlue}
+                  textColor={DalegriaColorsEnum.Gray}
                   fontSize={14}
-                  textTransform="uppercase"
                 >
-                  {t("retrospective.november")}
+                  {t("retrospective.get_knew")}
                 </Typography>
-              </TextContainer>
-              <OriginalArtTwo src={OriginalArt2} />
-              <RetrospectiveHiperContainerDesktop>
-                <RetroLeftSide>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
+              </RightText>
+            </NewsContainer>
+            <RetrospectiveContainerDesktop>
+              <BackgroundContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="center"
+                  chooseGap={8}
+                  marginBottom={12}
+                  flexDirection="row"
+                >
+                  <img src={BlueHeartPng} width={20} height={20} />
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.LightBlue}
+                    fontSize={14}
+                    textTransform="uppercase"
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.LightBlue}
-                      fontSize={32}
-                    >
-                      {t("retrospective.hospital_for_theater")}
-                    </Typography>
-                  </TextContainer>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={16}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Gray}
-                      fontSize={24}
-                    >
-                      {t("retrospective.two_shows")}
-                    </Typography>
-                  </TextContainer>
-                </RetroLeftSide>
-                <RetroRightSide>
-                  <SquareColored
-                    type="outlined"
-                    borderColor={DalegriaColorsEnum.LightBlue}
-                  >
+                    {t("retrospective.november")}
+                  </Typography>
+                </TextContainer>
+                <OriginalArtTwo src={OriginalArt2} />
+                <RetrospectiveHiperContainerDesktop>
+                  <RetroLeftSide>
                     <TextContainer
                       textAlign="left"
                       justifyContent="flex-start"
                       align="flex-start"
+                      marginBottom={12}
                     >
                       <Typography
                         fontFamily={DalegriaFontesEnum.ManualBasic}
                         textColor={DalegriaColorsEnum.LightBlue}
                         fontSize={32}
                       >
-                        {t("retrospective.one_hundred")}
+                        {t("retrospective.hospital_for_theater")}
                       </Typography>
                     </TextContainer>
                     <TextContainer
-                      textAlign="right"
+                      textAlign="left"
                       justifyContent="flex-start"
                       align="flex-start"
+                      marginBottom={16}
                     >
                       <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.LightBlue}
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Gray}
                         fontSize={24}
                       >
-                        assistiram ao
-                      </Typography>
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.LightBlue}
-                        fontSize={24}
-                      >
-                        Plateias no Palco
+                        {t("retrospective.two_shows")}
                       </Typography>
                     </TextContainer>
-                  </SquareColored>
-                </RetroRightSide>
-              </RetrospectiveHiperContainerDesktop>
-            </BackgroundContainer>
-          </RetrospectiveContainerDesktop>
+                  </RetroLeftSide>
+                  <RetroRightSide>
+                    <SquareColored
+                      type="outlined"
+                      borderColor={DalegriaColorsEnum.LightBlue}
+                    >
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                      >
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.ManualBasic}
+                          textColor={DalegriaColorsEnum.LightBlue}
+                          fontSize={32}
+                        >
+                          {t("retrospective.one_hundred")}
+                        </Typography>
+                      </TextContainer>
+                      <TextContainer
+                        textAlign="right"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                      >
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.LightBlue}
+                          fontSize={24}
+                        >
+                          assistiram ao
+                        </Typography>
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.LightBlue}
+                          fontSize={24}
+                        >
+                          Plateias no Palco
+                        </Typography>
+                      </TextContainer>
+                    </SquareColored>
+                  </RetroRightSide>
+                </RetrospectiveHiperContainerDesktop>
+              </BackgroundContainer>
+            </RetrospectiveContainerDesktop>
+          </GlobalContainer>
         </>
       ) : (
         <>

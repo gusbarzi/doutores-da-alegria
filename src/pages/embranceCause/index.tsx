@@ -5,11 +5,15 @@ import {
   BackgroundYellow,
   EmbranceCauseContainer,
   EmbranceCauseContainerDesktop,
+  ImagemDiv,
+  JokerImage,
+  JokerImageTwo,
 } from "./embranceCause.styles";
 import { useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -27,6 +31,7 @@ import {
 } from "../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
 import { FilteredList } from "../../components/FilteredList";
 import { data } from "../../components/FilteredList/constants";
+import jokerEleven from "../../../public/assets/jokersPng/mobile-recortes11.png";
 
 export const EmbranceCause: React.FC = () => {
   const { t } = useTranslation();
@@ -134,7 +139,7 @@ export const EmbranceCause: React.FC = () => {
   return (
     <>
       {isDesktop ? (
-        <>
+        <GlobalContainer>
           <EmbranceCauseContainerDesktop>
             <TextDivision>
               <TextSideDivision style={{ width: "650px" }}>
@@ -194,8 +199,14 @@ export const EmbranceCause: React.FC = () => {
                 <div style={{ height: "25px" }} />
               </TextSideDivision>
               <TextSideDivision
-                style={{ backgroundColor: "lightblue" }}
-              ></TextSideDivision>
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  marginBottom: "-50px",
+                }}
+              >
+                <JokerImage src={jokerEleven} />
+              </TextSideDivision>
             </TextDivision>
 
             <TextDivision style={{ display: "flex", gap: 0 }}>
@@ -263,7 +274,7 @@ export const EmbranceCause: React.FC = () => {
 
             <FilteredList data={data} />
           </EmbranceCauseContainerDesktop>
-        </>
+        </GlobalContainer>
       ) : (
         <>
           <EmbranceCauseContainer>
@@ -309,6 +320,9 @@ export const EmbranceCause: React.FC = () => {
                 {t("retrospective.embrance_cause.text_03")}
               </Typography>
             </TextContainer>
+            <ImagemDiv>
+              <JokerImageTwo src={jokerEleven} />
+            </ImagemDiv>
             <BackgroundYellow>
               <TextContainer
                 textAlign="left"
@@ -345,7 +359,7 @@ export const EmbranceCause: React.FC = () => {
                 <CustomList list={hospitalsList2} />
               </TextContainer>
             </BackgroundPurple>
-            
+
             <FilteredList data={data} />
           </EmbranceCauseContainer>
         </>

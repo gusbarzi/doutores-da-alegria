@@ -5,12 +5,14 @@ import {
   GridItemOne,
   GridItemTree,
   GridItemTwo,
+  PartnerImg,
   PartnersContainer,
 } from "./partners.styles";
 import { useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -24,6 +26,8 @@ import {
   TextDivision,
   TextSideDivision,
 } from "../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
+import partnerOne from "../../../public/assets/PNGS/patrocinadores-governamentais.png";
+import partnerTwo from "../../../public/assets/PNGS/patrocinadores.png";
 
 export const Partners: React.FC = () => {
   const { t } = useTranslation();
@@ -33,34 +37,18 @@ export const Partners: React.FC = () => {
   return (
     <>
       {isDesktop ? (
-        <>
+        <GlobalContainer>
           <TextDivision>
-            <TextSideDivision style={{ backgroundColor: "lightgreen" }}>
-              <TextContainer
-                textAlign="center"
-                justifyContent="center"
-                align="center"
-                marginBottom={16}
+            <TextSideDivision>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  gap: "32px"
+                }}
               >
-                <Typography
-                  fontFamily={DalegriaFontesEnum.ManualBasicS}
-                  textColor={DalegriaColorsEnum.LightBlue}
-                  lineHeight={1}
-                  fontSize={28}
-                >
-                  {t("retrospective.partners.titles.one")}
-                </Typography>
-              </TextContainer>
-            </TextSideDivision>
-            <TextSideDivision
-              style={{
-                backgroundColor: "lightblue",
-                display: "flex",
-                flexDirection: "column",
-                gap: "32px",
-              }}
-            >
-              <div>
                 <TextContainer
                   textAlign="center"
                   justifyContent="center"
@@ -71,12 +59,50 @@ export const Partners: React.FC = () => {
                     fontFamily={DalegriaFontesEnum.ManualBasicS}
                     textColor={DalegriaColorsEnum.LightBlue}
                     lineHeight={1}
-                    fontSize={28}
+                    fontSize={40}
+                  >
+                    {t("retrospective.partners.titles.one")}
+                  </Typography>
+                </TextContainer>
+
+                <PartnerImg src={partnerOne} />
+              </div>
+            </TextSideDivision>
+            <TextSideDivision
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                gap: "60px",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "column",
+                  gap: "32px"
+                }}
+              >
+                <TextContainer
+                  textAlign="center"
+                  justifyContent="center"
+                  align="center"
+                  marginBottom={16}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasicS}
+                    textColor={DalegriaColorsEnum.LightBlue}
+                    lineHeight={1}
+                    fontSize={40}
                   >
                     {t("retrospective.partners.titles.two")}
                   </Typography>
                 </TextContainer>
+                <PartnerImg src={partnerTwo} />
               </div>
+
               <PartnersContainer>
                 <GridContainer>
                   <GridItemOne>
@@ -618,7 +644,7 @@ export const Partners: React.FC = () => {
               </PartnersContainer>
             </TextSideDivision>
           </TextDivision>
-        </>
+        </GlobalContainer>
       ) : (
         <>
           <PartnersContainer>

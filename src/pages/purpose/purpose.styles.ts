@@ -71,18 +71,20 @@ export const ValuesContainer = styled.div`
 `;
 
 export const PurposeContainerDesktop = styled.div`
-  width: 100vw;
-  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 48px;
+  padding: 24px 0;
 `;
 
 export const BackgroundYellowDesktop = styled.div`
-  background-color: ${DalegriaColorsEnum.Yellow};
+  background-color: ${DalegriaColorsEnum.LightYellow};
   width: 900px;
   padding: 24px 60px;
   display: flex;
   flex-direction: column;
+`;
+
+export const JokerImage = styled.img`
+  width: 600px;
 `;

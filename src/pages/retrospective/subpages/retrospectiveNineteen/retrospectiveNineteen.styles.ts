@@ -15,6 +15,6 @@ export const OriginalArtNineteen = styled.img`
 export const YellowBox = styled.div`
   width: 600px;
   position: absolute;
-  right: 450px;
-  bottom: -1070px;
+  right: 650px;
+  bottom: -730px;
 `;

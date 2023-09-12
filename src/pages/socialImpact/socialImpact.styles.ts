@@ -77,7 +77,7 @@ export const SocialBannerContentDesktop = styled.div`
   width: 100%;
   height: 300px;
 
-  background-color: ${DalegriaColorsEnum.Yellow};
+  background-color: ${DalegriaColorsEnum.LightYellow};
 `;
 
 export const BannerDetailsContainer = styled.div`
@@ -95,3 +95,11 @@ export const SocialImpactTitle = styled.div`
   top: 125px;
   left: 30px;
 `
+
+export const JokerImage = styled.img`
+  width: 400px;
+`;
+
+export const ArtboardImage = styled.img`
+  width: 100%;
+`;

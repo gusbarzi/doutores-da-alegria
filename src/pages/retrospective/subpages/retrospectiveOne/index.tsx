@@ -5,6 +5,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -14,9 +15,13 @@ import { ReactComponent as NextButton } from "../../../../../public/assets/setin
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
 import {
+  BannerContainer,
+  Division,
   DivisorContainer,
   ImageContainer,
   ImageContainerDesktop,
+  JokerImage,
+  Left,
   LeftSide,
   LeftTextFirstStanza,
   LeftTextSecondStanza,
@@ -24,6 +29,7 @@ import {
   RetrospectiveOneBannerContainerDesktop,
   RetrospectiveOneBannerContentDesktop,
   RetrospectiveOneBannerDetailsContainer,
+  Right,
   RightSide,
   RightTextFirstStanza,
   RightTextSecondStanza,
@@ -32,6 +38,11 @@ import {
 } from "./retrospectiveOne.styles";
 import useMediaQuery from "../../../../hooks/useMediaQuery";
 import breakpoints from "../../../../utils/breakpoints";
+import { TextSideDivision } from "../retrospectiveFive/retrospectiveFive.styles";
+import { ArtboardImage } from "../../../opening/opening.styles";
+import artImage from "../../../../../public/assets/PNGS/Outros/Artboard 7.png";
+import jokerEigth from "../../../../../public/assets/jokersPng/mobile-recortes8.png";
+
 
 export const RetrospectiveOne: React.FC = () => {
   const { t } = useTranslation();
@@ -41,56 +52,63 @@ export const RetrospectiveOne: React.FC = () => {
   const pushBack = isDesktop ? "/raio-x-01" : "/raio-x-02";
 
   return (
-    <>
+    <GlobalContainer>
       {isDesktop ? (
         <>
           <RetrospectiveOneBannerContainerDesktop>
             <RetrospectiveOneBannerContentDesktop>
               <RetrospectiveOneBannerDetailsContainer>
-                <TextContainer
-                  align="flex-end"
-                  justifyContent="center"
-                  textAlign="center"
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.ManualBasicS}
-                    textColor={DalegriaColorsEnum.LightBlue}
-                    fontSize={100}
-                    style={{ marginRight: "50px" }}
-                  >
-                    retrospectiva
-                  </Typography>
-                </TextContainer>
-                <TextContainer
-                  flexDirection="row"
-                  chooseGap={24}
-                  align="flex-start"
-                  justifyContent="flex-end"
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Black}
-                    fontSize={16}
-                    style={{
-                      width: "400px",
-                      textAlign: "right",
-                      marginTop: "12px",
-                    }}
-                  >
-                    VIVEMOS MOMENTOS DESAFIADORES NOS ÚLTIMOS ANOS, MAS SEGUIMOS
-                    ADIANTE.O RESULTADO? A MANUTENÇÃO DE TODOS OS NOSSOS
-                    PROJETOS E A CRIAÇÃO DE NOVAS AÇÕES
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.ManualBasicS}
-                    textColor={DalegriaColorsEnum.LightBlue}
-                    fontSize={100}
-                    lineHeight={0.8}
-                    style={{ marginRight: "50px", marginBottom: "24px" }}
-                  >
-                    2022
-                  </Typography>
-                </TextContainer>
+                <Division>
+                  <Left>
+                    <JokerImage src={jokerEigth} />
+                  </Left>
+                  <Right>
+                    <TextContainer
+                      align="flex-end"
+                      justifyContent="center"
+                      textAlign="center"
+                    >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.ManualBasicS}
+                        textColor={DalegriaColorsEnum.LightBlue}
+                        fontSize={100}
+                        style={{ marginRight: "50px" }}
+                      >
+                        retrospectiva
+                      </Typography>
+                    </TextContainer>
+                    <TextContainer
+                      flexDirection="row"
+                      chooseGap={24}
+                      align="flex-start"
+                      justifyContent="flex-end"
+                    >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdBold}
+                        textColor={DalegriaColorsEnum.Black}
+                        fontSize={16}
+                        style={{
+                          width: "50%",
+                          textAlign: "right",
+                          marginTop: "12px",
+                        }}
+                      >
+                        VIVEMOS MOMENTOS DESAFIADORES NOS ÚLTIMOS ANOS, MAS
+                        SEGUIMOS ADIANTE.O RESULTADO? A MANUTENÇÃO DE TODOS OS
+                        NOSSOS PROJETOS E A CRIAÇÃO DE NOVAS AÇÕES
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.ManualBasicS}
+                        textColor={DalegriaColorsEnum.LightBlue}
+                        fontSize={100}
+                        lineHeight={0.8}
+                        style={{ marginRight: "50px", marginBottom: "24px" }}
+                      >
+                        2022
+                      </Typography>
+                    </TextContainer>
+                  </Right>
+                </Division>
               </RetrospectiveOneBannerDetailsContainer>
             </RetrospectiveOneBannerContentDesktop>
           </RetrospectiveOneBannerContainerDesktop>
@@ -128,6 +146,18 @@ export const RetrospectiveOne: React.FC = () => {
                   >
                     {t("retrospective.were_beneficied")}
                   </Typography>
+                  <TextSideDivision
+                    style={{
+                      display: "flex",
+                      width: "10%",
+                      justifyContent: "flex-start",
+                      alignItems: "flex-start",
+                      marginBottom: "-300px",
+                      marginRight: "-30px",
+                    }}
+                  >
+                    <ImageContainerDesktop src={heart} />
+                  </TextSideDivision>
                 </RightTextFirstStanza>
               </DivisorContainer>
             </LeftSide>
@@ -196,13 +226,13 @@ export const RetrospectiveOne: React.FC = () => {
                 </RightTextSecondStanza>
               </SecondStanzaDivisor>
             </RightSide>
-            <ImageContainerDesktop>
-              <img src={heart} width={150} height={150} />
-            </ImageContainerDesktop>
           </RetrospectiveHiperContainer>
         </>
       ) : (
         <>
+          <BannerContainer>
+            <ArtboardImage src={artImage} />
+          </BannerContainer>
           <DalegriaContainer chooseGap={0} choosePadding={16}>
             <TextContainer
               textAlign="center"
@@ -299,6 +329,6 @@ export const RetrospectiveOne: React.FC = () => {
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>
-    </>
+    </GlobalContainer>
   );
 };

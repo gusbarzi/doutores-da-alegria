@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -50,7 +51,7 @@ export const Team: React.FC = () => {
     <>
       <TeamContainer>
         {isDesktop ? (
-          <>
+          <GlobalContainer>
             <TeamContentDesktop>
               {dropdownContent.map((item) => (
                 <Dropdown
@@ -311,7 +312,7 @@ export const Team: React.FC = () => {
                 </TextDivision>
               </BackgroundLightBue>
             </TeamContentDesktop>
-          </>
+          </GlobalContainer>
         ) : (
           <>
             <TeamContentDesktop>

@@ -3,20 +3,21 @@ export enum DalegriaColorsEnum {
   Red = "#FF3732",
   Green = "#5FF065",
   //pink
-  Pink = "#FF61B5",
-  Pink_100 = "#EC62A0",
+  Pink = "#F067A6",
+  Pink_100 = "#F067A6",
   //yellow
-  LightYellow = "#FFFF01",
-  Yellow = "#fbeb05",
-  Yellow_100 = "#FFEC01",
+  LightYellow = "#FFEF00",
+  Yellow = "#FFEF00",
+  Yellow_100 = "#FFEF00",
   //blue
-  LightBlue = "#00CCE1",
+  LightBlue = "#2DB8C5",
   DarkBlue = "#006BFF",
-  Blue_100 = "#2AB8C4",
+  Blue_100 = "#2DB8C5",
+
   Black = "#000000",
   White = "#FFFFFF",
   Gray = "#59595B",
   //purple
-  Purple = "#7A72D2",
-  Purple_100 = "#805CA4",
+  Purple = "#8B6CAD",
+  Purple_100 = "#8B6CAD",
 }

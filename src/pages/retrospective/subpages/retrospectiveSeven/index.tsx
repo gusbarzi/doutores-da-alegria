@@ -5,6 +5,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -36,118 +37,122 @@ export const RetrospectiveSeven: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={12}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.Pink}
-              fontSize={48}
-              textTransform="uppercase"
+          <GlobalContainer>
+            <TextContainer
+              textAlign="center"
+              justifyContent="center"
+              align="center"
+              marginBottom={12}
             >
-              {t("retrospective.activity_year")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={20}
-              textTransform="uppercase"
-            >
-              {t("retrospective.activity_year_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
-            <BackgroundPinkContainer style={{ marginTop: "16px", gap: "16px" }}>
-              <OriginalArtFive src={OriginalArt5} />
-
-              <TextContainer
-                textAlign="left"
-                justifyContent="flex-start"
-                align="flex-start"
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
+                textColor={DalegriaColorsEnum.Pink}
+                fontSize={48}
+                textTransform="uppercase"
               >
-                <Typography
-                  fontFamily={DalegriaFontesEnum.ManualBasic}
-                  textColor={DalegriaColorsEnum.Yellow}
-                  fontSize={32}
-                  textTransform="uppercase"
+                {t("retrospective.activity_year")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={20}
+                textTransform="uppercase"
+              >
+                {t("retrospective.activity_year_description")}
+              </Typography>
+            </TextContainer>
+            <RetrospectiveContainer>
+              <BackgroundPinkContainer
+                style={{ marginTop: "16px", gap: "16px" }}
+              >
+                <OriginalArtFive src={OriginalArt5} />
+
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
                 >
-                  {t(
-                    "retrospective.retrospective_seven.background_container.doctors_school.title"
-                  )}
-                </Typography>
-              </TextContainer>
-              <TextDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
-                    chooseGap={8}
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    fontSize={32}
+                    textTransform="uppercase"
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={20}
+                    {t(
+                      "retrospective.retrospective_seven.background_container.doctors_school.title"
+                    )}
+                  </Typography>
+                </TextContainer>
+                <TextDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
+                      chooseGap={8}
                     >
-                      {t(
-                        "retrospective.retrospective_seven.background_container.doctors_school.stanza_01"
-                      )}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={20}
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={20}
+                      >
+                        {t(
+                          "retrospective.retrospective_seven.background_container.doctors_school.stanza_01"
+                        )}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={20}
+                      >
+                        {t(
+                          "retrospective.retrospective_seven.background_container.doctors_school.stanza_02"
+                        )}
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
+                      chooseGap={8}
                     >
-                      {t(
-                        "retrospective.retrospective_seven.background_container.doctors_school.stanza_02"
-                      )}
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
-                    chooseGap={8}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={20}
-                    >
-                      {t(
-                        "retrospective.retrospective_seven.background_container.doctors_school.stanza_03"
-                      )}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={20}
-                    >
-                      {t(
-                        "retrospective.retrospective_seven.background_container.doctors_school.stanza_04"
-                      )}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={20}
-                    >
-                      {t(
-                        "retrospective.retrospective_seven.background_container.doctors_school.stanza_05"
-                      )}
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundPinkContainer>
-          </RetrospectiveContainer>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={20}
+                      >
+                        {t(
+                          "retrospective.retrospective_seven.background_container.doctors_school.stanza_03"
+                        )}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={20}
+                      >
+                        {t(
+                          "retrospective.retrospective_seven.background_container.doctors_school.stanza_04"
+                        )}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={20}
+                      >
+                        {t(
+                          "retrospective.retrospective_seven.background_container.doctors_school.stanza_05"
+                        )}
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundPinkContainer>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>

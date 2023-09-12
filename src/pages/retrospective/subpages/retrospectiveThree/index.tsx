@@ -5,6 +5,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -12,7 +13,7 @@ import {
 import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import BlueHeartPng from "../../../../../public/assets/PNGS/Outros/coração-azul.png";
-import pngArt1 from "../../../../../public/assets/photos/pngart-1.png";
+import jokerNine from "../../../../../public/assets/jokersPng/mobile-recortes9.png";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import {
   BackgroundContainer,
@@ -26,10 +27,12 @@ import { DalegriaColorsEnum } from "../../../../utils/colors";
 import useMediaQuery from "../../../../hooks/useMediaQuery";
 import breakpoints from "../../../../utils/breakpoints";
 import {
+  JokerImage,
   RetroLeftSide,
   RetroRightSide,
   RetrospectiveHiperContainerDesktop,
 } from "./retrospectiveThree.styles";
+import { TextSideDivision } from "../retrospectiveFive/retrospectiveFive.styles";
 
 export const RetrospectiveThree: React.FC = () => {
   const { t } = useTranslation();
@@ -43,110 +46,126 @@ export const RetrospectiveThree: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <NewsContainer>
-            <LeftText>
-              <Typography
-                fontFamily={DalegriaFontesEnum.SimplesInlineS}
-                textColor={DalegriaColorsEnum.Yellow}
-                fontSize={newsFontSize}
-              >
-                {t("retrospective.news")}
-              </Typography>
-            </LeftText>
-            <RightText>
-              <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
-                textColor={DalegriaColorsEnum.Gray}
-                fontSize={14}
-              >
-                {t("retrospective.get_knew")}
-              </Typography>
-            </RightText>
-          </NewsContainer>
-          <RetrospectiveContainerDesktop>
-            <BackgroundContainer>
-              <TextContainer
-                textAlign="left"
-                justifyContent="flex-start"
-                align="center"
-                chooseGap={8}
-                marginBottom={12}
-                flexDirection="row"
-              >
-                <img src={BlueHeartPng} width={20} height={20} />
+          <GlobalContainer>
+            <NewsContainer>
+              <LeftText>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.SimplesInlineS}
+                  textColor={DalegriaColorsEnum.Yellow}
+                  fontSize={newsFontSize}
+                >
+                  {t("retrospective.news")}
+                </Typography>
+              </LeftText>
+              <RightText>
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}
-                  textColor={DalegriaColorsEnum.LightBlue}
+                  textColor={DalegriaColorsEnum.Gray}
                   fontSize={14}
-                  textTransform="uppercase"
                 >
-                  {t("retrospective.agoust")}
+                  {t("retrospective.get_knew")}
                 </Typography>
-              </TextContainer>
-              <RetrospectiveHiperContainerDesktop>
-                <RetroLeftSide>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
+              </RightText>
+            </NewsContainer>
+            <RetrospectiveContainerDesktop>
+              <BackgroundContainer style={{ marginBottom: "20px" }}>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="center"
+                  chooseGap={8}
+                  marginBottom={12}
+                  flexDirection="row"
+                >
+                  <img src={BlueHeartPng} width={20} height={20} />
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.LightBlue}
+                    fontSize={14}
+                    textTransform="uppercase"
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.LightBlue}
-                      fontSize={32}
+                    {t("retrospective.agoust")}
+                  </Typography>
+                </TextContainer>
+                <RetrospectiveHiperContainerDesktop>
+                  <RetroLeftSide>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
                     >
-                      {t("retrospective.joker_writer")}
-                    </Typography>
-                  </TextContainer>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={16}
-                    chooseGap={4}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Gray}
-                      fontSize={20}
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.ManualBasic}
+                        textColor={DalegriaColorsEnum.LightBlue}
+                        fontSize={32}
+                      >
+                        {t("retrospective.joker_writer")}
+                      </Typography>
+                    </TextContainer>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={16}
+                      chooseGap={4}
                     >
-                      {t("retrospective.joker_writer_stanza.stanza_01")}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Gray}
-                      fontSize={20}
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Gray}
+                        fontSize={22}
+                      >
+                        {t("retrospective.joker_writer_stanza.stanza_01")}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Gray}
+                        fontSize={22}
+                      >
+                        {t("retrospective.joker_writer_stanza.stanza_02")}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Gray}
+                        fontSize={22}
+                      >
+                        {t("retrospective.joker_writer_stanza.stanza_03")}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Gray}
+                        fontSize={22}
+                      >
+                        {t("retrospective.joker_writer_stanza.stanza_04")}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Gray}
+                        fontSize={22}
+                      >
+                        {t("retrospective.joker_writer_stanza.stanza_05")}
+                      </Typography>
+                    </TextContainer>
+                  </RetroLeftSide>
+                  <RetroRightSide>
+                    <TextSideDivision
+                      style={{
+                        display: "flex",
+                        width: "600px",
+                        justifyContent: "flex-end",
+                        alignItems: "flex-end",
+                        marginTop: "-100px",
+                        marginRight: "-210px",
+                        marginBottom: "-30px",
+                      }}
                     >
-                      {t("retrospective.joker_writer_stanza.stanza_02")}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Gray}
-                      fontSize={20}
-                    >
-                      {t("retrospective.joker_writer_stanza.stanza_03")}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Gray}
-                      fontSize={20}
-                    >
-                      {t("retrospective.joker_writer_stanza.stanza_04")}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Gray}
-                      fontSize={20}
-                    >
-                      {t("retrospective.joker_writer_stanza.stanza_05")}
-                    </Typography>
-                  </TextContainer>
-                </RetroLeftSide>
-                <RetroRightSide></RetroRightSide>
-              </RetrospectiveHiperContainerDesktop>
-            </BackgroundContainer>
-          </RetrospectiveContainerDesktop>
+                      <JokerImage src={jokerNine} />
+                    </TextSideDivision>
+                  </RetroRightSide>
+                </RetrospectiveHiperContainerDesktop>
+              </BackgroundContainer>
+            </RetrospectiveContainerDesktop>
+          </GlobalContainer>
         </>
       ) : (
         <>

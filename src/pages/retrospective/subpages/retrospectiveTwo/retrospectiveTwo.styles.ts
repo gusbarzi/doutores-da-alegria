@@ -42,6 +42,10 @@ export const BackgroundContainer = styled.div`
   width: 100%;
   background-color: ${DalegriaColorsEnum.Yellow};
   padding: 16px;
+
+  ${breakpoints.higherThan('desktop')} {
+    padding: 24px 40px;
+  }
 `;
 
 export const TextDirection = styled.div`

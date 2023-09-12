@@ -100,7 +100,7 @@ export const dropdownContent: IDropdownConstent[] = [
   {
     width: "1000px",
     mobileWidth: "100%",
-    title: "Equipe",
+    title: "Fundador",
     img: fundador,
     imgWidth: 400,
     imgWidthMobile: 350,

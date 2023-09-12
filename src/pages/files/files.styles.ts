@@ -19,7 +19,6 @@ export const FilesContainerDesktop = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: ${DalegriaColorsEnum.White};
   padding: 16px;
 `;
 
@@ -52,4 +51,12 @@ export const GridItemTwo = styled.div`
   flex-direction: column;
   width: 180px;
   height: 335px;
+`;
+
+export const JokerImage = styled.img`
+  width: 50%;
+`;
+
+export const HeartRed = styled.img`
+  width: 20%;
 `;

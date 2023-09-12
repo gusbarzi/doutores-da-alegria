@@ -11,11 +11,13 @@ import {
 } from "../../../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { ReactComponent as Caveira } from "../../../../../public/assets/caveira.svg";
-import { ColorideBackground } from "../../xRay.styles";
+import { BannerContainer, ColorideBackground } from "../../xRay.styles";
 import { IList } from "../../../../components/CustomList/customList.types";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { CustomList } from "../../../../components/CustomList";
+import artImage from "../../../../../public/assets/PNGS/Outros/Artboard 6.png";
+import { ArtboardImage } from "../../../opening/opening.styles";
 
 export const XRayTwo: React.FC = () => {
   const { t } = useTranslation();
@@ -158,6 +160,9 @@ export const XRayTwo: React.FC = () => {
   return (
     <>
       <DalegriaContainer choosePadding={0}>
+        <BannerContainer>
+          <ArtboardImage src={artImage} />
+        </BannerContainer>
         <ColorideBackground>
           <TextContainer
             textAlign="left"
@@ -243,7 +248,7 @@ export const XRayTwo: React.FC = () => {
         <Caveira
           width={120}
           height={120}
-          style={{ position: "absolute", bottom: "-1000px" }}
+          style={{ position: "absolute", bottom: "-930px" }}
         />
 
         <ButtonContainer>

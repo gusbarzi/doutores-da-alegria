@@ -6,6 +6,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -36,228 +37,230 @@ export const RetrospectiveTen: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={16}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              flexDirection="row"
+              marginBottom={16}
+              chooseGap={4}
             >
-              <BlueHeart width={40} height={30} />
               <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
                 textColor={DalegriaColorsEnum.LightBlue}
-                fontSize={14}
+                fontSize={52}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={18}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer style={{ display: "flex", gap: "16px" }}>
-              <OriginalArtTwo src={OriginalArt7} />
+            <RetrospectiveContainer>
               <TextContainer
                 textAlign="left"
                 justifyContent="flex-start"
-                align="flex-start"
+                align="center"
+                flexDirection="row"
               >
+                <BlueHeart width={40} height={30} />
                 <Typography
-                  fontFamily={DalegriaFontesEnum.ManualBasic}
-                  textColor={DalegriaColorsEnum.Yellow}
-                  fontSize={32}
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={14}
                   textTransform="uppercase"
                 >
-                  {t(
-                    "retrospective.retrospective_ten.background_container.doctors_school.title"
-                  )}
+                  {t("retrospective.january_to_abril")}
                 </Typography>
               </TextContainer>
-              <TextDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={32}
-                    chooseGap={8}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={24}
-                    >
-                      Antes da pandemia de Covid-19, as festas de carnaval, São
-                      João e o Natal eram comemoradas pelos palhaços com
-                      cortejos que reuniam os elencos e passavam por todos os
-                      hospitais.
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={24}
-                    >
-                      Em 2022, ano de transições e retomadas, o carnaval e o São
-                      João foram lembrados nos hospitais, mas reunindo menos
-                      palhaços.
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={24}
-                    >
-                      Em Recife, os hospitais receberam grupos de três palhaços,
-                      como Dr. Dud Grud “Homem da Meia-Noite”, Dra. Baju “Rainha
-                      da Tradicional Clube Vassourinhas” e Dr. Wago Ninguém “Rei
-                      do Maracatu”.
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-                <TextSideDivision
-                  chooseWidth={500}
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
+              <BackgroundBlueContainer style={{ display: "flex", gap: "16px" }}>
+                <OriginalArtTwo src={OriginalArt7} />
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
                 >
-                  <SquareColored
-                    borderColor={DalegriaColorsEnum.Yellow}
-                    type="outlined"
-                    style={{ width: "500px" }}
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    fontSize={32}
+                    textTransform="uppercase"
                   >
+                    {t(
+                      "retrospective.retrospective_ten.background_container.doctors_school.title"
+                    )}
+                  </Typography>
+                </TextContainer>
+                <TextDivision>
+                  <TextSideDivision>
                     <TextContainer
                       textAlign="left"
                       justifyContent="flex-start"
                       align="flex-start"
-                      marginBottom={8}
+                      marginBottom={32}
+                      chooseGap={8}
                     >
                       <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
+                        fontFamily={DalegriaFontesEnum.StdLight}
                         textColor={DalegriaColorsEnum.White}
-                        fontSize={20}
-                        textTransform="uppercase"
+                        fontSize={24}
                       >
-                        {t(
-                          "retrospective.retrospective_ten.background_container.doctors_school.square.text_01"
-                        )}
-                        <span
-                          style={{
-                            marginLeft: "8px",
-                            fontSize: "14px",
-                          }}
+                        Antes da pandemia de Covid-19, as festas de carnaval,
+                        São João e o Natal eram comemoradas pelos palhaços com
+                        cortejos que reuniam os elencos e passavam por todos os
+                        hospitais.
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={24}
+                      >
+                        Em 2022, ano de transições e retomadas, o carnaval e o
+                        São João foram lembrados nos hospitais, mas reunindo
+                        menos palhaços.
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={24}
+                      >
+                        Em Recife, os hospitais receberam grupos de três
+                        palhaços, como Dr. Dud Grud “Homem da Meia-Noite”, Dra.
+                        Baju “Rainha da Tradicional Clube Vassourinhas” e Dr.
+                        Wago Ninguém “Rei do Maracatu”.
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision
+                    chooseWidth={500}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <SquareColored
+                      borderColor={DalegriaColorsEnum.Yellow}
+                      type="outlined"
+                      style={{ width: "500px" }}
+                    >
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={8}
+                      >
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.White}
+                          fontSize={20}
+                          textTransform="uppercase"
                         >
                           {t(
-                            "retrospective.retrospective_ten.background_container.doctors_school.square.text_05"
+                            "retrospective.retrospective_ten.background_container.doctors_school.square.text_01"
                           )}
-                        </span>
-                      </Typography>
-                    </TextContainer>
+                          <span
+                            style={{
+                              marginLeft: "8px",
+                              fontSize: "14px",
+                            }}
+                          >
+                            {t(
+                              "retrospective.retrospective_ten.background_container.doctors_school.square.text_05"
+                            )}
+                          </span>
+                        </Typography>
+                      </TextContainer>
 
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={16}
-                    >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.ManualBasic}
-                        textColor={DalegriaColorsEnum.White}
-                        fontSize={16}
-                        textTransform="uppercase"
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
                       >
-                        {t(
-                          "retrospective.retrospective_ten.background_container.doctors_school.square.text_02"
-                        )}
-                      </Typography>
-                    </TextContainer>
-
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={16}
-                    >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.White}
-                        fontSize={12}
-                        textTransform="uppercase"
-                      >
-                        {t(
-                          "retrospective.retrospective_ten.background_container.doctors_school.square.text_03"
-                        )}
-                        <span
-                          style={{
-                            color: DalegriaColorsEnum.Yellow,
-                            fontFamily: DalegriaFontesEnum.ManualBasic,
-                            marginLeft: "4px",
-                            fontSize: "24px",
-                          }}
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.ManualBasic}
+                          textColor={DalegriaColorsEnum.White}
+                          fontSize={16}
+                          textTransform="uppercase"
                         >
                           {t(
-                            "retrospective.retrospective_ten.background_container.doctors_school.square.text_06"
+                            "retrospective.retrospective_ten.background_container.doctors_school.square.text_02"
                           )}
-                        </span>
-                      </Typography>
-                    </TextContainer>
+                        </Typography>
+                      </TextContainer>
 
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={16}
-                    >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.White}
-                        fontSize={12}
-                        textTransform="uppercase"
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
                       >
-                        {t(
-                          "retrospective.retrospective_ten.background_container.doctors_school.square.text_04"
-                        )}
-                        <span
-                          style={{
-                            color: DalegriaColorsEnum.Yellow,
-                            fontFamily: DalegriaFontesEnum.ManualBasic,
-                            marginLeft: "4px",
-                            fontSize: "24px",
-                          }}
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.White}
+                          fontSize={12}
+                          textTransform="uppercase"
                         >
                           {t(
-                            "retrospective.retrospective_ten.background_container.doctors_school.square.text_07"
+                            "retrospective.retrospective_ten.background_container.doctors_school.square.text_03"
                           )}
-                        </span>
-                      </Typography>
-                    </TextContainer>
-                  </SquareColored>
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-          </RetrospectiveContainer>
+                          <span
+                            style={{
+                              color: DalegriaColorsEnum.Yellow,
+                              fontFamily: DalegriaFontesEnum.ManualBasic,
+                              marginLeft: "4px",
+                              fontSize: "24px",
+                            }}
+                          >
+                            {t(
+                              "retrospective.retrospective_ten.background_container.doctors_school.square.text_06"
+                            )}
+                          </span>
+                        </Typography>
+                      </TextContainer>
+
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
+                      >
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.White}
+                          fontSize={12}
+                          textTransform="uppercase"
+                        >
+                          {t(
+                            "retrospective.retrospective_ten.background_container.doctors_school.square.text_04"
+                          )}
+                          <span
+                            style={{
+                              color: DalegriaColorsEnum.Yellow,
+                              fontFamily: DalegriaFontesEnum.ManualBasic,
+                              marginLeft: "4px",
+                              fontSize: "24px",
+                            }}
+                          >
+                            {t(
+                              "retrospective.retrospective_ten.background_container.doctors_school.square.text_07"
+                            )}
+                          </span>
+                        </Typography>
+                      </TextContainer>
+                    </SquareColored>
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>

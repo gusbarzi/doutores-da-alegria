@@ -6,7 +6,6 @@ export const RetrospectiveContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 60px;
-  margin-bottom: 50px;
   gap: 16px;
 `;
 
@@ -17,7 +16,7 @@ export const BackgroundPinkContainer = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.Pink};
-  padding: 16px;
+  padding: 24px 40px;
   position: relative;
 `;
 

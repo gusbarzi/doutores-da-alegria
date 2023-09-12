@@ -9,6 +9,7 @@ export const InsideOutContainer = styled.div`
   flex-direction: column;
   padding: 0 60px;
   gap: 16px;
+  margin-top: 100px;
 `;
 
 export const InsideOutBannerContainerDesktop = styled.div`
@@ -41,4 +42,35 @@ export const HiperContainer = styled.div`
   width: 100%;
   justify-content: flex-end;
   align-items: flex-end;
+`;
+
+export const JokerImage = styled.img`
+  width: 500px;
+`;
+
+export const BannerContainer = styled.div`
+  width: 100%;
+  display: flex;
+  text-align: right;
+  position: relative;
+  flex-direction: column;
+`;
+
+export const Division = styled.div`
+  display: flex;
+`;
+
+export const Left = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+`;
+
+export const Right = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 100px;
 `;

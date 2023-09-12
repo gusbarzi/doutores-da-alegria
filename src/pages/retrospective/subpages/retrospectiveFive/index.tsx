@@ -13,6 +13,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -149,160 +150,75 @@ export const RetrospectiveFive: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={12}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.Pink}
-              fontSize={48}
-              textTransform="uppercase"
-            >
-              {t("retrospective.activity_year")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={20}
-              textTransform="uppercase"
-            >
-              {t("retrospective.activity_year_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
-            <OriginalArtTree src={OriginalArt3} />
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
-              align="flex-start"
+              textAlign="center"
+              justifyContent="center"
+              align="center"
+              marginBottom={12}
             >
               <Typography
-                fontFamily={DalegriaFontesEnum.ManualBasic}
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
                 textColor={DalegriaColorsEnum.Pink}
-                fontSize={32}
+                fontSize={48}
                 textTransform="uppercase"
               >
-                {t("retrospective.joker_place.title")}
+                {t("retrospective.activity_year")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={20}
+                textTransform="uppercase"
+              >
+                {t("retrospective.activity_year_description")}
               </Typography>
             </TextContainer>
-            <TextDivision>
-              <TextSideDivision>
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="flex-start"
-                  align="flex-start"
-                  chooseGap={4}
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Gray}
-                    fontSize={20}
-                  >
-                    {t("retrospective.joker_place.stanza_01")}
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Gray}
-                    fontSize={20}
-                  >
-                    {t("retrospective.joker_place.stanza_02")}
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Gray}
-                    fontSize={20}
-                  >
-                    {t("retrospective.joker_place.stanza_03")}
-                  </Typography>
-                </TextContainer>
-              </TextSideDivision>
-              <TextSideDivision>
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="flex-start"
-                  align="flex-start"
-                  chooseGap={8}
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Gray}
-                    fontSize={20}
-                  >
-                    {t("retrospective.joker_place.stanza_04")}
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Gray}
-                    fontSize={20}
-                  >
-                    {t("retrospective.joker_place.stanza_05")}
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Gray}
-                    fontSize={20}
-                  >
-                    São histórias reais, que fazem diferença no cotidiano das
-                    crianças, das suas famílias e dos profissionais de saúde,
-                    construídas a partir da sensibilidade e da preparação do
-                    nosso elenco.
-                  </Typography>
-                </TextContainer>
-              </TextSideDivision>
-            </TextDivision>
-            <PinkBackgroundDesktop>
+            <RetrospectiveContainer>
+              <OriginalArtTree src={OriginalArt3} />
               <TextContainer
                 textAlign="left"
                 justifyContent="flex-start"
                 align="flex-start"
-                marginBottom={12}
               >
                 <Typography
-                  fontFamily={DalegriaFontesEnum.StdBold}
-                  textColor={DalegriaColorsEnum.Yellow}
-                  fontSize={24}
+                  fontFamily={DalegriaFontesEnum.ManualBasic}
+                  textColor={DalegriaColorsEnum.Pink}
+                  fontSize={32}
                   textTransform="uppercase"
                 >
-                  {t("retrospective.joker_act")}
+                  {t("retrospective.joker_place.title")}
                 </Typography>
               </TextContainer>
-              <TextDivision chooseGap={1}>
-                <TextSideDivision chooseWidth={700}>
+              <TextDivision>
+                <TextSideDivision>
                   <TextContainer
                     textAlign="left"
                     justifyContent="flex-start"
                     align="flex-start"
-                    marginBottom={12}
+                    chooseGap={4}
                   >
                     <Typography
                       fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Yellow}
-                      fontSize={16}
-                      textTransform="uppercase"
+                      textColor={DalegriaColorsEnum.Gray}
+                      fontSize={20}
                     >
-                      {t("retrospective.san_paulo")}
+                      {t("retrospective.joker_place.stanza_01")}
                     </Typography>
-                  </TextContainer>
-
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
-                    chooseGap={8}
-                  >
                     <Typography
-                      fontFamily={DalegriaFontesEnum.StdBold}
-                      textColor={DalegriaColorsEnum.White}
-                      textTransform="uppercase"
-                      fontSize={16}
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.Gray}
+                      fontSize={20}
                     >
-                      {t("retrospective.hospitals_served")}
+                      {t("retrospective.joker_place.stanza_02")}
                     </Typography>
-                    <CustomList list={sanPauloList} />
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.Gray}
+                      fontSize={20}
+                    >
+                      {t("retrospective.joker_place.stanza_03")}
+                    </Typography>
                   </TextContainer>
                 </TextSideDivision>
                 <TextSideDivision>
@@ -310,57 +226,101 @@ export const RetrospectiveFive: React.FC = () => {
                     textAlign="left"
                     justifyContent="flex-start"
                     align="flex-start"
-                    marginBottom={12}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.Yellow}
-                      fontSize={16}
-                      textTransform="uppercase"
-                    >
-                      {t("retrospective.recife")}
-                    </Typography>
-                  </TextContainer>
-
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
                     chooseGap={8}
                   >
                     <Typography
-                      fontFamily={DalegriaFontesEnum.StdBold}
-                      textColor={DalegriaColorsEnum.White}
-                      textTransform="uppercase"
-                      fontSize={16}
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.Gray}
+                      fontSize={20}
                     >
-                      {t("retrospective.hospitals_served")}
+                      {t("retrospective.joker_place.stanza_04")}
                     </Typography>
-                    <CustomList list={recifeList} />
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.Gray}
+                      fontSize={20}
+                    >
+                      {t("retrospective.joker_place.stanza_05")}
+                    </Typography>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.Gray}
+                      fontSize={20}
+                    >
+                      São histórias reais, que fazem diferença no cotidiano das
+                      crianças, das suas famílias e dos profissionais de saúde,
+                      construídas a partir da sensibilidade e da preparação do
+                      nosso elenco.
+                    </Typography>
                   </TextContainer>
                 </TextSideDivision>
               </TextDivision>
-              <TextDivision chooseGap={100}>
-                <TextSideDivision>
-                  <SquareColored
-                    borderColor={DalegriaColorsEnum.Yellow}
-                    type="outlined"
-                    style={{ marginBottom: "16px" }}
+              <PinkBackgroundDesktop>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={12}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    fontSize={24}
+                    textTransform="uppercase"
                   >
+                    {t("retrospective.joker_act")}
+                  </Typography>
+                </TextContainer>
+                <TextDivision chooseGap={1}>
+                  <TextSideDivision chooseWidth={700}>
                     <TextContainer
                       textAlign="left"
                       justifyContent="flex-start"
                       align="flex-start"
-                      marginBottom={16}
+                      marginBottom={12}
+                    >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Yellow}
+                        fontSize={16}
+                        textTransform="uppercase"
+                      >
+                        {t("retrospective.san_paulo")}
+                      </Typography>
+                    </TextContainer>
+
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
+                      chooseGap={8}
                     >
                       <Typography
                         fontFamily={DalegriaFontesEnum.StdBold}
                         textColor={DalegriaColorsEnum.White}
-                        fontSize={14}
+                        textTransform="uppercase"
+                        fontSize={16}
+                      >
+                        {t("retrospective.hospitals_served")}
+                      </Typography>
+                      <CustomList list={sanPauloList} />
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
+                    >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Yellow}
+                        fontSize={16}
                         textTransform="uppercase"
                       >
-                        {t("retrospective.how_many_people_impacted")}
+                        {t("retrospective.recife")}
                       </Typography>
                     </TextContainer>
 
@@ -368,180 +328,223 @@ export const RetrospectiveFive: React.FC = () => {
                       textAlign="left"
                       justifyContent="flex-start"
                       align="flex-start"
-                      marginBottom={16}
-                    >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.ManualBasic}
-                        textColor={DalegriaColorsEnum.Yellow}
-                        fontSize={16}
-                        textTransform="uppercase"
-                      >
-                        {t("retrospective.how_many_child_sp")}
-                        <span
-                          style={{
-                            color: DalegriaColorsEnum.White,
-                            fontFamily: DalegriaFontesEnum.StdBold,
-                            marginLeft: "8px",
-                            fontSize: "10px",
-                          }}
-                        >
-                          {t("retrospective.direct_public")}
-                        </span>
-                      </Typography>
-                    </TextContainer>
-
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={16}
-                    >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.ManualBasic}
-                        textColor={DalegriaColorsEnum.Yellow}
-                        fontSize={16}
-                        textTransform="uppercase"
-                      >
-                        {t("retrospective.how_many_people_sp")}
-                        <span
-                          style={{
-                            color: DalegriaColorsEnum.White,
-                            fontFamily: DalegriaFontesEnum.StdBold,
-                            marginLeft: "8px",
-                            fontSize: "10px",
-                          }}
-                        >
-                          {t("retrospective.indirect_public")}
-                        </span>
-                      </Typography>
-                    </TextContainer>
-                  </SquareColored>
-                </TextSideDivision>
-                <TextSideDivision>
-                  <SquareColored
-                    borderColor={DalegriaColorsEnum.Yellow}
-                    type="outlined"
-                  >
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={16}
+                      marginBottom={12}
+                      chooseGap={8}
                     >
                       <Typography
                         fontFamily={DalegriaFontesEnum.StdBold}
                         textColor={DalegriaColorsEnum.White}
-                        fontSize={16}
                         textTransform="uppercase"
+                        fontSize={16}
                       >
-                        {t("retrospective.how_many_people_impacted")}
+                        {t("retrospective.hospitals_served")}
                       </Typography>
+                      <CustomList list={recifeList} />
                     </TextContainer>
-
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={16}
+                  </TextSideDivision>
+                </TextDivision>
+                <TextDivision chooseGap={100}>
+                  <TextSideDivision>
+                    <SquareColored
+                      borderColor={DalegriaColorsEnum.Yellow}
+                      type="outlined"
+                      style={{ marginBottom: "16px" }}
                     >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.ManualBasic}
-                        textColor={DalegriaColorsEnum.Yellow}
-                        fontSize={16}
-                        textTransform="uppercase"
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
                       >
-                        {t("retrospective.how_many_child_rc")}
-                        <span
-                          style={{
-                            color: DalegriaColorsEnum.White,
-                            fontFamily: DalegriaFontesEnum.StdBold,
-                            marginLeft: "8px",
-                            fontSize: "10px",
-                          }}
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.White}
+                          fontSize={14}
+                          textTransform="uppercase"
                         >
-                          {t("retrospective.direct_public")}
-                        </span>
-                      </Typography>
-                    </TextContainer>
+                          {t("retrospective.how_many_people_impacted")}
+                        </Typography>
+                      </TextContainer>
 
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={16}
-                    >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.ManualBasic}
-                        textColor={DalegriaColorsEnum.Yellow}
-                        fontSize={16}
-                        textTransform="uppercase"
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
                       >
-                        {t("retrospective.how_many_people_rc")}
-                        <span
-                          style={{
-                            color: DalegriaColorsEnum.White,
-                            fontFamily: DalegriaFontesEnum.StdBold,
-                            marginLeft: "8px",
-                            fontSize: "10px",
-                          }}
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.ManualBasic}
+                          textColor={DalegriaColorsEnum.Yellow}
+                          fontSize={16}
+                          textTransform="uppercase"
                         >
-                          {t("retrospective.indirect_public")}
-                        </span>
-                      </Typography>
-                    </TextContainer>
-                  </SquareColored>
-                </TextSideDivision>
-                <TextSideDivision chooseWidth={600}>
-                <SquareColored
-                    backgroundColor={DalegriaColorsEnum.Yellow}
-                    type="primary"
-                    style={{ height: "154px"}}
-                  >
-                    <TextContainer
-                      textAlign="center"
-                      justifyContent="center"
-                      align="center"
-                      marginBottom={16}
-                      chooseGap={4}
+                          {t("retrospective.how_many_child_sp")}
+                          <span
+                            style={{
+                              color: DalegriaColorsEnum.White,
+                              fontFamily: DalegriaFontesEnum.StdBold,
+                              marginLeft: "8px",
+                              fontSize: "10px",
+                            }}
+                          >
+                            {t("retrospective.direct_public")}
+                          </span>
+                        </Typography>
+                      </TextContainer>
+
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
+                      >
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.ManualBasic}
+                          textColor={DalegriaColorsEnum.Yellow}
+                          fontSize={16}
+                          textTransform="uppercase"
+                        >
+                          {t("retrospective.how_many_people_sp")}
+                          <span
+                            style={{
+                              color: DalegriaColorsEnum.White,
+                              fontFamily: DalegriaFontesEnum.StdBold,
+                              marginLeft: "8px",
+                              fontSize: "10px",
+                            }}
+                          >
+                            {t("retrospective.indirect_public")}
+                          </span>
+                        </Typography>
+                      </TextContainer>
+                    </SquareColored>
+                  </TextSideDivision>
+                  <TextSideDivision>
+                    <SquareColored
+                      borderColor={DalegriaColorsEnum.Yellow}
+                      type="outlined"
                     >
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.Black}
-                        fontSize={20}
-                        textTransform="uppercase"
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
                       >
-                        leia as 
-                      </Typography>
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.Black}
-                        fontSize={20}
-                        textTransform="uppercase"
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.White}
+                          fontSize={16}
+                          textTransform="uppercase"
+                        >
+                          {t("retrospective.how_many_people_impacted")}
+                        </Typography>
+                      </TextContainer>
+
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
                       >
-                        histórias de
-                      </Typography>
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.Black}
-                        fontSize={20}
-                        textTransform="uppercase"
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.ManualBasic}
+                          textColor={DalegriaColorsEnum.Yellow}
+                          fontSize={16}
+                          textTransform="uppercase"
+                        >
+                          {t("retrospective.how_many_child_rc")}
+                          <span
+                            style={{
+                              color: DalegriaColorsEnum.White,
+                              fontFamily: DalegriaFontesEnum.StdBold,
+                              marginLeft: "8px",
+                              fontSize: "10px",
+                            }}
+                          >
+                            {t("retrospective.direct_public")}
+                          </span>
+                        </Typography>
+                      </TextContainer>
+
+                      <TextContainer
+                        textAlign="left"
+                        justifyContent="flex-start"
+                        align="flex-start"
+                        marginBottom={16}
                       >
-                        hospital no
-                      </Typography>
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdBold}
-                        textColor={DalegriaColorsEnum.Black}
-                        fontSize={20}
-                        textTransform="uppercase"
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.ManualBasic}
+                          textColor={DalegriaColorsEnum.Yellow}
+                          fontSize={16}
+                          textTransform="uppercase"
+                        >
+                          {t("retrospective.how_many_people_rc")}
+                          <span
+                            style={{
+                              color: DalegriaColorsEnum.White,
+                              fontFamily: DalegriaFontesEnum.StdBold,
+                              marginLeft: "8px",
+                              fontSize: "10px",
+                            }}
+                          >
+                            {t("retrospective.indirect_public")}
+                          </span>
+                        </Typography>
+                      </TextContainer>
+                    </SquareColored>
+                  </TextSideDivision>
+                  <TextSideDivision chooseWidth={600}>
+                    <SquareColored
+                      backgroundColor={DalegriaColorsEnum.Yellow}
+                      type="primary"
+                      style={{ height: "154px" }}
+                    >
+                      <TextContainer
+                        textAlign="center"
+                        justifyContent="center"
+                        align="center"
+                        marginBottom={16}
+                        chooseGap={4}
                       >
-                        nosso blog
-                      </Typography>
-                    </TextContainer>
-                  </SquareColored>
-                </TextSideDivision>
-              </TextDivision>
-            </PinkBackgroundDesktop>
-          </RetrospectiveContainer>
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.Black}
+                          fontSize={20}
+                          textTransform="uppercase"
+                        >
+                          leia as
+                        </Typography>
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.Black}
+                          fontSize={20}
+                          textTransform="uppercase"
+                        >
+                          histórias de
+                        </Typography>
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.Black}
+                          fontSize={20}
+                          textTransform="uppercase"
+                        >
+                          hospital no
+                        </Typography>
+                        <Typography
+                          fontFamily={DalegriaFontesEnum.StdBold}
+                          textColor={DalegriaColorsEnum.Black}
+                          fontSize={20}
+                          textTransform="uppercase"
+                        >
+                          nosso blog
+                        </Typography>
+                      </TextContainer>
+                    </SquareColored>
+                  </TextSideDivision>
+                </TextDivision>
+              </PinkBackgroundDesktop>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>
@@ -866,7 +869,35 @@ export const RetrospectiveFive: React.FC = () => {
                   </Typography>
                 </TextContainer>
               </SquareColored>
+              <SquareColored
+                type="primary"
+                backgroundColor={DalegriaColorsEnum.Yellow}
+                style={{ height: "38px", marginBottom: "-50px", marginTop: "10px"}}
+              >
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  flexDirection="row"
+                  align="center"
+                  marginBottom={12}
+                  chooseGap={4}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.Black}
+                    width={320}
+                    fontSize={14}
+                  >
+                    LEIAS AS HISTÓRIAS DE HOSPITAL NO NOSSO BLOG
+                  </Typography>
+                </TextContainer>
+              </SquareColored>
             </BackgroundPinkContainer>
+            <div 
+              style={{
+                height: "20px"
+              }}
+            />
           </DalegriaContainer>
         </>
       )}

@@ -21,7 +21,7 @@ export const BackgroundPinkContainer = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.Pink};
-  padding: 16px;
+  padding: 24px 40px;
 `;
 
 export const OriginalArtTree = styled.img`

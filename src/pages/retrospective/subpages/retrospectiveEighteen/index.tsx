@@ -6,6 +6,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -33,110 +34,112 @@ export const RetrospectiveEighteen: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={16}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              marginTop={12}
-              flexDirection="row"
+              marginBottom={16}
+              chooseGap={4}
             >
-              <BlueHeart width={50} height={40} />
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
+                textColor={DalegriaColorsEnum.LightBlue}
+                fontSize={52}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month")}
+              </Typography>
               <Typography
                 fontFamily={DalegriaFontesEnum.StdBold}
-                textColor={DalegriaColorsEnum.LightBlue}
+                textColor={DalegriaColorsEnum.Gray}
                 fontSize={18}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer>
+            <RetrospectiveContainer>
               <TextContainer
                 textAlign="left"
                 justifyContent="flex-start"
-                align="flex-start"
-                marginBottom={24}
+                align="center"
+                marginTop={12}
+                flexDirection="row"
               >
+                <BlueHeart width={50} height={40} />
                 <Typography
-                  fontFamily={DalegriaFontesEnum.ManualBasic}
-                  textColor={DalegriaColorsEnum.Yellow}
-                  fontSize={40}
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={18}
                   textTransform="uppercase"
                 >
-                  Mais uma turma de curiosos sobre palhaços!{" "}
+                  {t("retrospective.january_to_abril")}
                 </Typography>
               </TextContainer>
-              <TextDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={32}
-                    chooseGap={8}
+              <BackgroundBlueContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={24}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    fontSize={40}
+                    textTransform="uppercase"
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={28}
+                    Mais uma turma de curiosos sobre palhaços!{" "}
+                  </Typography>
+                </TextContainer>
+                <TextDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={32}
+                      chooseGap={8}
                     >
-                      Dezessete pessoas de várias idades e formações
-                      profissionais participaram da 31a turma do curso Palhaço
-                      para curiosos, realizado pela Escola Doutores da Alegria.
-                      O curso propicia uma aproximação com a linguagem da
-                      palhaçaria ao longo de oito encontros presenciais,
-                      totalizando 26 horas
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
-                    chooseGap={8}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={28}
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={28}
+                      >
+                        Dezessete pessoas de várias idades e formações
+                        profissionais participaram da 31a turma do curso Palhaço
+                        para curiosos, realizado pela Escola Doutores da
+                        Alegria. O curso propicia uma aproximação com a
+                        linguagem da palhaçaria ao longo de oito encontros
+                        presenciais, totalizando 26 horas
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
+                      chooseGap={8}
                     >
-                      de formação. Quem participou, identifica como o palhaço
-                      consegue subverter as situações do cotidiano e como as
-                      características dessa figura milenar podem ser
-                      incorporadas no dia a dia de alguém que não é artista.
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-          </RetrospectiveContainer>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={28}
+                      >
+                        de formação. Quem participou, identifica como o palhaço
+                        consegue subverter as situações do cotidiano e como as
+                        características dessa figura milenar podem ser
+                        incorporadas no dia a dia de alguém que não é artista.
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>

@@ -19,12 +19,13 @@ export const BoardDescriptionText = styled.div`
   align-items: center;
   text-align: center;
 
-  ${breakpoints.higherThan('desktop')} {
+  ${breakpoints.higherThan("desktop")} {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 32px;
+    text-align: left;
+    width: 100%;
   }
 `;
 
@@ -33,8 +34,50 @@ export const BoardText = styled.span`
   color: ${DalegriaColorsEnum.Black};
   font-size: 20px;
 
-  ${breakpoints.higherThan('desktop')} {
-    text-align: left;
-    width: 600px;
+  ${breakpoints.higherThan("desktop")} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74%;
   }
+`;
+
+export const JokerImage = styled.img`
+  width: 600px;
+`;
+
+export const BannerContainer = styled.div`
+  width: 100%;
+  display: flex;
+  text-align: right;
+  position: relative;
+  flex-direction: column;
+`;
+
+export const BlueFlag = styled.div`
+  display: flex;
+  margin-bottom: -20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 160px;
+  height: 25px;
+  background-color: ${DalegriaColorsEnum.LightBlue};
+  z-index: 10;
+`;
+
+export const Division = styled.div`
+  display: flex;
+`;
+
+export const Left = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+`;
+
+export const Right = styled.div`
+  display: flex;
+  width: 100%;
+
+  margin-top: -180px;
 `;

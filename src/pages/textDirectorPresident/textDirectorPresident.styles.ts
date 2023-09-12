@@ -53,6 +53,7 @@ export const BannerContainerDesktop = styled.div`
 
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 export const BannerContentDesktop = styled.div`
@@ -67,6 +68,20 @@ export const BannerDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  position: relative;
   padding: 16px 32px;
+`;
+
+export const JokerImage = styled.img`
+  width: 400px;
+`;
+
+export const BlueFlag = styled.div`
+  display: flex;
+  margin-bottom: -20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 200px;
+  height: 25px;
+  background-color: ${DalegriaColorsEnum.LightBlue};
+  z-index: 10;
 `;

@@ -6,11 +6,12 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
-import OriginalArt8 from "../../../../../public/assets/photos/originalart-8.jpg";
+import OriginalArt8 from "../../../../../public/assets/photos/originalart-8.png";
 import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
@@ -24,7 +25,6 @@ import {
 } from "../retrospectiveFive/retrospectiveFive.styles";
 import { RetrospectiveContainer } from "../retrospectiveEight/retrospectiveEight.styles";
 import { OriginalArtTwo } from "../retrospectiveFour/retrospectiveFour.styles";
-import { RightSide } from "../retrospectiveOne/retrospectiveOne.styles";
 
 export const RetrospectiveEleven: React.FC = () => {
   const { t } = useTranslation();
@@ -36,111 +36,113 @@ export const RetrospectiveEleven: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={16}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              flexDirection="row"
+              marginBottom={16}
+              chooseGap={4}
             >
-              <BlueHeart width={50} height={40} />
               <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
                 textColor={DalegriaColorsEnum.LightBlue}
-                fontSize={20}
+                fontSize={52}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={18}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer
-              style={{
-                position: "relative",
-              }}
-            >
-              <TextDivision>
-                <TextSideDivision
-                  style={{
-                    width: "700px",
-                  }}
+            <RetrospectiveContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="center"
+                flexDirection="row"
+              >
+                <BlueHeart width={50} height={40} />
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={20}
+                  textTransform="uppercase"
                 >
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={32}
-                    chooseGap={8}
+                  {t("retrospective.january_to_abril")}
+                </Typography>
+              </TextContainer>
+              <BackgroundBlueContainer
+                style={{
+                  position: "relative",
+                }}
+              >
+                <TextDivision>
+                  <TextSideDivision
+                    style={{
+                      width: "700px",
+                    }}
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.Yellow}
-                      fontSize={40}
-                      textTransform="uppercase"
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={32}
+                      chooseGap={8}
                     >
-                      {t(
-                        "retrospective.retrospective_eleven.background_container.doctors_school.title"
-                      )}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={32}
-                    >
-                      Para homenagear o circo e o palhaço Benjamim de Oliveira,
-                      o Itaú Cultural montou uma programação especial no mês de
-                      fevereiro. Participamos com a exibição on-line do
-                      espetáculo “Aquele Momento Em Que...” e um debate com o
-                      elenco da peça. Além disso, o webinário Memória e
-                      Reinvenção – o que mantém o circo vivo? contou com a
-                      colaboração de Ronaldo Aguiar, diretor artístico dos
-                      Doutores da Alegria.
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-                <TextSideDivision
-                  style={{
-                    position: "absolute",
-                    width: "600px",
-                    height: "700px",
-                    right: "40px",
-                  }}
-                >
-                  <OriginalArtTwo src={OriginalArt8} />
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-            <div
-              style={{
-                width: "100%",
-                height: "600px",
-                backgroundColor: "transparent",
-              }}
-            />
-          </RetrospectiveContainer>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.ManualBasic}
+                        textColor={DalegriaColorsEnum.Yellow}
+                        fontSize={40}
+                        textTransform="uppercase"
+                      >
+                        {t(
+                          "retrospective.retrospective_eleven.background_container.doctors_school.title"
+                        )}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={24}
+                      >
+                        Para homenagear o circo e o palhaço Benjamim de
+                        Oliveira, o Itaú Cultural montou uma programação
+                        especial no mês de fevereiro. Participamos com a
+                        exibição on-line do espetáculo “Aquele Momento Em
+                        Que...” e um debate com o elenco da peça. Além disso, o
+                        webinário Memória e Reinvenção – o que mantém o circo
+                        vivo? contou com a colaboração de Ronaldo Aguiar,
+                        diretor artístico dos Doutores da Alegria.
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision
+                    style={{
+                      position: "absolute",
+                      width: "600px",
+                      height: "700px",
+                      right: "40px",
+                    }}
+                  >
+                    <OriginalArtTwo src={OriginalArt8} />
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+              <div
+                style={{
+                  width: "100%",
+                  height: "350px",
+                  backgroundColor: "transparent",
+                }}
+              />
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>
@@ -195,8 +197,7 @@ export const RetrospectiveEleven: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt8}
-                width={335}
-                height={500}
+                width="120%"
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer
@@ -238,7 +239,7 @@ export const RetrospectiveEleven: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate(-1)}>
+        <GlobalBackButton onClick={() => navigate("/restrospectiva-10")}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
         <GlobalNextButton onClick={() => navigate("/restrospectiva-12")}>

@@ -61,3 +61,7 @@ export const GridItemTree = styled.div`
   width: 110px;
   height: 500px;
 `;
+
+export const PartnerImg = styled.img`
+ width: 60%;
+`

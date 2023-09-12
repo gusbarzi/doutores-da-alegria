@@ -6,17 +6,18 @@ import { Footer } from "./footer";
 import { FooterContainer, GlobalContainer } from "../styles/global.styles";
 
 const MainContent: React.FC = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    return (
-        <>
-            {location.pathname !== '/' && location.pathname !== '/ending' && <Header />}
-            <GlobalContainer>
-                <AppRoutes />
-            </GlobalContainer>
-        </>
-    );
-}
+  return (
+    <>
+      {location.pathname !== "/" && location.pathname !== "/fim" && (
+        <Header />
+      )}
+
+      <AppRoutes />
+    </>
+  );
+};
 
 export const App: React.FC = () => {
   return (

@@ -1,8 +1,8 @@
-import { Header } from './../../components/header/index';
+import { Header } from "./../../components/header/index";
 import { keyframes, styled } from "styled-components";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import { DalegriaColorsEnum } from "../../utils/colors";
-import breakpoints from '../../utils/breakpoints';
+import breakpoints from "../../utils/breakpoints";
 
 export const AccountabilityContainer = styled.div`
   display: flex;
@@ -38,17 +38,18 @@ export const AccountabilityContainerTwo = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 8px;
-
 `;
 
 export const InformationsContainer = styled.div`
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 16px;
+  position: relative;
+  padding: 16px 0;
 
-  ${breakpoints.higherThan('desktop')} {
+  ${breakpoints.higherThan("desktop")} {
     width: 700px;
   }
 `;
@@ -63,6 +64,11 @@ export const RightSide = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  width: 80%;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 60%;
+  }
 `;
 
 export const SquareContainer = styled.div`
@@ -84,11 +90,15 @@ export const GridContainer = styled.div`
 `;
 
 export const BackgroundPink = styled.div`
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.Pink};
-  padding: 16px;
+  padding: 16px 16px 0 16px;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 320px;
+  }
 `;
 
 export const BackgroundYellow = styled.div`
@@ -161,35 +171,54 @@ export const Bar = styled.div`
 `;
 
 export const BarImage = styled.img`
-  width: 55px;
+  width: 30px;
   display: flex;
-  margin-left: 28px;
+  margin-left: 8px;
   animation: ${fadeInUp} 1.5s ease-out;
   transform-origin: bottom;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 55px;
+    margin-left: 28px;
+  }
 `;
 export const NumbersContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 16px;
-  margin-left: 24px;
+  margin-left: 10px;
+  
+  ${breakpoints.higherThan("desktop")} {
+    margin-left: 24px;
+
+  }
 `;
 
 export const YearLabel = styled.div`
   position: absolute;
-  top: -30px;
-  left: 65%;
+  top: -20px;
+  left: 60%;
+  font-size: 16px;
   transform: translateX(-50%);
-  font-size: 24px;
   font-family: ${DalegriaFontesEnum.ManualBasic};
   color: ${DalegriaColorsEnum.White};
+  
+  ${breakpoints.higherThan("desktop")} {
+    font-size: 24px;
+    top: -30px;
+    left: 65%;
+  }
 `;
 
 export const BarContainer = styled.div`
   display: flex;
   align-items: flex-end;
   width: 100%;
-  height: 580px;
+
+  ${breakpoints.higherThan("desktop")} {
+    height: 580px;
+  }
 `;
 
 const fadeInRight = keyframes`
@@ -220,8 +249,8 @@ export const BarImageHorizon = styled.img`
   animation: ${fadeInRight} 1.5s ease-out;
   transform-origin: left;
 
-  ${breakpoints.higherThan('desktop')} {
-    width: 'none';
+  ${breakpoints.higherThan("desktop")} {
+    width: "none";
   }
 `;
 
@@ -246,4 +275,31 @@ export const NumberLabelHorizon = styled.div`
 export const BarContainerHorizon = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const Division = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-left: 350px;
+`;
+
+export const Right = styled.div`
+  width: 100%;
+  margin-right: -300px;
+`;
+
+export const Left = styled.div`
+  width: 100%;
+
+  ${breakpoints.higherThan("desktop")} {
+    margin-left: -300px;
+  }
+`;
+
+export const JokerImage = styled.img`
+  width: 100%;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 70%;
+  }
 `;

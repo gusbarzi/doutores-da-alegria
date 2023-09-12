@@ -6,6 +6,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -37,168 +38,175 @@ export const RetrospectiveFourteen: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={16}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              flexDirection="row"
+              marginBottom={16}
+              chooseGap={4}
             >
-              <BlueHeart width={50} height={40} />
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
+                textColor={DalegriaColorsEnum.LightBlue}
+                fontSize={52}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month")}
+              </Typography>
               <Typography
                 fontFamily={DalegriaFontesEnum.StdBold}
-                textColor={DalegriaColorsEnum.LightBlue}
+                textColor={DalegriaColorsEnum.Gray}
                 fontSize={18}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer
-              style={{
-                position: "relative",
-              }}
-            >
-              <TextDivision
-                style={{ display: "flex", justifyContent: "flex-end" }}
+            <RetrospectiveContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="center"
+                flexDirection="row"
               >
-                <TextSideDivision
-                  style={{
-                    position: "absolute",
-                    width: "600px",
-                    height: "700px",
-                    left: "15px",
-                  }}
+                <BlueHeart width={50} height={40} />
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={18}
+                  textTransform="uppercase"
                 >
-                  <OriginalArtTwelve src={OriginalArt12} />
-                </TextSideDivision>
-                <TextSideDivision
+                  {t("retrospective.january_to_abril")}
+                </Typography>
+              </TextContainer>
+              <BackgroundBlueContainer
+                style={{
+                  position: "relative",
+                }}
+              >
+                <TextDivision
+                  style={{ display: "flex", justifyContent: "flex-end" }}
+                >
+                  <TextSideDivision
+                    style={{
+                      position: "absolute",
+                      width: "600px",
+                      height: "700px",
+                      left: "15px",
+                    }}
+                  >
+                    <OriginalArtTwelve src={OriginalArt12} />
+                  </TextSideDivision>
+                  <TextSideDivision
+                    style={{
+                      width: "530px",
+                    }}
+                  >
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={32}
+                      chooseGap={16}
+                    >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.ManualBasic}
+                        textColor={DalegriaColorsEnum.Yellow}
+                        fontSize={24}
+                        textTransform="uppercase"
+                      >
+                        {t(
+                          "retrospective.retrospective_twelve.background_container.doctors_school.title"
+                        )}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={20}
+                      >
+                        A unidade Recife foi homenageada pela Câmara Municipal
+                        do Recife nas comemorações do Dia Nacional do Circo
+                        pelos 19 anos de atuação na capital pernambucana. O
+                        reconhecimento foi proposto pela vereadora Cida Pedrosa
+                        e a homenagem foi recebida pelos coordenadores Arilson
+                        Lopes e Nice Vasconcelos durante uma sessão especial.
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+              <div
+                style={{
+                  width: "100%",
+                  height: "230px",
+                  backgroundColor: "transparent",
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  alignItems: "flex-end",
+                }}
+              >
+                <SquareColored
+                  type="primary"
+                  backgroundColor={DalegriaColorsEnum.Yellow}
                   style={{
-                    width: "550px",
+                    height: "140px",
+                    width: "400px",
+                    marginRight: "150px",
+                    marginBottom: "6px",
                   }}
                 >
                   <TextContainer
                     textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={32}
-                    chooseGap={16}
+                    justifyContent="center"
+                    flexDirection="row"
+                    align="center"
+                    marginBottom={12}
+                    chooseHeight={60}
+                    chooseGap={4}
                   >
                     <Typography
-                      fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.Yellow}
-                      fontSize={24}
-                      textTransform="uppercase"
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.LightBlue}
+                      fontSize={32}
                     >
-                      {t(
-                        "retrospective.retrospective_twelve.background_container.doctors_school.title"
-                      )}
+                      18
                     </Typography>
                     <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={20}
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Black}
+                      fontSize={18}
                     >
-                      A unidade Recife foi homenageada pela Câmara Municipal do
-                      Recife nas comemorações do Dia Nacional do Circo pelos 19
-                      anos de atuação na capital pernambucana. O reconhecimento
-                      foi proposto pela vereadora Cida Pedrosa e a homenagem foi
-                      recebida pelos coordenadores Arilson Lopes e Nice
-                      Vasconcelos durante uma sessão especial.
+                      APRESENTAÇÕES GRATUITAS
                     </Typography>
                   </TextContainer>
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-            <div
-              style={{
-                width: "100%",
-                height: "230px",
-                backgroundColor: "transparent",
-                display: "flex",
-                justifyContent: "flex-end",
-                alignItems: "flex-end",
-              }}
-            >
-              <SquareColored
-                type="primary"
-                backgroundColor={DalegriaColorsEnum.Yellow}
-                style={{ height: "150px", width: '400px', marginRight: "150px" }}
-              >
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="center"
-                  flexDirection="row"
-                  align="center"
-                  marginBottom={12}
-                  chooseHeight={60}
-                  chooseGap={4}
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.LightBlue}
-                    fontSize={32}
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="center"
+                    flexDirection="row"
+                    align="center"
+                    marginBottom={12}
+                    chooseGap={4}
                   >
-                    18
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Black}
-                    fontSize={18}
-                  >
-                    APRESENTAÇÕES GRATUITAS
-                  </Typography>
-                </TextContainer>
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="center"
-                  flexDirection="row"
-                  align="center"
-                  marginBottom={12}
-                  chooseGap={4}
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.LightBlue}
-                    fontSize={32}
-                  >
-                    1.331
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Black}
-                    fontSize={16}
-                  >
-                    PESSOAS ASSISTIRAM AO ESPETÁCULO
-                  </Typography>
-                </TextContainer>
-              </SquareColored>
-            </div>
-          </RetrospectiveContainer>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.LightBlue}
+                      fontSize={32}
+                    >
+                      1.331
+                    </Typography>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Black}
+                      fontSize={16}
+                    >
+                      PESSOAS ASSISTIRAM AO ESPETÁCULO
+                    </Typography>
+                  </TextContainer>
+                </SquareColored>
+              </div>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>
@@ -295,7 +303,7 @@ export const RetrospectiveFourteen: React.FC = () => {
               <SquareColored
                 type="primary"
                 backgroundColor={DalegriaColorsEnum.Yellow}
-                style={{ height: "95px" }}
+                style={{ height: "95px", marginBottom: "-100px" }}
               >
                 <TextContainer
                   textAlign="left"
@@ -315,7 +323,7 @@ export const RetrospectiveFourteen: React.FC = () => {
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdBold}
                     textColor={DalegriaColorsEnum.Black}
-                    fontSize={14}
+                    fontSize={12}
                   >
                     APRESENTAÇÕES GRATUITAS
                   </Typography>
@@ -331,20 +339,26 @@ export const RetrospectiveFourteen: React.FC = () => {
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdBold}
                     textColor={DalegriaColorsEnum.LightBlue}
-                    fontSize={24}
+                    fontSize={20}
                   >
                     1.331
                   </Typography>
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdBold}
                     textColor={DalegriaColorsEnum.Black}
-                    fontSize={14}
+                    width={220}
+                    fontSize={12}
                   >
                     PESSOAS ASSISTIRAM AO ESPETÁCULO
                   </Typography>
                 </TextContainer>
               </SquareColored>
             </BackgroundBlueContainer>
+            <div 
+              style={{
+                height: "80px"
+              }}
+            />
           </DalegriaContainer>
         </>
       )}

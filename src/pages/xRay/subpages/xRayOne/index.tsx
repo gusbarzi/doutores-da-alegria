@@ -12,20 +12,27 @@ import {
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { ReactComponent as Caveira } from "../../../../../public/assets/caveira.svg";
 import {
+  BannerContainer,
   ColorideBackground,
   ColorideBackgroundDesktop,
+  JokerImage,
   TransparentBackgroundDesktop,
   XRayBannerContainerDesktop,
   XRayBannerContentDesktop,
   XRayBannerDetailsContainer,
   XRayHiperContainer,
 } from "../../xRay.styles";
-import { IList } from "../../../../components/CustomList/customList.types";
+import jokerSeven from "../../../../../public/assets/jokersPng/mobile-recortes7.png";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { CustomList } from "../../../../components/CustomList";
 import useMediaQuery from "../../../../hooks/useMediaQuery";
 import breakpoints from "../../../../utils/breakpoints";
+
+import { TextSideDivision } from "../../../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
+import { IList } from "../../../../components/CustomList/customList.types";
+import { ArtboardImage } from "../../../opening/opening.styles";
+import artImage from "../../../../../public/assets/PNGS/Outros/Artboard 6.png";
 
 export const XRayOne: React.FC = () => {
   const { t } = useTranslation();
@@ -40,49 +47,49 @@ export const XRayOne: React.FC = () => {
       text: t("x_ray.list_item.first"),
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
+      fontSize: 20,
     },
     {
       itemId: 2,
       text: t("x_ray.list_item.second"),
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
+      fontSize: 20,
     },
     {
       itemId: 3,
       text: t("x_ray.list_item.thirth"),
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
+      fontSize: 20,
     },
     {
       itemId: 4,
       text: t("x_ray.list_item.fourth"),
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
+      fontSize: 20,
     },
     {
       itemId: 5,
       text: t("x_ray.list_item.fifth"),
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
+      fontSize: 20,
     },
     {
       itemId: 6,
       text: t("x_ray.list_item.sixth"),
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
+      fontSize: 20,
     },
     {
       itemId: 7,
       text: t("x_ray.list_item.seventh"),
       color: DalegriaColorsEnum.LightBlue,
       fontFamily: DalegriaFontesEnum.StdLight,
-      fontSize: 16,
+      fontSize: 20,
     },
   ];
 
@@ -263,6 +270,18 @@ export const XRayOne: React.FC = () => {
           <XRayHiperContainer>
             <ColorideBackgroundDesktop>
               <CustomList list={xRayListItens} chooseWidth={700} />
+              <TextSideDivision
+                style={{
+                  display: "flex",
+                  width: "600px",
+                  justifyContent: "flex-end",
+                  alignItems: "flex-end",
+                  marginTop: "-140px",
+                  marginLeft: "-90px",
+                }}
+              >
+                <JokerImage src={jokerSeven} />
+              </TextSideDivision>
             </ColorideBackgroundDesktop>
           </XRayHiperContainer>
           <XRayHiperContainer>
@@ -277,7 +296,7 @@ export const XRayOne: React.FC = () => {
                   fontFamily={DalegriaFontesEnum.ManualBasic}
                   textColor={DalegriaColorsEnum.Purple}
                   fontSize={24}
-                  style={{ marginBottom: '12px' }}
+                  style={{ marginBottom: "12px" }}
                 >
                   {t("x_ray.impacted_people_list.title")}
                 </Typography>
@@ -294,7 +313,7 @@ export const XRayOne: React.FC = () => {
                   fontFamily={DalegriaFontesEnum.ManualBasic}
                   textColor={DalegriaColorsEnum.Purple}
                   fontSize={24}
-                  style={{ marginBottom: '12px' }}
+                  style={{ marginBottom: "12px" }}
                 >
                   {t("x_ray.who_goes_hospital_list.title")}
                 </Typography>
@@ -311,7 +330,7 @@ export const XRayOne: React.FC = () => {
                   fontFamily={DalegriaFontesEnum.ManualBasic}
                   textColor={DalegriaColorsEnum.Purple}
                   fontSize={24}
-                  style={{ marginBottom: '12px' }}
+                  style={{ marginBottom: "12px" }}
                 >
                   {t("x_ray.have_school_list.title")}
                 </Typography>
@@ -328,7 +347,7 @@ export const XRayOne: React.FC = () => {
                   fontFamily={DalegriaFontesEnum.ManualBasic}
                   textColor={DalegriaColorsEnum.Purple}
                   fontSize={24}
-                  style={{ marginBottom: '12px' }}
+                  style={{ marginBottom: "12px" }}
                 >
                   {t("x_ray.see_us_list.title")}
                 </Typography>
@@ -345,7 +364,7 @@ export const XRayOne: React.FC = () => {
                   fontFamily={DalegriaFontesEnum.ManualBasic}
                   textColor={DalegriaColorsEnum.Purple}
                   fontSize={24}
-                  style={{ marginBottom: '12px' }}
+                  style={{ marginBottom: "12px" }}
                 >
                   {t("x_ray.we_won_prizes_list.title")}
                 </Typography>
@@ -357,6 +376,9 @@ export const XRayOne: React.FC = () => {
       ) : (
         <>
           <DalegriaContainer choosePadding={0}>
+            <BannerContainer>
+              <ArtboardImage src={artImage} />
+            </BannerContainer>
             <ColorideBackground>
               <CustomList list={xRayListItens} />
             </ColorideBackground>
@@ -364,7 +386,7 @@ export const XRayOne: React.FC = () => {
             <Caveira
               width={120}
               height={120}
-              style={{ position: "absolute", bottom: "-250px" }}
+              style={{ position: "absolute", bottom: "-380px" }}
             />
           </DalegriaContainer>
         </>

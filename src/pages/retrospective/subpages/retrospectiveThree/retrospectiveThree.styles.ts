@@ -22,5 +22,8 @@ export const RetroRightSide = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightcyan;
+`;
+
+export const JokerImage = styled.img`
+  width: 560px;
 `;

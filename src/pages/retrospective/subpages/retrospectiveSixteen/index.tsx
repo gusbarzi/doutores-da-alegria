@@ -6,11 +6,12 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
-import OriginalArt14 from "../../../../../public/assets/photos/originalart-14.jpg";
+import OriginalArt14 from "../../../../../public/assets/photos/originalart-14.png";
 import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
@@ -36,167 +37,167 @@ export const RetrospectiveSixteen: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={16}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              flexDirection="row"
+              marginBottom={16}
+              chooseGap={4}
             >
-              <BlueHeart width={50} height={40} />
+              <Typography
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
+                textColor={DalegriaColorsEnum.LightBlue}
+                fontSize={52}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month")}
+              </Typography>
               <Typography
                 fontFamily={DalegriaFontesEnum.StdBold}
-                textColor={DalegriaColorsEnum.LightBlue}
+                textColor={DalegriaColorsEnum.Gray}
                 fontSize={18}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer
-              style={{
-                position: "relative",
-              }}
-            >
-              <TextDivision>
-                <TextSideDivision
+            <RetrospectiveContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="center"
+                flexDirection="row"
+              >
+                <BlueHeart width={50} height={40} />
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={18}
+                  textTransform="uppercase"
+                >
+                  {t("retrospective.january_to_abril")}
+                </Typography>
+              </TextContainer>
+              <BackgroundBlueContainer
+                style={{
+                  position: "relative",
+                }}
+              >
+                <TextDivision>
+                  <TextSideDivision
+                    style={{
+                      width: "550px",
+                    }}
+                  >
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={32}
+                      chooseGap={8}
+                    >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.ManualBasic}
+                        textColor={DalegriaColorsEnum.Yellow}
+                        fontSize={32}
+                        textTransform="uppercase"
+                      >
+                        {t(
+                          "retrospective.retrospective_sixteen.background_container.doctors_school.title"
+                        )}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={24.25}
+                      >
+                        {t(
+                          "retrospective.retrospective_sixteen.background_container.doctors_school.stanza_01"
+                        )}
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision
+                    style={{
+                      position: "absolute",
+                      width: "730px",
+                      height: "700px",
+                      right: "40px",
+                    }}
+                  >
+                    <OriginalArtTwo src={OriginalArt14} />
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+              <TextSideDivision
+                style={{
+                  display: "flex",
+                  width: "600px",
+                  justifyContent: "flex-end",
+                  alignItems: "flex-end",
+                  marginTop: "-40px",
+                  marginLeft: "-100px",
+                  zIndex: "10",
+                }}
+              >
+                <SquareColored
+                  type="primary"
+                  backgroundColor={DalegriaColorsEnum.Yellow}
                   style={{
-                    width: "500px",
+                    height: "140px",
+                    width: "460px",
                   }}
                 >
                   <TextContainer
                     textAlign="left"
                     justifyContent="flex-start"
                     align="flex-start"
-                    marginBottom={32}
-                    chooseGap={8}
+                    marginBottom={12}
+                    chooseGap={4}
                   >
                     <Typography
                       fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.Yellow}
-                      fontSize={42}
-                      textTransform="uppercase"
+                      textColor={DalegriaColorsEnum.LightBlue}
+                      fontSize={24}
                     >
-                      {t(
-                        "retrospective.retrospective_sixteen.background_container.doctors_school.title"
-                      )}
+                      9 ARTISTAS
                     </Typography>
                     <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={29.5}
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Black}
+                      fontSize={14}
                     >
-                      {t(
-                        "retrospective.retrospective_sixteen.background_container.doctors_school.stanza_01"
-                      )}
+                      FORAM SELECIONADOS PARA O ELENCO SUBSTITUTO EM SÃO PAULO
                     </Typography>
                   </TextContainer>
-                </TextSideDivision>
-                <TextSideDivision
-                  style={{
-                    position: "absolute",
-                    width: "800px",
-                    height: "700px",
-                    right: "40px",
-                  }}
-                >
-                  <OriginalArtTwo src={OriginalArt14} />
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-            <div
-              style={{
-                width: "100%",
-                height: "100px",
-                backgroundColor: "transparent",
-                display: "flex",
-                justifyContent: "flex-end",
-                alignItems: "flex-start",
-              }}
-            >
-              <SquareColored
-                type="primary"
-                backgroundColor={DalegriaColorsEnum.Yellow}
-                style={{
-                  height: "140px",
-                  width: "460px",
-                  position: "absolute",
-                  left: "100px",
-                  top: "1018px",
-                }}
-              >
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="flex-start"
-                  align="flex-start"
-                  marginBottom={12}
-                  chooseGap={4}
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.ManualBasic}
-                    textColor={DalegriaColorsEnum.LightBlue}
-                    fontSize={24}
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    flexDirection="row"
+                    align="flex-end"
+                    marginBottom={12}
+                    chooseGap={4}
                   >
-                    9 ARTISTAS
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Black}
-                    fontSize={14}
-                  >
-                    FORAM SELECIONADOS PARA O ELENCO SUBSTITUTO EM SÃO PAULO
-                  </Typography>
-                </TextContainer>
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="flex-start"
-                  flexDirection="row"
-                  align="flex-end"
-                  marginBottom={12}
-                  chooseGap={4}
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.ManualBasic}
-                    textColor={DalegriaColorsEnum.LightBlue}
-                    fontSize={24}
-                  >
-                    140 PESSOAS
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Black}
-                    fontSize={16}
-                  >
-                    SE INSCREVERAM NA SELEÇÃO
-                  </Typography>
-                </TextContainer>
-              </SquareColored>
-            </div>
-          </RetrospectiveContainer>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.ManualBasic}
+                      textColor={DalegriaColorsEnum.LightBlue}
+                      fontSize={24}
+                    >
+                      140 PESSOAS
+                    </Typography>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Black}
+                      fontSize={16}
+                    >
+                      SE INSCREVERAM NA SELEÇÃO
+                    </Typography>
+                  </TextContainer>
+                </SquareColored>
+              </TextSideDivision>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>
@@ -293,7 +294,7 @@ export const RetrospectiveSixteen: React.FC = () => {
               <SquareColored
                 type="primary"
                 backgroundColor={DalegriaColorsEnum.Yellow}
-                style={{ height: "120px" }}
+                style={{ height: "140px", marginBottom: "-150px"}}
               >
                 <TextContainer
                   textAlign="left"
@@ -342,6 +343,11 @@ export const RetrospectiveSixteen: React.FC = () => {
                 </TextContainer>
               </SquareColored>
             </BackgroundBlueContainer>
+            <div
+              style={{
+                height: "120px",
+              }}
+            />
           </DalegriaContainer>
         </>
       )}

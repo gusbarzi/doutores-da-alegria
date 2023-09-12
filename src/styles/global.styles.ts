@@ -23,6 +23,7 @@ interface ITypographyStylesProps {
   width?: number;
   textTransform?: string;
   lineHeight?: number;
+  whiteSpace?: string;
 }
 
 interface IDelegriaContainerStylesProps {
@@ -128,8 +129,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const GlobalContainer = styled.div`
-  max-width: 1500px;
+export const GlobalContainer = styled.div<{ fullwidth?: boolean }>`
+  max-width: ${({ fullwidth }) => (fullwidth ? "none" : "1500px")};
   margin: 0 auto;
 `;
 
@@ -177,7 +178,7 @@ export const TextContainer = styled.div<ITextContainerStylesProps>`
     marginLeft,
     marginRight,
     chooseWidth,
-    chooseHeight
+    chooseHeight,
   }) => css`
     align-items: ${align ? align : "center"};
     justify-content: ${justifyContent ? justifyContent : "center"};
@@ -194,7 +195,16 @@ export const TextContainer = styled.div<ITextContainerStylesProps>`
 `;
 
 export const Typography = styled.span<ITypographyStylesProps>`
-  ${({ fontFamily, fontSize, textColor, height, width, textTransform, lineHeight }) => css`
+  ${({
+    fontFamily,
+    fontSize,
+    textColor,
+    height,
+    width,
+    textTransform,
+    lineHeight,
+    whiteSpace
+  }) => css`
     font-family: ${fontFamily};
     color: ${textColor};
     font-size: ${`${fontSize}px`};
@@ -202,6 +212,7 @@ export const Typography = styled.span<ITypographyStylesProps>`
     width: ${`${width}px`};
     text-transform: ${textTransform};
     line-height: ${lineHeight};
+    white-space: ${whiteSpace};
   `};
 `;
 
@@ -224,7 +235,7 @@ export const BackgroundBlueContainer = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.LightBlue};
-  padding: 16px;
+  padding: 24px 40px;
 `;
 
 export const FooterContainer = styled.div`

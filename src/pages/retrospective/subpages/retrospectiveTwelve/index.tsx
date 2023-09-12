@@ -6,11 +6,12 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
-import OriginalArt9 from "../../../../../public/assets/photos/originalart-9.jpeg";
+import OriginalArt9 from "../../../../../public/assets/photos/originalart-9.png";
 import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
@@ -35,109 +36,113 @@ export const RetrospectiveTwelve: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={16}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              flexDirection="row"
+              marginBottom={16}
+              chooseGap={4}
             >
-              <BlueHeart width={50} height={40} />
               <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
                 textColor={DalegriaColorsEnum.LightBlue}
-                fontSize={20}
+                fontSize={52}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={18}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer
-              style={{
-                position: "relative",
-              }}
-            >
-              <TextDivision style={{ display: 'flex', justifyContent: 'flex-end'}}>
-                <TextSideDivision
-                  style={{
-                    position: "absolute",
-                    width: "600px",
-                    height: "700px",
-                    left: '15px'
-                  }}
+            <RetrospectiveContainer>
+              <TextContainer
+                textAlign="left"
+                justifyContent="flex-start"
+                align="center"
+                flexDirection="row"
+              >
+                <BlueHeart width={50} height={40} />
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={20}
+                  textTransform="uppercase"
                 >
-                  <OriginalArtTwo src={OriginalArt9} />
-                </TextSideDivision>
-                <TextSideDivision
-                  style={{
-                    width: "700px",
-                  }}
+                  {t("retrospective.january_to_abril")}
+                </Typography>
+              </TextContainer>
+              <BackgroundBlueContainer
+                style={{
+                  position: "relative",
+                }}
+              >
+                <TextDivision
+                  style={{ display: "flex", justifyContent: "flex-end" }}
                 >
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={32}
-                    chooseGap={16}
+                  <TextSideDivision
+                    style={{
+                      position: "absolute",
+                      width: "600px",
+                      height: "700px",
+                      left: "15px",
+                    }}
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.Yellow}
-                      fontSize={36}
-                      textTransform="uppercase"
+                    <OriginalArtTwo src={OriginalArt9} />
+                  </TextSideDivision>
+                  <TextSideDivision
+                    style={{
+                      width: "700px",
+                    }}
+                  >
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={32}
+                      chooseGap={16}
                     >
-                      {t(
-                        "retrospective.retrospective_twelve.background_container.doctors_school.title"
-                      )}
-                    </Typography>
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={32}
-                    >
-                      A unidade Recife foi homenageada pela Câmara Municipal do
-                      Recife nas comemorações do Dia Nacional do Circo pelos 19
-                      anos de atuação na capital pernambucana. O reconhecimento
-                      foi proposto pela vereadora Cida Pedrosa e a homenagem foi
-                      recebida pelos coordenadores Arilson Lopes e Nice
-                      Vasconcelos durante uma sessão especial.
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-            <div
-              style={{
-                width: "100%",
-                height: "300px",
-                backgroundColor: "transparent",
-              }}
-            />
-          </RetrospectiveContainer>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.ManualBasic}
+                        textColor={DalegriaColorsEnum.Yellow}
+                        fontSize={36}
+                        textTransform="uppercase"
+                      >
+                        {t(
+                          "retrospective.retrospective_twelve.background_container.doctors_school.title"
+                        )}
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={32}
+                      >
+                        A unidade Recife foi homenageada pela Câmara Municipal
+                        do Recife nas comemorações do Dia Nacional do Circo
+                        pelos 19 anos de atuação na capital pernambucana. O
+                        reconhecimento foi proposto pela vereadora Cida Pedrosa
+                        e a homenagem foi recebida pelos coordenadores Arilson
+                        Lopes e Nice Vasconcelos durante uma sessão especial.
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+              <div
+                style={{
+                  width: "100%",
+                  height: "150px",
+                  backgroundColor: "transparent",
+                }}
+              />
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>
@@ -192,8 +197,7 @@ export const RetrospectiveTwelve: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt9}
-                width={335}
-                height={450}
+                width="115%"
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer

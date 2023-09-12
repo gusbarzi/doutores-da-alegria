@@ -6,6 +6,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -33,109 +34,112 @@ export const RetrospectiveTwenty: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={32}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              marginTop={28}
-              flexDirection="row"
+              marginBottom={32}
+              chooseGap={4}
             >
-              <BlueHeart width={50} height={40} />
               <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
                 textColor={DalegriaColorsEnum.LightBlue}
-                fontSize={14}
+                fontSize={52}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={18}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer>
+            <RetrospectiveContainer>
               <TextContainer
                 textAlign="left"
                 justifyContent="flex-start"
-                align="flex-start"
-                marginBottom={24}
+                align="center"
+                marginTop={28}
+                flexDirection="row"
               >
+                <BlueHeart width={50} height={40} />
                 <Typography
-                  fontFamily={DalegriaFontesEnum.ManualBasic}
-                  textColor={DalegriaColorsEnum.Yellow}
-                  fontSize={40}
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={14}
                   textTransform="uppercase"
                 >
-                  Oficina para profissionais de assistência social
+                  {t("retrospective.january_to_abril")}
                 </Typography>
               </TextContainer>
-              <TextDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={32}
-                    chooseGap={8}
+              <BackgroundBlueContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={24}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    fontSize={40}
+                    textTransform="uppercase"
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={28}
+                    Oficina para profissionais de assistência social
+                  </Typography>
+                </TextContainer>
+                <TextDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={32}
+                      chooseGap={8}
                     >
-                      No dia 6 de dezembro de 2022, os artistas-formadores da
-                      Escola Doutores da Alegria, Raul Figueiredo e Roberta
-                      Calza, fizeram uma oficina para funcionários do Centro de
-                      Referência Especializado da Assistência Social (CREAS), em
-                      São Paulo,
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
-                    chooseGap={8}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={28}
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={28}
+                      >
+                        No dia 6 de dezembro de 2022, os artistas-formadores da
+                        Escola Doutores da Alegria, Raul Figueiredo e Roberta
+                        Calza, fizeram uma oficina para funcionários do Centro
+                        de Referência Especializado da Assistência Social
+                        (CREAS), em São Paulo,
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
+                      chooseGap={8}
                     >
-                      dentro da programação da IV Semana de Direitos Humanos. 20
-                      profissionais, entre assistentes sociais, psicólogos e
-                      recepcionistas, participaram da atividade, que propôs o
-                      brincar como base para a construção de relações saudáveis.
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-          </RetrospectiveContainer>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={28}
+                      >
+                        dentro da programação da IV Semana de Direitos Humanos.
+                        20 profissionais, entre assistentes sociais, psicólogos
+                        e recepcionistas, participaram da atividade, que propôs
+                        o brincar como base para a construção de relações
+                        saudáveis.
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>

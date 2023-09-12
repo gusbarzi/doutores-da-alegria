@@ -6,6 +6,7 @@ import {
   ButtonContainer,
   DalegriaContainer,
   GlobalBackButton,
+  GlobalContainer,
   GlobalNextButton,
   TextContainer,
   Typography,
@@ -33,111 +34,114 @@ export const RetrospectiveNine: React.FC = () => {
       {isDesktop ? (
         <>
           <RetrospectiveHeader />
-          <TextContainer
-            textAlign="center"
-            justifyContent="center"
-            align="center"
-            marginBottom={16}
-            chooseGap={4}
-          >
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.LightBlue}
-              fontSize={52}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month")}
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.StdBold}
-              textColor={DalegriaColorsEnum.Gray}
-              fontSize={18}
-              textTransform="uppercase"
-            >
-              {t("retrospective.month_to_month_description")}
-            </Typography>
-          </TextContainer>
-          <RetrospectiveContainer>
+          <GlobalContainer>
             <TextContainer
-              textAlign="left"
-              justifyContent="flex-start"
+              textAlign="center"
+              justifyContent="center"
               align="center"
-              flexDirection="row"
+              marginBottom={16}
+              chooseGap={4}
             >
-              <BlueHeart width={60} height={50} />
               <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
+                fontFamily={DalegriaFontesEnum.ManualBasicS}
                 textColor={DalegriaColorsEnum.LightBlue}
-                fontSize={20}
+                fontSize={52}
                 textTransform="uppercase"
               >
-                {t("retrospective.january_to_abril")}
+                {t("retrospective.month_to_month")}
+              </Typography>
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdBold}
+                textColor={DalegriaColorsEnum.Gray}
+                fontSize={18}
+                textTransform="uppercase"
+              >
+                {t("retrospective.month_to_month_description")}
               </Typography>
             </TextContainer>
-            <BackgroundBlueContainer>
+            <RetrospectiveContainer>
               <TextContainer
                 textAlign="left"
                 justifyContent="flex-start"
-                align="flex-start"
-                marginBottom={24}
+                align="center"
+                flexDirection="row"
               >
+                <BlueHeart width={60} height={50} />
                 <Typography
-                  fontFamily={DalegriaFontesEnum.ManualBasic}
-                  textColor={DalegriaColorsEnum.Yellow}
-                  fontSize={40}
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  fontSize={20}
                   textTransform="uppercase"
                 >
-                  Palhaços estão sempre em formação!
+                  {t("retrospective.january_to_abril")}
                 </Typography>
               </TextContainer>
-              <TextDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={32}
-                    chooseGap={8}
+              <BackgroundBlueContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={24}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    fontSize={40}
+                    textTransform="uppercase"
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={28}
+                    Palhaços estão sempre em formação!
+                  </Typography>
+                </TextContainer>
+                <TextDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={32}
+                      chooseGap={8}
                     >
-                      O curso Formação Básica de Palhaço foi prorrogado para o
-                      primeiro quadrimestre, encerrando assim o processo
-                      formativo, iniciado em 2021. No ano anterior, as aulas
-                      aconteceram em modelo híbrido - online e presencial - e,
-                      em 2022, 16 encontros presenciais foram realizados com os
-                      alunos para aprofundar a arte do palhaço. O curso gratuito
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-                <TextSideDivision>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={12}
-                    chooseGap={8}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdLight}
-                      textColor={DalegriaColorsEnum.White}
-                      fontSize={28}
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={28}
+                      >
+                        O curso Formação Básica de Palhaço foi prorrogado para o
+                        primeiro quadrimestre, encerrando assim o processo
+                        formativo, iniciado em 2021. No ano anterior, as aulas
+                        aconteceram em modelo híbrido - online e presencial - e,
+                        em 2022, 16 encontros presenciais foram realizados com
+                        os alunos para aprofundar a arte do palhaço. O curso
+                        gratuito
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                  <TextSideDivision>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={12}
+                      chooseGap={8}
                     >
-                      oferece formação especializada para artistas e estudantes
-                      de arte, tendo o palhaço como território e expressão. Ao
-                      longo desse processo, formadores e alunos puderam
-                      experimentar e realizar trocas a partir de um olhar comum
-                      sobre a linguagem do palhaço, entendendo que a formação é
-                      uma prática cumulativa e ininterrupta.
-                    </Typography>
-                  </TextContainer>
-                </TextSideDivision>
-              </TextDivision>
-            </BackgroundBlueContainer>
-          </RetrospectiveContainer>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={28}
+                      >
+                        oferece formação especializada para artistas e
+                        estudantes de arte, tendo o palhaço como território e
+                        expressão. Ao longo desse processo, formadores e alunos
+                        puderam experimentar e realizar trocas a partir de um
+                        olhar comum sobre a linguagem do palhaço, entendendo que
+                        a formação é uma prática cumulativa e ininterrupta.
+                      </Typography>
+                    </TextContainer>
+                  </TextSideDivision>
+                </TextDivision>
+              </BackgroundBlueContainer>
+            </RetrospectiveContainer>
+          </GlobalContainer>
         </>
       ) : (
         <>
