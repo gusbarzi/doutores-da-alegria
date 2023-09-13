@@ -96,6 +96,16 @@ export const AccountabilityOne: React.FC = () => {
     },
   ];
 
+  const handleNext = () => {
+    navigate("/prestacao-de-contas-02")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/abrace-a-causa")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <AccountabilityHeader />
@@ -155,11 +165,11 @@ export const AccountabilityOne: React.FC = () => {
           </BarContainer>
         </BackgroundPink>
         <ButtonContainer>
-          <GlobalBackButton onClick={() => navigate("/abrace-a-causa")}>
+          <GlobalBackButton onClick={handleBack}>
             <NextButton width={50} height={50} />
           </GlobalBackButton>
 
-          <GlobalNextButton onClick={() => navigate("/prestacao-de-contas-02")}>
+          <GlobalNextButton onClick={handleNext}>
             <NextButton width={50} height={50} />
           </GlobalNextButton>
         </ButtonContainer>

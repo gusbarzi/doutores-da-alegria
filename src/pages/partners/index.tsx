@@ -5,6 +5,7 @@ import {
   GridItemOne,
   GridItemTree,
   GridItemTwo,
+  PartnerImagesContaienr,
   PartnerImg,
   PartnersContainer,
 } from "./partners.styles";
@@ -34,6 +35,16 @@ export const Partners: React.FC = () => {
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/expedientes")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/equipe")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -46,7 +57,7 @@ export const Partners: React.FC = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  gap: "32px"
+                  gap: "32px",
                 }}
               >
                 <TextContainer
@@ -82,7 +93,7 @@ export const Partners: React.FC = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
-                  gap: "32px"
+                  gap: "32px",
                 }}
               >
                 <TextContainer
@@ -648,37 +659,42 @@ export const Partners: React.FC = () => {
       ) : (
         <>
           <PartnersContainer>
-            <TextContainer
-              textAlign="center"
-              justifyContent="center"
-              align="center"
-              marginBottom={16}
-            >
-              <Typography
-                fontFamily={DalegriaFontesEnum.ManualBasicS}
-                textColor={DalegriaColorsEnum.LightBlue}
-                lineHeight={1}
-                fontSize={28}
+            <PartnerImagesContaienr>
+              <TextContainer
+                textAlign="center"
+                justifyContent="center"
+                align="center"
+                marginBottom={16}
               >
-                {t("retrospective.partners.titles.one")}
-              </Typography>
-            </TextContainer>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.ManualBasicS}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  lineHeight={1}
+                  fontSize={28}
+                >
+                  {t("retrospective.partners.titles.one")}
+                </Typography>
+              </TextContainer>
 
-            <TextContainer
-              textAlign="center"
-              justifyContent="center"
-              align="center"
-              marginBottom={16}
-            >
-              <Typography
-                fontFamily={DalegriaFontesEnum.ManualBasicS}
-                textColor={DalegriaColorsEnum.LightBlue}
-                lineHeight={1}
-                fontSize={28}
+              <PartnerImg src={partnerOne} />
+
+              <TextContainer
+                textAlign="center"
+                justifyContent="center"
+                align="center"
+                marginBottom={16}
               >
-                {t("retrospective.partners.titles.two")}
-              </Typography>
-            </TextContainer>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.ManualBasicS}
+                  textColor={DalegriaColorsEnum.LightBlue}
+                  lineHeight={1}
+                  fontSize={28}
+                >
+                  {t("retrospective.partners.titles.two")}
+                </Typography>
+              </TextContainer>
+              <PartnerImg src={partnerTwo} />
+            </PartnerImagesContaienr>
 
             <GridContainer>
               <GridItemOne>
@@ -1221,11 +1237,11 @@ export const Partners: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/equipe")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 
-        <GlobalNextButton onClick={() => navigate("/expedientes")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

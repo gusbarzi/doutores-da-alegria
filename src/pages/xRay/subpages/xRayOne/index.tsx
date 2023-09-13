@@ -227,6 +227,16 @@ export const XRayOne: React.FC = () => {
     },
   ];
 
+  const handleNext = () => {
+    navigate(push)
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/de-dentro-para-fora")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -392,10 +402,10 @@ export const XRayOne: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/de-dentro-para-fora")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate(push)}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

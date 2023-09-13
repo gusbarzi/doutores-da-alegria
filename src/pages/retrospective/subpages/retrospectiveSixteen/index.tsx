@@ -32,6 +32,16 @@ export const RetrospectiveSixteen: React.FC = () => {
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/restrospectiva-17")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/restrospectiva-15")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -352,10 +362,10 @@ export const RetrospectiveSixteen: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/restrospectiva-15")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/restrospectiva-17")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

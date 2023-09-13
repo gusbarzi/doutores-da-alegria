@@ -86,6 +86,16 @@ export const RetrospectiveSix: React.FC = () => {
     },
   ];
 
+  const handleNext = () => {
+    navigate("/restrospectiva-07")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/restrospectiva-05")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -482,10 +492,10 @@ export const RetrospectiveSix: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/restrospectiva-05")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/restrospectiva-07")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

@@ -16,6 +16,16 @@ export const Opening: React.FC = () => {
 
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/proposito")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -25,11 +35,11 @@ export const Opening: React.FC = () => {
       )}
       
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 
-        <GlobalNextButton onClick={() => navigate("/proposito")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

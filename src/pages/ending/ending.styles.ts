@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { DalegriaColorsEnum } from "../../utils/colors";
+import breakpoints from "../../utils/breakpoints";
 
 export const EndingContainer = styled.div`
   display: flex;
@@ -13,5 +14,9 @@ export const EndingContainer = styled.div`
 `;
 
 export const Twenty = styled.img`
-  width: 30%;
+  width: 90%;
+
+  ${breakpoints.higherThan('desktop')} {
+    width: 30%;
+  }
 `;

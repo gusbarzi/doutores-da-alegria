@@ -29,6 +29,16 @@ export const RetrospectiveTwenty: React.FC = () => {
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/doutores-da-alegria-na-midia")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/restrospectiva-19")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -226,15 +236,18 @@ export const RetrospectiveTwenty: React.FC = () => {
                 </Typography>
               </TextContainer>
             </BackgroundBlueContainer>
+            <div 
+              style={{ height: '100px'}}
+            />
           </DalegriaContainer>
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/restrospectiva-19")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
         <GlobalNextButton
-          onClick={() => navigate("/doutores-da-alegria-na-midia")}
+          onClick={handleNext}
         >
           <NextButton width={50} height={50} />
         </GlobalNextButton>

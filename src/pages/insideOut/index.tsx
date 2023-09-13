@@ -17,6 +17,16 @@ export const InsideOut: React.FC = () => {
 
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/raio-x-01")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/texto-diretoria")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -25,10 +35,10 @@ export const InsideOut: React.FC = () => {
         <InsideOutMobile />
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/texto-diretoria")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/raio-x-01")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

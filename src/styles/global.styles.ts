@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle, css } from "styled-components";
 import { DalegriaColorsEnum } from "../utils/colors";
+import breakpoints from "../utils/breakpoints";
 
 interface ITextContainerStylesProps {
   align?: string;
@@ -235,7 +236,11 @@ export const BackgroundBlueContainer = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.LightBlue};
-  padding: 24px 40px;
+  padding: 16px;
+
+  ${breakpoints.higherThan("desktop")} {
+    padding: 24px 40px;
+  }
 `;
 
 export const FooterContainer = styled.div`

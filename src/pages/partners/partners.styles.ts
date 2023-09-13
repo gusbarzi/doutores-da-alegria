@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import { DalegriaColorsEnum } from "../../utils/colors";
+import breakpoints from "../../utils/breakpoints";
 
 export const PartnersContainer = styled.div`
   display: flex;
@@ -9,6 +10,7 @@ export const PartnersContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 16px;
 `;
 
 export const TextContainer = styled.div`
@@ -62,6 +64,18 @@ export const GridItemTree = styled.div`
   height: 500px;
 `;
 
+export const PartnerImagesContaienr = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+  margin-bottom: 16px;
+`;
+
 export const PartnerImg = styled.img`
- width: 60%;
+  width: 100%;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 60%;
+  }
 `

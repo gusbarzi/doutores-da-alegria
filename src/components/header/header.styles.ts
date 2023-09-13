@@ -53,3 +53,34 @@ export const HeaderTitle = styled.span`
 export const Logo = styled.div`
   display: flex;
 `;
+
+export const HamburgerButton = styled.div`
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  z-index: 3;
+`;
+
+export const HamburguerImage = styled.img`
+  width: 40px;
+  transition: 0.3s;
+
+  &:hover {
+    width: 45px;
+  }
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 50px;
+
+    &:hover {
+      width: 55px;
+    }
+  }
+`;
+
+export const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

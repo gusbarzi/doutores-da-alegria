@@ -47,6 +47,16 @@ export const Team: React.FC = () => {
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/parceiros")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/prestacao-de-contas-03")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <TeamContainer>
@@ -573,11 +583,11 @@ export const Team: React.FC = () => {
         )}
       </TeamContainer>
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/prestacao-de-contas-03")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 
-        <GlobalNextButton onClick={() => navigate("/parceiros")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

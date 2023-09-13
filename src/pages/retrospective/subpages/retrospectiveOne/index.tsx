@@ -51,6 +51,16 @@ export const RetrospectiveOne: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
   const pushBack = isDesktop ? "/raio-x-01" : "/raio-x-02";
 
+  const handleNext = () => {
+    navigate("/restrospectiva-02")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate(pushBack)
+    window.scrollTo(0, 0);
+  }
+
   return (
     <GlobalContainer>
       {isDesktop ? (
@@ -322,10 +332,10 @@ export const RetrospectiveOne: React.FC = () => {
       )}
 
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate(pushBack)}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/restrospectiva-02")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

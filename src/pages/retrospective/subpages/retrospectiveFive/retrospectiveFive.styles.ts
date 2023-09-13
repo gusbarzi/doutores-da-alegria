@@ -1,5 +1,6 @@
-import { DalegriaColorsEnum } from '../../../../utils/colors';
-import { DalegriaFontesEnum } from '../../../../utils/fontes';
+import breakpoints from "../../../../utils/breakpoints";
+import { DalegriaColorsEnum } from "../../../../utils/colors";
+import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { styled } from "styled-components";
 
 interface IRetrospectiveStyles {
@@ -21,7 +22,11 @@ export const BackgroundPinkContainer = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.Pink};
-  padding: 24px 40px;
+  padding: 16px;
+
+  ${breakpoints.higherThan("desktop")} {
+    padding: 24px 40px;
+  }
 `;
 
 export const OriginalArtTree = styled.img`
@@ -32,12 +37,12 @@ export const TextDivision = styled.div<IRetrospectiveStyles>`
   display: flex;
   width: 100%;
   flex-direction: row;
-  gap: ${({ chooseGap }) => chooseGap ? `${chooseGap}px` : '32px'};
+  gap: ${({ chooseGap }) => (chooseGap ? `${chooseGap}px` : "32px")};
 `;
 
 export const TextSideDivision = styled.div<IRetrospectiveStyles>`
-  width: ${({ chooseWidth }) => chooseWidth ? `${chooseWidth}px` : '100%'};
-`
+  width: ${({ chooseWidth }) => (chooseWidth ? `${chooseWidth}px` : "100%")};
+`;
 
 export const PinkBackgroundDesktop = styled.div`
   display: flex;

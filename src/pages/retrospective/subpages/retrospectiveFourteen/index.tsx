@@ -33,6 +33,16 @@ export const RetrospectiveFourteen: React.FC = () => {
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/restrospectiva-15")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/restrospectiva-13")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (

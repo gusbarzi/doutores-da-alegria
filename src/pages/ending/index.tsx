@@ -12,6 +12,11 @@ export const Ending: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
+  const handleNext = () => {
+    navigate("/")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <EndingContainer>
@@ -32,7 +37,7 @@ export const Ending: React.FC = () => {
         </TextContainer>
       </EndingContainer>
       <ButtonContainerTwo>
-        <GlobalNextButton onClick={() => navigate("/")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainerTwo>

@@ -157,6 +157,16 @@ export const XRayTwo: React.FC = () => {
     },
   ];
 
+  const handleNext = () => {
+    navigate("/restrospectiva-01")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/raio-x-01")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <DalegriaContainer choosePadding={0}>
@@ -252,10 +262,10 @@ export const XRayTwo: React.FC = () => {
         />
 
         <ButtonContainer>
-          <GlobalBackButton onClick={() => navigate("/raio-x-01")}>
+          <GlobalBackButton onClick={handleBack}>
             <NextButton width={50} height={50} />
           </GlobalBackButton>
-          <GlobalNextButton onClick={() => navigate("/restrospectiva-01")}>
+          <GlobalNextButton onClick={handleNext}>
             <NextButton width={50} height={50} />
           </GlobalNextButton>
         </ButtonContainer>

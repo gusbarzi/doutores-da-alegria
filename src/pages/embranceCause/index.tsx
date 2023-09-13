@@ -136,6 +136,16 @@ export const EmbranceCause: React.FC = () => {
     },
   ];
 
+  const handleNext = () => {
+    navigate(pathNext)
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/doutores-da-alegria-na-midia")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -366,12 +376,12 @@ export const EmbranceCause: React.FC = () => {
       )}
       <ButtonContainer>
         <GlobalBackButton
-          onClick={() => navigate("/doutores-da-alegria-na-midia")}
+          onClick={handleBack}
         >
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 
-        <GlobalNextButton onClick={() => navigate(pathNext)}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

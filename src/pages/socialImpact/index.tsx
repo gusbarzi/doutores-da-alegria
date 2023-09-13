@@ -15,6 +15,16 @@ export const SocialImpact: React.FC = () => {
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/texto-diretor-presidente")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/proposito")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -23,10 +33,10 @@ export const SocialImpact: React.FC = () => {
         <SocialImpactMobile />
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/proposito")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/texto-diretor-presidente")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

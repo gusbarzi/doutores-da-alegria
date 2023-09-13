@@ -15,6 +15,16 @@ export const Purpose: React.FC = () => {
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/impacto-social")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/abertura")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -23,11 +33,11 @@ export const Purpose: React.FC = () => {
         <PurposeMobile />
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/abertura")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 
-        <GlobalNextButton onClick={() => navigate("/impacto-social")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

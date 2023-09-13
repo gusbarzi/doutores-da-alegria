@@ -13,7 +13,6 @@ import {
   GridContainer,
   NumberLabelHorizon,
   RectangleBlue,
-  RectangleContainer,
   RectanglePink,
   SquareContainer,
 } from "../../../accountability.styles";
@@ -38,12 +37,22 @@ import {
 } from "../../../../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
 
 import { PercentSquareDesktop } from "../../../../../components/PercentSquareDesktop";
-import { backgroundPinkData, data, data_two } from "../../constants";
+import { data, data_two } from "../../constants";
 
 export const AccountabilityTree: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
+
+  const handleNext = () => {
+    navigate("/equipe")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/prestacao-de-contas-02")
+    window.scrollTo(0, 0);
+  }
 
   return (
     <>
@@ -519,7 +528,7 @@ export const AccountabilityTree: React.FC = () => {
                   </TextSideDivision>
                 </TextDivision>
 
-                <TextDivision chooseGap={16} style={{ backgroundColor: "lightgreen"}}>
+                <TextDivision chooseGap={16}>
                   <TextSideDivision style={{ width: "10px" }}>
                     <RectanglePink />
                   </TextSideDivision>
@@ -995,11 +1004,11 @@ export const AccountabilityTree: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/prestacao-de-contas-02")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 
-        <GlobalNextButton onClick={() => navigate("/equipe")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

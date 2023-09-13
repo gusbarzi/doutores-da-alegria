@@ -16,6 +16,16 @@ export const TextBoard: React.FC = () => {
 
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
+  const handleNext = () => {
+    navigate("/de-dentro-para-fora")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate("/texto-diretor-presidente")
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -24,10 +34,10 @@ export const TextBoard: React.FC = () => {
         <TextBoardMobile />
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/texto-diretor-presidente")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/de-dentro-para-fora")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

@@ -119,6 +119,16 @@ export const AccountabilityTwo: React.FC = () => {
     },
   ];
 
+  const handleNext = () => {
+    navigate("/prestacao-de-contas-03")
+    window.scrollTo(0, 0);
+  }
+
+  const handleBack = () => {
+    navigate(pathNext)
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       {isDesktop ? (
@@ -503,11 +513,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={100}
               >
-                <PercentSquare
+                <PercentSquareDesktop
                   chooseWidth={42}
                   chooseBackgroundColor={DalegriaColorsEnum.Yellow}
                   chooseTextColor={DalegriaColorsEnum.Black}
-                  text="68,6%"
+                  number={68.6}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -525,11 +535,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={100}
               >
-                <PercentSquare
-                  chooseWidth={48}
+                <PercentSquareDesktop
+                  chooseWidth={42}
                   chooseBackgroundColor={DalegriaColorsEnum.Purple}
                   chooseTextColor={DalegriaColorsEnum.White}
-                  text="18,20%"
+                  number={18.2}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -555,11 +565,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={100}
               >
-                <PercentSquare
+                <PercentSquareDesktop
                   chooseWidth={42}
                   chooseBackgroundColor={DalegriaColorsEnum.Pink}
                   chooseTextColor={DalegriaColorsEnum.White}
-                  text="3,50%"
+                  number={3.5}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -585,11 +595,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={100}
               >
-                <PercentSquare
-                  chooseWidth={42}
+                <PercentSquareDesktop
+                  chooseWidth={40}
                   chooseBackgroundColor={DalegriaColorsEnum.Red}
                   chooseTextColor={DalegriaColorsEnum.White}
-                  text="3,20%"
+                  number={3.2}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -608,11 +618,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={130}
               >
-                <PercentSquare
-                  chooseWidth={42}
+                <PercentSquareDesktop
+                  chooseWidth={40}
                   chooseBackgroundColor={DalegriaColorsEnum.LightBlue}
                   chooseTextColor={DalegriaColorsEnum.Black}
-                  text="2,50%"
+                  number={2.5}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -630,11 +640,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={150}
               >
-                <PercentSquare
-                  chooseWidth={42}
+                <PercentSquareDesktop
+                  chooseWidth={38}
                   chooseBackgroundColor={DalegriaColorsEnum.Green}
                   chooseTextColor={DalegriaColorsEnum.White}
-                  text="1,80%"
+                  number={1.8}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -660,11 +670,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={130}
               >
-                <PercentSquare
-                  chooseWidth={42}
+                <PercentSquareDesktop
+                  chooseWidth={44}
                   chooseBackgroundColor={DalegriaColorsEnum.Salmon}
                   chooseTextColor={DalegriaColorsEnum.Black}
-                  text="68,6%"
+                  number={68.6}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -682,11 +692,11 @@ export const AccountabilityTwo: React.FC = () => {
                 marginBottom={32}
                 chooseWidth={130}
               >
-                <PercentSquare
+                <PercentSquareDesktop
                   chooseWidth={42}
                   chooseBackgroundColor={DalegriaColorsEnum.DarkBlue}
                   chooseTextColor={DalegriaColorsEnum.White}
-                  text="0,20%"
+                  number={0.2}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -713,11 +723,11 @@ export const AccountabilityTwo: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate(pathNext)}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
 
-        <GlobalNextButton onClick={() => navigate("/prestacao-de-contas-03")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>
