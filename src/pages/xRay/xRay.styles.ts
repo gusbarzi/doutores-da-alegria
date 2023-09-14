@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import { DalegriaFontesEnum } from "../../utils/fontes";
 import { DalegriaColorsEnum } from "../../utils/colors";
 
 export const XRayHiperContainer = styled.div`

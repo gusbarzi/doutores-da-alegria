@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import {
   BackgroundPinkContainer,
-  BlueBox,
   RetrospectiveContainer,
 } from "./retrospectiveEight.styles";
 import { useNavigate } from "react-router-dom";

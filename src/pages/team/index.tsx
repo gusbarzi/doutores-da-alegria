@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import {
   BackgroundLightBue,
   TeamContainer,
@@ -43,7 +42,6 @@ import {
 } from "./constants";
 
 export const Team: React.FC = () => {
-  const { t } = useTranslation();
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 

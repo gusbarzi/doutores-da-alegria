@@ -20,9 +20,7 @@ import { DalegriaColorsEnum } from "../../../../utils/colors";
 import { SquareColored } from "../../../../components/SquareColored";
 import useMediaQuery from "../../../../hooks/useMediaQuery";
 import breakpoints from "../../../../utils/breakpoints";
-import { OriginalArtTwelve } from "../retrospectiveFourteen/retrospectiveFourteen.styles";
 import {
-  BlueBox,
   RetrospectiveContainer,
 } from "../retrospectiveEight/retrospectiveEight.styles";
 import { OriginalArtNineteen, YellowBox } from "./retrospectiveNineteen.styles";

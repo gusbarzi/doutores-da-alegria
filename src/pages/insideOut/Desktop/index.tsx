@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Division,
-  HiperContainer,
   InsideOutBannerContainerDesktop,
   InsideOutBannerContentDesktop,
   InsideOutBannerDetailsContainer,

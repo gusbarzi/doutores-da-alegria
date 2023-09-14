@@ -16,7 +16,6 @@ import {
 } from "../../../styles/global.styles";
 import { CustomList } from "../../../components/CustomList";
 import jokerOne from "../../../../public/assets/jokersPng/mobile-recortes2.png";
-import { TextSideDivision } from "../../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
 
 export const PurposeDesktop: React.FC = () => {
   const { t } = useTranslation();

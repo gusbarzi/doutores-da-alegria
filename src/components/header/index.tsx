@@ -9,7 +9,6 @@ import {
 } from "./header.styles";
 import { ReactComponent as TwentTwo } from "../../../public/assets/twenttwo.svg";
 import LogoVertical from "../../../public/assets/logo-vertical-b.png";
-import styled from "styled-components";
 import { SidebarMenu } from "./components/dropdown";
 import menu from "../../../public/assets/PNGS/Outros/Menu.png";
 

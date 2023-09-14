@@ -1,4 +1,3 @@
-import { Header } from "./../../components/header/index";
 import { keyframes, styled } from "styled-components";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import { DalegriaColorsEnum } from "../../utils/colors";

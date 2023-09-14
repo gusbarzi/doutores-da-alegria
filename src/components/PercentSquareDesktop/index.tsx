@@ -1,6 +1,4 @@
 import React from "react";
-import { SquarePercentContainer } from "./percentSquare.styles";
-import { Typography } from "../../styles/global.styles";
 import { DalegriaFontesEnum } from "../../utils/fontes";
 import CountUp from "react-countup";
 import useMediaQuery from "../../hooks/useMediaQuery";

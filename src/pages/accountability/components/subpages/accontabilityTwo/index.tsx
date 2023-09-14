@@ -33,7 +33,6 @@ import { ReactComponent as NextButton } from "../../../../../../public/assets/se
 import { AccountabilityHeader } from "../../AccountabilityHeader";
 import { DalegriaFontesEnum } from "../../../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../../../utils/colors";
-import { PercentSquare } from "../../../../../components/PercentSquare";
 import useMediaQuery from "../../../../../hooks/useMediaQuery";
 import breakpoints from "../../../../../utils/breakpoints";
 import {

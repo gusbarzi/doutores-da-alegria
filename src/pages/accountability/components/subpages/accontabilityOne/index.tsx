@@ -7,8 +7,6 @@ import {
   BarContainer,
   BarImage,
   NumbersContainer,
-  PinkBox,
-  PinkBoxContainer,
   YearLabel,
 } from "../../../accountability.styles";
 import { useNavigate } from "react-router-dom";

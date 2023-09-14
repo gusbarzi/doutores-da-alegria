@@ -3,7 +3,7 @@ import { BrowserRouter as Router, useLocation } from "react-router-dom";
 import { AppRoutes } from "../routes/routes";
 import { Header } from "./header";
 import { Footer } from "./footer";
-import { FooterContainer, GlobalContainer } from "../styles/global.styles";
+import { FooterContainer } from "../styles/global.styles";
 
 const MainContent: React.FC = () => {
   const location = useLocation();

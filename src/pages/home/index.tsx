@@ -12,7 +12,6 @@ import {
 import {
   ButtonContainerTwo,
   GlobalNextButton,
-  TextContainer,
   Typography,
 } from "../../styles/global.styles";
 import { DalegriaFontesEnum } from "../../utils/fontes";

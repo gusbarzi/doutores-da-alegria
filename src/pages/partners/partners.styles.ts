@@ -1,6 +1,4 @@
 import { styled } from "styled-components";
-import { DalegriaFontesEnum } from "../../utils/fontes";
-import { DalegriaColorsEnum } from "../../utils/colors";
 import breakpoints from "../../utils/breakpoints";
 
 export const PartnersContainer = styled.div`

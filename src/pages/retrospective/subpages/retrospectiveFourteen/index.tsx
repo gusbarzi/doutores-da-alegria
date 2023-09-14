@@ -25,7 +25,6 @@ import {
   TextDivision,
   TextSideDivision,
 } from "../retrospectiveFive/retrospectiveFive.styles";
-import { OriginalArtTwo } from "../retrospectiveFour/retrospectiveFour.styles";
 import { OriginalArtTwelve } from "./retrospectiveFourteen.styles";
 
 export const RetrospectiveFourteen: React.FC = () => {
@@ -373,10 +372,10 @@ export const RetrospectiveFourteen: React.FC = () => {
         </>
       )}
       <ButtonContainer>
-        <GlobalBackButton onClick={() => navigate("/restrospectiva-13")}>
+        <GlobalBackButton onClick={handleBack}>
           <NextButton width={50} height={50} />
         </GlobalBackButton>
-        <GlobalNextButton onClick={() => navigate("/restrospectiva-15")}>
+        <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />
         </GlobalNextButton>
       </ButtonContainer>

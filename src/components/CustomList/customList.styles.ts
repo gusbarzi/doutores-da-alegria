@@ -1,4 +1,4 @@
-import { css, styled } from "styled-components";
+import { styled } from "styled-components";
 import { DalegriaColorsEnum } from "../../utils/colors";
 import { DalegriaFontesEnum } from '../../utils/fontes';
 

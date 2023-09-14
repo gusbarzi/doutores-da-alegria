@@ -1,5 +1,4 @@
-import { css, styled } from "styled-components";
-import { DalegriaFontesEnum } from "../../utils/fontes";
+import { styled } from "styled-components";
 import { DalegriaColorsEnum } from "../../utils/colors";
 
 export const InsideOutContainer = styled.div`
