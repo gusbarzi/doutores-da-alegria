@@ -244,7 +244,7 @@ export const RetrospectiveFiveteen: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt13}
-                width="135%"
+                width="100%"
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer

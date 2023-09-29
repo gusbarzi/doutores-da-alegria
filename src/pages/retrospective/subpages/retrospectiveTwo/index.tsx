@@ -244,7 +244,7 @@ export const RetrospectiveTwo: React.FC = () => {
                   {t("retrospective.march_april")}
                 </Typography>
               </TextContainer>
-              <img src={OriginalArt1} width={310} height={200} />
+              <img src={OriginalArt1} width="100%" height="100%" />
               <TextContainer
                 textAlign="left"
                 justifyContent="flex-start"

@@ -207,7 +207,7 @@ export const RetrospectiveTwelve: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt9}
-                width="115%"
+                width="100%"
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer

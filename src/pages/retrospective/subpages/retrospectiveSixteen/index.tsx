@@ -262,8 +262,8 @@ export const RetrospectiveSixteen: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt14}
-                width={380}
-                height={350}
+                width="100%"
+                height="100%"
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer

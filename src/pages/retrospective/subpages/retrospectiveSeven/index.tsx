@@ -195,8 +195,8 @@ export const RetrospectiveSeven: React.FC = () => {
             <BackgroundPinkContainer style={{ marginTop: "16px" }}>
               <img
                 src={OriginalArt5}
-                width={380}
-                height={250}
+                width="100%"
+                height="100%"
                 style={{ marginBottom: "16px" }}
               />
 

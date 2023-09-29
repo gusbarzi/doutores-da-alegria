@@ -370,8 +370,8 @@ export const RetrospectiveNineteen: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt16}
-                width={330}
-                height={220}
+                width="100%"
+                height="100%"
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer
@@ -439,16 +439,16 @@ export const RetrospectiveNineteen: React.FC = () => {
               </TextContainer>
               <img
                 src={OriginalArt17}
-                width={330}
-                height={220}
+                width="100%"
+                height="100%"
                 style={{ marginBottom: "16px" }}
               />
               <SquareColored
                 type="primary"
                 backgroundColor={DalegriaColorsEnum.Yellow}
                 style={{
-                  height: "185px",
-                  width: "330px",
+                  height: "100%",
+                  width: "100%",
                   marginBottom: "-200px",
                 }}
               >

@@ -375,8 +375,8 @@ export const RetrospectiveThirteen: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt10}
-                width={330}
-                height={220}
+                width="100%"
+                height="100%"
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer
@@ -610,7 +610,7 @@ export const RetrospectiveThirteen: React.FC = () => {
                 </TextContainer>
               </SquareColored>
               <div style={{ marginBottom: "-200px" }}>
-                <img src={OriginalArt11} width={330} height={200} />
+                <img src={OriginalArt11} width="100%" height="100%" />
               </div>
             </BackgroundBlueContainer>
             <div

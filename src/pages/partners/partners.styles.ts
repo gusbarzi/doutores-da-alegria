@@ -8,7 +8,11 @@ export const PartnersContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
+
+  ${breakpoints.higherThan('desktop')} {
+    margin-bottom: 16px;
+  }
 `;
 
 export const TextContainer = styled.div`

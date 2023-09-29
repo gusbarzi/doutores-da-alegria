@@ -587,8 +587,8 @@ export const RetrospectiveFive: React.FC = () => {
             </TextContainer>
             <img
               src={OriginalArt3}
-              width={360}
-              height={250}
+              width="100%"
+              height="100%"
               style={{ marginBottom: "16px" }}
             />
             <TextContainer
@@ -892,7 +892,7 @@ export const RetrospectiveFive: React.FC = () => {
                   }}
                 >
                   <TextContainer
-                    textAlign="left"
+                    textAlign="center"
                     justifyContent="flex-start"
                     flexDirection="row"
                     align="center"
@@ -902,8 +902,8 @@ export const RetrospectiveFive: React.FC = () => {
                     <Typography
                       fontFamily={DalegriaFontesEnum.StdBold}
                       textColor={DalegriaColorsEnum.Black}
-                      width={320}
-                      fontSize={14}
+                      width={300}
+                      fontSize={12}
                     >
                       LEIAS AS HISTÓRIAS DE HOSPITAL NO NOSSO BLOG
                     </Typography>

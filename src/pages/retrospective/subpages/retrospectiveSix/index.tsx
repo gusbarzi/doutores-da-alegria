@@ -325,8 +325,8 @@ export const RetrospectiveSix: React.FC = () => {
             </TextContainer>
             <img
               src={OriginalArt4}
-              width={360}
-              height={250}
+              width="100%"
+              height="100%"
               style={{ marginBottom: "16px" }}
             />
             <TextContainer
@@ -402,7 +402,7 @@ export const RetrospectiveSix: React.FC = () => {
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}
                   textColor={DalegriaColorsEnum.Black}
-                  fontSize={12}
+                  fontSize={10}
                   textTransform="uppercase"
                 >
                   {t("retrospective.square_retrospective_six.text_01")}
