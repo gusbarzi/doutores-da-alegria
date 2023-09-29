@@ -104,9 +104,23 @@ export const PurposeDesktop: React.FC = () => {
             alignItems: "flex-end",
             marginTop: "-10px",
             marginRight: "-50px",
-            zIndex: "10"
+            zIndex: "10",
           }}
         >
+          <Typography
+            fontFamily={DalegriaFontesEnum.StdLight}
+            textColor={DalegriaColorsEnum.Black}
+            fontSize={16}
+            textTransform="uppercase"
+            style={{
+              writingMode: "vertical-lr",
+              marginBottom: "16px",
+              marginRight: "4px",
+              transform: "rotate(180deg)"
+            }}
+          >
+            foto lana pinho
+          </Typography>
           <JokerImage src={jokerOne} />
         </div>
         <BackgroundYellowDesktop>
@@ -128,14 +142,7 @@ export const PurposeDesktop: React.FC = () => {
               textColor={DalegriaColorsEnum.Pink}
               fontSize={80}
             >
-              propósito
-            </Typography>
-            <Typography
-              fontFamily={DalegriaFontesEnum.ManualBasicS}
-              textColor={DalegriaColorsEnum.Purple}
-              fontSize={80}
-            >
-              ?
+              propósito ?
             </Typography>
           </TextContainer>
           <TextContainer

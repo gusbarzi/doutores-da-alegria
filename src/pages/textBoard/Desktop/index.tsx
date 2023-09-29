@@ -23,6 +23,7 @@ import {
 import { SquareColored } from "../../../components/SquareColored";
 import jokerFive from "../../../../public/assets/jokersPng/mobile-recortes5.png";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const TextBoardDesktop: React.FC = () => {
   const { t } = useTranslation();
@@ -113,30 +114,49 @@ export const TextBoardDesktop: React.FC = () => {
             justifyContent="flex-start"
             marginLeft={100}
           >
-            <SquareColored
-              type="primary"
-              backgroundColor={DalegriaColorsEnum.Pink}
-              chooseWidth={400}
+            <Link
+              to="https://doutoresdaalegria.org.br/blog/os-desafios-na-defesa-da-cultura-e-na-gestao-de-uma-organizacao-da-sociedade-civil/"
+              style={{ textDecoration: "none" }}
             >
-              <TextContainer
-                align="center"
-                textAlign="center"
-                justifyContent="flex-end"
+              <SquareColored
+                type="primary"
+                backgroundColor={DalegriaColorsEnum.Pink}
+                chooseWidth={400}
               >
-                <Typography
-                  fontFamily={DalegriaFontesEnum.StdBold}
-                  textColor={DalegriaColorsEnum.White}
-                  lineHeight={1}
-                  fontSize={20}
+                <TextContainer
+                  align="center"
+                  textAlign="center"
+                  justifyContent="flex-end"
                 >
-                  confira o link
-                </Typography>
-              </TextContainer>
-            </SquareColored>
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.White}
+                    lineHeight={1}
+                    fontSize={20}
+                  >
+                    confira o link
+                  </Typography>
+                </TextContainer>
+              </SquareColored>
+            </Link>
           </TextContainer>
         </Left>
         <Right>
           <JokerImage src={jokerFive} />
+          <Typography
+            fontFamily={DalegriaFontesEnum.StdLight}
+            textColor={DalegriaColorsEnum.Black}
+            fontSize={16}
+            textTransform="uppercase"
+            style={{
+              writingMode: "vertical-lr",
+              marginBottom: "16px",
+              marginRight: "4px",
+              transform: "rotate(180deg)"
+            }}
+          >
+            foto lana pinho
+          </Typography>
         </Right>
       </Division>
     </GlobalContainer>

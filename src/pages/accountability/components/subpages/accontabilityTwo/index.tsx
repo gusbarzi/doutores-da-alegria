@@ -119,14 +119,14 @@ export const AccountabilityTwo: React.FC = () => {
   ];
 
   const handleNext = () => {
-    navigate("/prestacao-de-contas-03")
+    navigate("/prestacao-de-contas-03");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate(pathNext)
+    navigate(pathNext);
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -156,7 +156,7 @@ export const AccountabilityTwo: React.FC = () => {
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdBold}
                     textColor={DalegriaColorsEnum.Pink}
-                    fontSize={16}
+                    fontSize={20}
                   >
                     Nossas contas são auditadas anualmente por auditorias
                     independentes. Em 2022, a Singolare Consultoria e Auditoria
@@ -173,7 +173,7 @@ export const AccountabilityTwo: React.FC = () => {
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdLight}
                     textColor={DalegriaColorsEnum.Black}
-                    fontSize={12}
+                    fontSize={14}
                   >
                     * Em 2016, o evento Gala Doutores da Alegria mobilizou
                     empresas e pessoas, gerando recursos pela venda de convites,
@@ -187,6 +187,38 @@ export const AccountabilityTwo: React.FC = () => {
 
             <PinkBoxContainer>
               <PinkBox>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={16}
+                  marginLeft={32}
+                  marginTop={32}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    lineHeight={1}
+                    fontSize={52}
+                  >
+                    {t("retrospective.accountability.title_02")}
+                  </Typography>
+                </TextContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginLeft={32}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdLight}
+                    textColor={DalegriaColorsEnum.Yellow}
+                    lineHeight={1}
+                    fontSize={18}
+                  >
+                    {t("retrospective.accountability.period")}
+                  </Typography>
+                </TextContainer>
                 <BarContainer>
                   {data.map((bar, index) => (
                     <Bar key={index}>
@@ -410,10 +442,10 @@ export const AccountabilityTwo: React.FC = () => {
                         chooseWidth={130}
                       >
                         <PercentSquareDesktop
-                          chooseWidth={52}
+                          chooseWidth={48}
                           chooseBackgroundColor={DalegriaColorsEnum.Salmon}
                           chooseTextColor={DalegriaColorsEnum.Black}
-                          number={68.6}
+                          number={2.10}
                         />
                         <Typography
                           fontFamily={DalegriaFontesEnum.StdLight}
@@ -421,7 +453,7 @@ export const AccountabilityTwo: React.FC = () => {
                           lineHeight={1}
                           fontSize={16}
                         >
-                          {t("retrospective.accountability.percents.item_05")}
+                          DOADORES PESSOAS FÍSICAS COM LEI DE INCENTIVO
                         </Typography>
                       </TextContainer>
                       <TextContainer
@@ -673,7 +705,7 @@ export const AccountabilityTwo: React.FC = () => {
                   chooseWidth={44}
                   chooseBackgroundColor={DalegriaColorsEnum.Salmon}
                   chooseTextColor={DalegriaColorsEnum.Black}
-                  number={68.6}
+                  number={2.1}
                 />
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -681,7 +713,7 @@ export const AccountabilityTwo: React.FC = () => {
                   lineHeight={1}
                   fontSize={14}
                 >
-                  {t("retrospective.accountability.percents.item_05")}
+                  DOADORES PESSOAS FÍSICAS COM LEI DE INCENTIVO
                 </Typography>
               </TextContainer>
               <TextContainer

@@ -39,7 +39,7 @@ export const GridContainer = styled.div`
 `;
 
 export const GridItemOne = styled.div`
-  width: 180px;
+  width: 100%;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ export const GridItemOne = styled.div`
 export const GridItemTwo = styled.div`
   display: flex;
   flex-direction: column;
-  width: 180px;
+  width: 100%;
   height: 335px;
 `;
 
@@ -57,5 +57,5 @@ export const JokerImage = styled.img`
 `;
 
 export const HeartRed = styled.img`
-  width: 20%;
+  width: 15%;
 `;

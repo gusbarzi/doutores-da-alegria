@@ -391,10 +391,10 @@ export const RetrospectiveSix: React.FC = () => {
             <SquareColored
               borderColor={DalegriaColorsEnum.Yellow}
               type="outlined"
-              style={{ height: "50px" }}
+              style={{ height: "45px" }}
             >
               <TextContainer
-                textAlign="center"
+                textAlign="left"
                 justifyContent="center"
                 align="center"
                 marginBottom={16}
@@ -411,7 +411,7 @@ export const RetrospectiveSix: React.FC = () => {
                       color: DalegriaColorsEnum.Black,
                       fontFamily: DalegriaFontesEnum.ManualBasic,
                       marginLeft: "2px",
-                      fontSize: "16px",
+                      fontSize: "14px",
                     }}
                   >
                     {t("retrospective.square_retrospective_six.text_02")}

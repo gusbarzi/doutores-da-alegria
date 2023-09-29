@@ -26,6 +26,7 @@ import {
   TextSideDivision,
 } from "../retrospectiveFive/retrospectiveFive.styles";
 import { OriginalArtTwelve } from "./retrospectiveFourteen.styles";
+import { LinkPersonal } from "../retrospectiveTen/retrospectiveTen.styles";
 
 export const RetrospectiveFourteen: React.FC = () => {
   const { t } = useTranslation();
@@ -33,14 +34,14 @@ export const RetrospectiveFourteen: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/restrospectiva-15")
+    navigate("/restrospectiva-15");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-13")
+    navigate("/restrospectiva-13");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -86,7 +87,7 @@ export const RetrospectiveFourteen: React.FC = () => {
                   fontSize={18}
                   textTransform="uppercase"
                 >
-                  {t("retrospective.january_to_abril")}
+                  SETEMBRO E OUTUBRO
                 </Typography>
               </TextContainer>
               <BackgroundBlueContainer
@@ -122,24 +123,31 @@ export const RetrospectiveFourteen: React.FC = () => {
                       <Typography
                         fontFamily={DalegriaFontesEnum.ManualBasic}
                         textColor={DalegriaColorsEnum.Yellow}
-                        fontSize={24}
+                        fontSize={32}
                         textTransform="uppercase"
                       >
-                        {t(
-                          "retrospective.retrospective_twelve.background_container.doctors_school.title"
-                        )}
+                        Peça de suspense, mágica e risada
                       </Typography>
                       <Typography
                         fontFamily={DalegriaFontesEnum.StdLight}
                         textColor={DalegriaColorsEnum.White}
-                        fontSize={20}
+                        fontSize={22}
                       >
-                        A unidade Recife foi homenageada pela Câmara Municipal
-                        do Recife nas comemorações do Dia Nacional do Circo
-                        pelos 19 anos de atuação na capital pernambucana. O
-                        reconhecimento foi proposto pela vereadora Cida Pedrosa
-                        e a homenagem foi recebida pelos coordenadores Arilson
-                        Lopes e Nice Vasconcelos durante uma sessão especial.
+                        Os universos do circo e do hospital se misturam na peça
+                        “O médico é o monstro?”, que reestreou no Teatro Marco
+                        Camarotti, no Recife, no mês de setembro. O espetáculo,
+                        de suspense e muito humor, conta o que aconteceu depois
+                        que a equipe de um hospital-picadeiro recebeu a visita
+                        de uma paciente misteriosa.
+                      </Typography>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={22}
+                      >
+                        <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                          Veja a experiência das crianças no espetáculo
+                        </LinkPersonal>
                       </Typography>
                     </TextContainer>
                   </TextSideDivision>
@@ -162,12 +170,12 @@ export const RetrospectiveFourteen: React.FC = () => {
                     height: "140px",
                     width: "400px",
                     marginRight: "150px",
-                    marginBottom: "6px",
+                    marginBottom: "56px",
                   }}
                 >
                   <TextContainer
                     textAlign="left"
-                    justifyContent="center"
+                    justifyContent="flex-start"
                     flexDirection="row"
                     align="center"
                     marginBottom={12}
@@ -191,7 +199,7 @@ export const RetrospectiveFourteen: React.FC = () => {
                   </TextContainer>
                   <TextContainer
                     textAlign="left"
-                    justifyContent="center"
+                    justifyContent="flex-start"
                     flexDirection="row"
                     align="center"
                     marginBottom={12}
@@ -215,6 +223,7 @@ export const RetrospectiveFourteen: React.FC = () => {
                 </SquareColored>
               </div>
             </RetrospectiveContainer>
+            <div style={{ height: "35px" }} />
           </GlobalContainer>
         </>
       ) : (
@@ -270,8 +279,8 @@ export const RetrospectiveFourteen: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt12}
-                width={380}
-                height={250}
+                width={330}
+                height={220}
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer
@@ -297,6 +306,7 @@ export const RetrospectiveFourteen: React.FC = () => {
                 justifyContent="flex-start"
                 align="flex-start"
                 marginBottom={12}
+                chooseGap={16}
               >
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -306,6 +316,15 @@ export const RetrospectiveFourteen: React.FC = () => {
                   {t(
                     "retrospective.retrospective_fourteen.background_container.doctors_school.stanza_01"
                   )}
+                </Typography>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdLight}
+                  textColor={DalegriaColorsEnum.White}
+                  fontSize={14}
+                >
+                  <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                    Veja a experiência das crianças no espetáculo
+                  </LinkPersonal>
                 </Typography>
               </TextContainer>
 
@@ -363,9 +382,9 @@ export const RetrospectiveFourteen: React.FC = () => {
                 </TextContainer>
               </SquareColored>
             </BackgroundBlueContainer>
-            <div 
+            <div
               style={{
-                height: "80px"
+                height: "80px",
               }}
             />
           </DalegriaContainer>

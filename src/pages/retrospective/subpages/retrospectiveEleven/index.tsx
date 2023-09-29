@@ -85,7 +85,7 @@ export const RetrospectiveEleven: React.FC = () => {
                   fontSize={20}
                   textTransform="uppercase"
                 >
-                  {t("retrospective.january_to_abril")}
+                  fevereiro
                 </Typography>
               </TextContainer>
               <BackgroundBlueContainer

@@ -7,5 +7,5 @@ export const RetrospectiveContainer = styled.div`
 `;
 
 export const OriginalArtTwelve = styled.img`
-  width: 770px;
+  width: 125%;
 `;

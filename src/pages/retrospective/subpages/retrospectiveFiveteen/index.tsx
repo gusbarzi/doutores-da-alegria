@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   BackgroundBlueContainer,
   ButtonContainer,
@@ -33,14 +33,14 @@ export const RetrospectiveFiveteen: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/restrospectiva-16")
+    navigate("/restrospectiva-16");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-14")
+    navigate("/restrospectiva-14");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -86,7 +86,7 @@ export const RetrospectiveFiveteen: React.FC = () => {
                   fontSize={18}
                   textTransform="uppercase"
                 >
-                  {t("retrospective.january_to_abril")}
+                  OUTUBRO E NOVEMBRO
                 </Typography>
               </TextContainer>
               <BackgroundBlueContainer
@@ -159,32 +159,34 @@ export const RetrospectiveFiveteen: React.FC = () => {
                   zIndex: "10",
                 }}
               >
-                <SquareColored
-                  type="primary"
-                  backgroundColor={DalegriaColorsEnum.Yellow}
-                  style={{
-                    height: "80px",
-                    width: "600px",
-                  }}
-                >
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="center"
-                    flexDirection="row"
-                    align="center"
-                    marginBottom={12}
-                    chooseHeight={60}
-                    chooseGap={4}
+                <Link to="https://youtu.be/bX6pFRlF5mI">
+                  <SquareColored
+                    type="primary"
+                    backgroundColor={DalegriaColorsEnum.Yellow}
+                    style={{
+                      height: "80px",
+                      width: "600px",
+                    }}
                   >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.StdBold}
-                      textColor={DalegriaColorsEnum.Black}
-                      fontSize={26}
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="center"
+                      flexDirection="row"
+                      align="center"
+                      marginBottom={12}
+                      chooseHeight={60}
+                      chooseGap={4}
                     >
-                      CONFIRA O VIDEOCAST O PALHAÇO: O QUE É?
-                    </Typography>
-                  </TextContainer>
-                </SquareColored>
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdBold}
+                        textColor={DalegriaColorsEnum.Black}
+                        fontSize={26}
+                      >
+                        CONFIRA O VIDEOCAST O PALHAÇO: O QUE É?
+                      </Typography>
+                    </TextContainer>
+                  </SquareColored>
+                </Link>
               </TextSideDivision>
             </RetrospectiveContainer>
           </GlobalContainer>
@@ -279,33 +281,35 @@ export const RetrospectiveFiveteen: React.FC = () => {
                   )}
                 </Typography>
               </TextContainer>
-              <SquareColored
-                type="primary"
-                backgroundColor={DalegriaColorsEnum.Yellow}
-                style={{ height: "38px", marginBottom: "-50px" }}
-              >
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="flex-start"
-                  flexDirection="row"
-                  align="center"
-                  marginBottom={12}
-                  chooseGap={4}
+              <Link to="https://youtu.be/bX6pFRlF5mI">
+                <SquareColored
+                  type="primary"
+                  backgroundColor={DalegriaColorsEnum.Yellow}
+                  style={{ height: "38px", marginBottom: "-50px" }}
                 >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Black}
-                    width={290}
-                    fontSize={14}
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    flexDirection="row"
+                    align="center"
+                    marginBottom={12}
+                    chooseGap={4}
                   >
-                    CONFIRA O VIDEOCAST O PALHAÇO: O QUE É?
-                  </Typography>
-                </TextContainer>
-              </SquareColored>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Black}
+                      width={290}
+                      fontSize={14}
+                    >
+                      CONFIRA O VIDEOCAST O PALHAÇO: O QUE É?
+                    </Typography>
+                  </TextContainer>
+                </SquareColored>
+              </Link>
             </BackgroundBlueContainer>
-            <div 
+            <div
               style={{
-                height: "20px"
+                height: "20px",
               }}
             />
           </DalegriaContainer>

@@ -11,11 +11,12 @@ import {
   JokerImage,
   JokerImageTwo,
   LeftSide,
+  LinkPersonalNaMidia,
   NumbersContainer,
   RightSide,
   TextSquare,
 } from "./doctorsJoyMedia.styles";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   GlobalBackButton,
@@ -36,6 +37,7 @@ import {
 import { SquareColored } from "../../components/SquareColored";
 import jokerFiveteen from "../../../public/assets/jokersPng/mobile-recortes15.png";
 import jokerTen from "../../../public/assets/jokersPng/mobile-recortes10.png";
+import { LinkPersonal } from "../retrospective/subpages/retrospectiveTen/retrospectiveTen.styles";
 
 export const DoctorsJoyMedia: React.FC = () => {
   const { t } = useTranslation();
@@ -44,14 +46,14 @@ export const DoctorsJoyMedia: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/abrace-a-causa")
+    navigate("/abrace-a-causa");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-20")
+    navigate("/restrospectiva-20");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -103,7 +105,7 @@ export const DoctorsJoyMedia: React.FC = () => {
                   align="flex-start"
                   justifyContent="flex-start"
                   chooseGap={16}
-                  style={{ width: "170px" }}
+                  style={{ width: "200px" }}
                 >
                   <Typography
                     fontFamily={DalegriaFontesEnum.ManualBasic}
@@ -115,7 +117,7 @@ export const DoctorsJoyMedia: React.FC = () => {
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdLight}
                     textColor={DalegriaColorsEnum.Black}
-                    fontSize={18}
+                    fontSize={20}
                     lineHeight={1.5}
                   >
                     Em 2022, tivemos um{" "}
@@ -130,7 +132,15 @@ export const DoctorsJoyMedia: React.FC = () => {
                     Recife. As nossas ações foram divulgadas nos principais
                     jornais do Rio de Janeiro, São Paulo e Recife e, na
                     televisão, tivemos matérias divulgadas em telejornais locais
-                    e nacionais, como o Jornal Nacional e o Jornal Hoje.
+                    e nacionais, como o{" "}
+                    <LinkPersonalNaMidia to="https://g1.globo.com/jornal-nacional/noticia/2022/04/16/doutores-da-alegria-voltam-aos-hospitais-depois-de-dois-anos-distantes-por-causa-da-pandemia.ghtml">
+                      Jornal Nacional
+                    </LinkPersonalNaMidia>{" "}
+                    e o{" "}
+                    <LinkPersonalNaMidia to="https://g1.globo.com/jornal-hoje/noticia/2022/08/10/doutores-da-alegria-lancam-livro-com-vivencias-em-hospitais-do-recife.ghtml">
+                      Jornal Hoje
+                    </LinkPersonalNaMidia>
+                    .
                   </Typography>
                 </TextContainer>
               </TextSideDivision>
@@ -174,7 +184,7 @@ export const DoctorsJoyMedia: React.FC = () => {
                     </TextSideDivision>
                     <TextSideDivision
                       style={{
-                        width: "650px",
+                        width: "670px",
                         marginRight: "16px",
                         marginTop: "-100px",
                         marginBottom: "-60px",
@@ -219,10 +229,8 @@ export const DoctorsJoyMedia: React.FC = () => {
                       </SquareColored>
                       <div
                         style={{
-                          position: "absolute",
-                          left: "25%",
-                          top: "70%",
-                          zIndex: "1",
+                          display: "flex",
+                          marginBottom: "-10px",
                         }}
                       >
                         <JokerImageTwo src={jokerTen} />
@@ -254,7 +262,16 @@ export const DoctorsJoyMedia: React.FC = () => {
                               lineHeight={1.4}
                               fontSize={40}
                             >
-                              de fãs no facebook
+                              de fãs no{" "}
+                              <Link
+                                to="https://www.facebook.com/doutores"
+                                style={{
+                                  textDecoration: "none",
+                                  color: DalegriaColorsEnum.Pink,
+                                }}
+                              >
+                                facebook
+                              </Link>
                             </Typography>
                           </TextContainer>
                         </GridItem>
@@ -286,7 +303,16 @@ export const DoctorsJoyMedia: React.FC = () => {
                               lineHeight={1}
                               fontSize={46}
                             >
-                              no youtube
+                              no{" "}
+                              <Link
+                                to="https://www.instagram.com/doutoresdaalegriaoficial/"
+                                style={{
+                                  textDecoration: "none",
+                                  color: DalegriaColorsEnum.Red,
+                                }}
+                              >
+                                youtube
+                              </Link>
                             </Typography>
                           </TextContainer>
                         </GridItem>
@@ -318,7 +344,16 @@ export const DoctorsJoyMedia: React.FC = () => {
                               lineHeight={1}
                               fontSize={42}
                             >
-                              no instagram
+                              no{" "}
+                              <Link
+                                to="https://www.youtube.com/@CanaldosDoutoresdaAlegria"
+                                style={{
+                                  textDecoration: "none",
+                                  color: DalegriaColorsEnum.LightBlue,
+                                }}
+                              >
+                                instagram
+                              </Link>
                             </Typography>
                           </TextContainer>
                         </GridItem>
@@ -350,7 +385,16 @@ export const DoctorsJoyMedia: React.FC = () => {
                               lineHeight={1}
                               fontSize={42}
                             >
-                              no linkedin
+                              no{" "}
+                              <Link
+                                to="https://www.linkedin.com/company/doutoresdaalegria/"
+                                style={{
+                                  textDecoration: "none",
+                                  color: DalegriaColorsEnum.Purple,
+                                }}
+                              >
+                                linkedin
+                              </Link>
                             </Typography>
                           </TextContainer>
                         </GridItem>
@@ -421,31 +465,35 @@ export const DoctorsJoyMedia: React.FC = () => {
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdLight}
                     textColor={DalegriaColorsEnum.Black}
-                    lineHeight={1.35}
                     fontSize={14}
+                    lineHeight={1.3}
                   >
-                    {t("retrospective.doctors_joy_media.stanza_01")}
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Black}
-                    lineHeight={1.35}
-                    fontSize={14}
-                  >
-                    {t("retrospective.doctors_joy_media.stanza_02")}
-                  </Typography>
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Black}
-                    lineHeight={1.35}
-                    fontSize={14}
-                  >
-                    {t("retrospective.doctors_joy_media.stanza_03")}
+                    Em 2022, tivemos um{" "}
+                    <span style={{ fontFamily: DalegriaFontesEnum.StdBold }}>
+                      aumento de 270% na publicação de matérias jornalísticas
+                    </span>{" "}
+                    em relação ao ano anterior. As principais ações abordadas
+                    pelos veículos de imprensa foram o retorno aos hospitais do
+                    projeto Plateias Hospitalares, no Rio de Janeiro; as
+                    apresentações da Banda Doutores da Alegria em São Paulo; e o
+                    lançamento do livro Coletânea Conta Causos – Volume 1, no
+                    Recife. As nossas ações foram divulgadas nos principais
+                    jornais do Rio de Janeiro, São Paulo e Recife e, na
+                    televisão, tivemos matérias divulgadas em telejornais locais
+                    e nacionais, como o{" "}
+                    <LinkPersonalNaMidia to="https://g1.globo.com/jornal-nacional/noticia/2022/04/16/doutores-da-alegria-voltam-aos-hospitais-depois-de-dois-anos-distantes-por-causa-da-pandemia.ghtml">
+                      Jornal Nacional
+                    </LinkPersonalNaMidia>{" "}
+                    e o{" "}
+                    <LinkPersonalNaMidia to="https://g1.globo.com/jornal-hoje/noticia/2022/08/10/doutores-da-alegria-lancam-livro-com-vivencias-em-hospitais-do-recife.ghtml">
+                      Jornal Hoje
+                    </LinkPersonalNaMidia>
+                    .
                   </Typography>
                 </TextContainer>
               </RightSide>
             </DoctorsJoyMediaContent>
-            <div style={{ marginBottom: "-50px", marginTop: "-300px" }}>
+            <div style={{ marginBottom: "-25px", marginTop: "-250px" }}>
               <JokerImage src={jokerTen} />
             </div>
             <BackgroundYellow>
@@ -529,25 +577,16 @@ export const DoctorsJoyMedia: React.FC = () => {
                       textColor={DalegriaColorsEnum.Pink}
                       fontSize={28}
                     >
-                      {t(
-                        "retrospective.doctors_joy_media.number_social_media.static_01"
-                      )}
-                    </Typography>
-                  </TextContainer>
-                  <TextContainer
-                    textAlign="left"
-                    justifyContent="flex-start"
-                    align="flex-start"
-                    marginBottom={16}
-                  >
-                    <Typography
-                      fontFamily={DalegriaFontesEnum.ManualBasic}
-                      textColor={DalegriaColorsEnum.LightBlue}
-                      fontSize={28}
-                    >
-                      {t(
-                        "retrospective.doctors_joy_media.number_social_media.static_02"
-                      )}
+                      + 2,4 milhões de fãs no{" "}
+                      <Link
+                        to="https://www.facebook.com/doutores"
+                        style={{
+                          textDecoration: "none",
+                          color: DalegriaColorsEnum.Pink,
+                        }}
+                      >
+                        facebook
+                      </Link>
                     </Typography>
                   </TextContainer>
                   <TextContainer
@@ -561,9 +600,39 @@ export const DoctorsJoyMedia: React.FC = () => {
                       textColor={DalegriaColorsEnum.Red}
                       fontSize={28}
                     >
-                      {t(
-                        "retrospective.doctors_joy_media.number_social_media.static_03"
-                      )}
+                      + 11 mil seguidores no{" "}
+                      <Link
+                        to="https://www.instagram.com/doutoresdaalegriaoficial/"
+                        style={{
+                          textDecoration: "none",
+                          color: DalegriaColorsEnum.Red,
+                        }}
+                      >
+                        youtube
+                      </Link>
+                    </Typography>
+                  </TextContainer>
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    align="flex-start"
+                    marginBottom={16}
+                  >
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.ManualBasic}
+                      textColor={DalegriaColorsEnum.LightBlue}
+                      fontSize={28}
+                    >
+                      + 114 mil seguidores no{" "}
+                      <Link
+                        to="https://www.youtube.com/@CanaldosDoutoresdaAlegria"
+                        style={{
+                          textDecoration: "none",
+                          color: DalegriaColorsEnum.LightBlue,
+                        }}
+                      >
+                        instagram
+                      </Link>
                     </Typography>
                   </TextContainer>
                   <TextContainer
@@ -577,9 +646,16 @@ export const DoctorsJoyMedia: React.FC = () => {
                       textColor={DalegriaColorsEnum.Purple}
                       fontSize={28}
                     >
-                      {t(
-                        "retrospective.doctors_joy_media.number_social_media.static_04"
-                      )}
+                      + 7,8 mil seguidores no{" "}
+                      <Link
+                        to="https://www.linkedin.com/company/doutoresdaalegria/"
+                        style={{
+                          textDecoration: "none",
+                          color: DalegriaColorsEnum.Purple,
+                        }}
+                      >
+                        linkedin
+                      </Link>
                     </Typography>
                   </TextContainer>
                 </NumbersContainer>

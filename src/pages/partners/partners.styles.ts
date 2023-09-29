@@ -20,46 +20,66 @@ export const TextContainer = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  position: relative;
+  margin-bottom: -65px;
 
-  &::before, &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-    background-color: red;
-  }
+  ${breakpoints.higherThan("desktop")} {
+    grid-template-columns: repeat(3, 1fr);
 
-  &::before {
-    left: calc(33.33% - 4px);
-  }
+    position: relative;
 
-  &::after {
-    left: calc(66.66% + 2px);
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: red;
+    }
+
+    &::before {
+      left: calc(33.33% - 4px);
+    }
+
+    &::after {
+      left: calc(66.66% + 2px);
+    }
   }
 `;
 
 export const GridItemOne = styled.div`
-  width: 110px;
+  width: 120px;
   height: 500px;
   display: flex;
   flex-direction: column;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 150px;
+  }
 `;
 
 export const GridItemTwo = styled.div`
   display: flex;
   flex-direction: column;
-  width: 110px;
+  width: 120px;
   height: 500px;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 140px;
+  }
 `;
+
 export const GridItemTree = styled.div`
   display: flex;
   flex-direction: column;
-  width: 110px;
+  width: 120px;
   height: 500px;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 140px;
+  }
 `;
 
 export const PartnerImagesContaienr = styled.div`
@@ -76,4 +96,4 @@ export const PartnerImg = styled.img`
   ${breakpoints.higherThan("desktop")} {
     width: 60%;
   }
-`
+`;

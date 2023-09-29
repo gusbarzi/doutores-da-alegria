@@ -1,5 +1,3 @@
-import { DalegriaColorsEnum } from '../../../../utils/colors';
-import { DalegriaFontesEnum } from '../../../../utils/fontes';
 import { styled } from "styled-components";
 
 export const RetrospectiveContainer = styled.div`
@@ -14,7 +12,6 @@ export const OriginalArtNineteen = styled.img`
 
 export const YellowBox = styled.div`
   width: 600px;
-  position: absolute;
-  right: 650px;
-  bottom: -730px;
+  display: flex;
+  margin-bottom: -150px;
 `;

@@ -5,7 +5,15 @@ import breakpoints from "../../../utils/breakpoints";
 import { IList } from "../../../components/CustomList/customList.types";
 import { DalegriaColorsEnum } from "../../../utils/colors";
 import { DalegriaFontesEnum } from "../../../utils/fontes";
-import { BannerDetailsContainer, JokerImage, SocialBannerContainerDesktop, SocialBannerContentDesktop, SocialImpactContainer, SocialImpactContentDesktop, SocialImpactTitle } from "../socialImpact.styles";
+import {
+  BannerDetailsContainer,
+  JokerImage,
+  SocialBannerContainerDesktop,
+  SocialBannerContentDesktop,
+  SocialImpactContainer,
+  SocialImpactContentDesktop,
+  SocialImpactTitle,
+} from "../socialImpact.styles";
 import { TextContainer, Typography } from "../../../styles/global.styles";
 import { TextSideDivision } from "../../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
 import { CustomList } from "../../../components/CustomList";
@@ -59,7 +67,7 @@ export const SocialImpactDesktop: React.FC = () => {
       fontSize: selectFontsizeList,
     },
   ];
-  
+
   return (
     <>
       <SocialBannerContainerDesktop>
@@ -94,6 +102,20 @@ export const SocialImpactDesktop: React.FC = () => {
               }}
             >
               <JokerImage src={jokerSixteen} />
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Black}
+                fontSize={16}
+                textTransform="uppercase"
+                style={{
+                  writingMode: "vertical-lr",
+                  marginBottom: "200px",
+                  marginRight: "4px",
+                  transform: "rotate(180deg)",
+                }}
+              >
+                foto lana pinho
+              </Typography>
             </TextSideDivision>
           </BannerDetailsContainer>
         </SocialBannerContentDesktop>
@@ -195,6 +217,19 @@ export const SocialImpactDesktop: React.FC = () => {
           marginLeft: "-40px",
         }}
       >
+        <Typography
+          fontFamily={DalegriaFontesEnum.StdLight}
+          textColor={DalegriaColorsEnum.Black}
+          fontSize={16}
+          textTransform="uppercase"
+          style={{
+            writingMode: "vertical-lr",
+            marginBottom: "20px",
+            transform: "rotate(180deg)",
+          }}
+        >
+          foto lana pinho
+        </Typography>
         <JokerImage src={jokerSeventeen} />
       </TextSideDivision>
     </>

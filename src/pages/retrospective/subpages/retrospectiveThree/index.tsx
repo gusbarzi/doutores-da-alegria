@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   DalegriaContainer,
@@ -33,6 +33,7 @@ import {
   RetrospectiveHiperContainerDesktop,
 } from "./retrospectiveThree.styles";
 import { TextSideDivision } from "../retrospectiveFive/retrospectiveFive.styles";
+import { SquareColored } from "../../../../components/SquareColored";
 
 export const RetrospectiveThree: React.FC = () => {
   const { t } = useTranslation();
@@ -42,14 +43,14 @@ export const RetrospectiveThree: React.FC = () => {
   const newsFontSize = isDesktop ? 60 : 44;
 
   const handleNext = () => {
-    navigate("/restrospectiva-04")
+    navigate("/restrospectiva-04");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-02")
+    navigate("/restrospectiva-02");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -125,7 +126,10 @@ export const RetrospectiveThree: React.FC = () => {
                         textColor={DalegriaColorsEnum.Gray}
                         fontSize={22}
                       >
-                        {t("retrospective.joker_writer_stanza.stanza_01")}
+                        Os palhaços do elenco do Recife escreveram um livro! A
+                        publicação <i>Coletânea Conta Causos – Volume 1</i> foi
+                        lançada no dia 11 de agosto numa live especial e nas
+                        unidades de saúde atendidas na cidade.
                       </Typography>
                       <Typography
                         fontFamily={DalegriaFontesEnum.StdLight}
@@ -169,10 +173,57 @@ export const RetrospectiveThree: React.FC = () => {
                         marginBottom: "-30px",
                       }}
                     >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.Black}
+                        fontSize={16}
+                        textTransform="uppercase"
+                        style={{
+                          writingMode: "vertical-lr",
+                          marginBottom: "16px",
+                          marginRight: "4px",
+                          transform: "rotate(180deg)",
+                        }}
+                      >
+                        foto lana pinho
+                      </Typography>
                       <JokerImage src={jokerNine} />
                     </TextSideDivision>
                   </RetroRightSide>
                 </RetrospectiveHiperContainerDesktop>
+                <Link
+                  to="https://contacausos.doutoresdaalegria.org.br/"
+                  style={{
+                    textDecoration: "none",
+                    display: "flex",
+                    zIndex: "9",
+                  }}
+                >
+                  <SquareColored
+                    type="primary"
+                    backgroundColor={DalegriaColorsEnum.LightBlue}
+                    style={{
+                      width: "600px",
+                      marginTop: "-40px",
+                    }}
+                  >
+                    <TextContainer
+                      textAlign="center"
+                      justifyContent="center"
+                      flexDirection="row"
+                      align="center"
+                      chooseGap={4}
+                    >
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdBold}
+                        textColor={DalegriaColorsEnum.White}
+                        fontSize={20}
+                      >
+                        LEIA O LIVRO COLETÂNEA CONTA CAUSOS - Volume 01
+                      </Typography>
+                    </TextContainer>
+                  </SquareColored>
+                </Link>
               </BackgroundContainer>
             </RetrospectiveContainerDesktop>
           </GlobalContainer>
@@ -246,7 +297,10 @@ export const RetrospectiveThree: React.FC = () => {
                   textColor={DalegriaColorsEnum.Gray}
                   fontSize={16}
                 >
-                  {t("retrospective.joker_writer_stanza.stanza_01")}
+                  Os palhaços do elenco do Recife escreveram um livro! A
+                  publicação <i>Coletânea Conta Causos – Volume 1</i> foi
+                  lançada no dia 11 de agosto numa live especial e nas unidades
+                  de saúde atendidas na cidade.
                 </Typography>
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
@@ -277,8 +331,53 @@ export const RetrospectiveThree: React.FC = () => {
                   {t("retrospective.joker_writer_stanza.stanza_05")}
                 </Typography>
               </TextContainer>
-              {/* TODO: rever imagem */}
+              <TextSideDivision
+                style={{
+                  display: "flex",
+                  marginBottom: "-15px",
+                }}
+              >
+                <JokerImage src={jokerNine} />
+              </TextSideDivision>
+              <Link
+                to="https://contacausos.doutoresdaalegria.org.br/"
+                style={{ textDecoration: "none", display: "flex", zIndex: "9" }}
+              >
+                <SquareColored
+                  type="primary"
+                  backgroundColor={DalegriaColorsEnum.LightBlue}
+                  style={{
+                    width: "290px",
+                    height: "38px",
+                    marginBottom: "-30px",
+                    marginTop: "10px",
+                  }}
+                >
+                  <TextContainer
+                    textAlign="center"
+                    justifyContent="flex-start"
+                    flexDirection="row"
+                    align="center"
+                    marginBottom={12}
+                    chooseGap={4}
+                  >
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.White}
+                      width={330}
+                      fontSize={11}
+                    >
+                      LEIA O LIVRO COLETÂNEA CONTA CAUSOS - Vol. 01
+                    </Typography>
+                  </TextContainer>
+                </SquareColored>
+              </Link>
             </BackgroundContainer>
+            <div
+              style={{
+                height: "20px",
+              }}
+            />
           </DalegriaContainer>
         </>
       )}

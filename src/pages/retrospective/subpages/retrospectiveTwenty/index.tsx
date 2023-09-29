@@ -81,10 +81,10 @@ export const RetrospectiveTwenty: React.FC = () => {
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}
                   textColor={DalegriaColorsEnum.LightBlue}
-                  fontSize={14}
+                  fontSize={18}
                   textTransform="uppercase"
                 >
-                  {t("retrospective.january_to_abril")}
+                  DEZEMBRO
                 </Typography>
               </TextContainer>
               <BackgroundBlueContainer>

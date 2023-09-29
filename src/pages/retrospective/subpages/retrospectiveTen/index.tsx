@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   BackgroundBlueContainer,
   ButtonContainer,
@@ -26,6 +26,7 @@ import {
   TextDivision,
   TextSideDivision,
 } from "../retrospectiveFive/retrospectiveFive.styles";
+import { LinkPersonal } from "./retrospectiveTen.styles";
 
 export const RetrospectiveTen: React.FC = () => {
   const { t } = useTranslation();
@@ -33,14 +34,14 @@ export const RetrospectiveTen: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/restrospectiva-11")
+    navigate("/restrospectiva-11");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-09")
+    navigate("/restrospectiva-09");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -83,10 +84,10 @@ export const RetrospectiveTen: React.FC = () => {
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdBold}
                   textColor={DalegriaColorsEnum.LightBlue}
-                  fontSize={14}
+                  fontSize={18}
                   textTransform="uppercase"
                 >
-                  {t("retrospective.january_to_abril")}
+                  fevereiro
                 </Typography>
               </TextContainer>
               <BackgroundBlueContainer style={{ display: "flex", gap: "16px" }}>
@@ -143,7 +144,10 @@ export const RetrospectiveTen: React.FC = () => {
                         Em Recife, os hospitais receberam grupos de três
                         palhaços, como Dr. Dud Grud “Homem da Meia-Noite”, Dra.
                         Baju “Rainha da Tradicional Clube Vassourinhas” e Dr.
-                        Wago Ninguém “Rei do Maracatu”.
+                        Wago Ninguém “Rei do Maracatu”.{" "}
+                        <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                          Olha a farra!
+                        </LinkPersonal>
                       </Typography>
                     </TextContainer>
                   </TextSideDivision>
@@ -158,7 +162,7 @@ export const RetrospectiveTen: React.FC = () => {
                     <SquareColored
                       borderColor={DalegriaColorsEnum.Yellow}
                       type="outlined"
-                      style={{ width: "500px" }}
+                      style={{ width: "350px" }}
                     >
                       <TextContainer
                         textAlign="left"
@@ -195,7 +199,7 @@ export const RetrospectiveTen: React.FC = () => {
                         marginBottom={16}
                       >
                         <Typography
-                          fontFamily={DalegriaFontesEnum.ManualBasic}
+                          fontFamily={DalegriaFontesEnum.StdBold}
                           textColor={DalegriaColorsEnum.White}
                           fontSize={16}
                           textTransform="uppercase"
@@ -325,8 +329,8 @@ export const RetrospectiveTen: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt7}
-                width={380}
-                height={250}
+                width={330}
+                height={220}
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer
@@ -367,9 +371,14 @@ export const RetrospectiveTen: React.FC = () => {
                   textColor={DalegriaColorsEnum.White}
                   fontSize={16}
                 >
-                  {t(
-                    "retrospective.retrospective_ten.background_container.doctors_school.stanza_02"
-                  )}
+                  Em Recife, os hospitais receberam grupos de três palhaços,
+                  como Dr. Dud Grud “Homem da Meia-Noite”, Dra. Baju “Rainha da
+                  Tradicional Clube Vassourinhas” e Dr. Wago Ninguém “Rei do
+                  Maracatu”.{" "}
+                  <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                    Olha a farra!
+                  </LinkPersonal>
+                   
                 </Typography>
               </TextContainer>
 

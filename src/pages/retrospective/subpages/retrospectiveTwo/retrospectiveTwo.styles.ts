@@ -51,7 +51,6 @@ export const TextDirection = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: flex-end;
 `;
 
 export const RetrospectiveContainerDesktop = styled.div`

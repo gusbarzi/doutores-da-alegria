@@ -72,8 +72,11 @@ export const RightSide = styled.div`
 
 export const SquareContainer = styled.div`
   display: flex;
-  width: 100%;
   gap: 12px;
+
+  ${breakpoints.higherThan("desktop")} {
+    width: 100%;
+  }
 `;
 
 export const RectangleContainer = styled.div`
@@ -89,7 +92,6 @@ export const GridContainer = styled.div`
 `;
 
 export const BackgroundPink = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: ${DalegriaColorsEnum.Pink};
@@ -143,7 +145,7 @@ export const PinkBoxContainer = styled.div`
 
 export const PinkBox = styled.div`
   width: 700px;
-  height: 550px;
+  height: 630px;
   background-color: ${DalegriaColorsEnum.Pink};
 `;
 
@@ -187,10 +189,9 @@ export const NumbersContainer = styled.div`
   align-items: center;
   margin-bottom: 16px;
   margin-left: 10px;
-  
+
   ${breakpoints.higherThan("desktop")} {
     margin-left: 24px;
-
   }
 `;
 
@@ -202,7 +203,7 @@ export const YearLabel = styled.div`
   transform: translateX(-50%);
   font-family: ${DalegriaFontesEnum.ManualBasic};
   color: ${DalegriaColorsEnum.White};
-  
+
   ${breakpoints.higherThan("desktop")} {
     font-size: 24px;
     top: -30px;
@@ -216,7 +217,7 @@ export const BarContainer = styled.div`
   width: 100%;
 
   ${breakpoints.higherThan("desktop")} {
-    height: 580px;
+    height: 530px;
   }
 `;
 

@@ -45,14 +45,14 @@ export const AccountabilityTree: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/equipe")
+    navigate("/equipe");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/prestacao-de-contas-02")
+    navigate("/prestacao-de-contas-02");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -72,44 +72,6 @@ export const AccountabilityTree: React.FC = () => {
                 Prestação de contas
               </Typography>
             </TextContainer>
-            <TextDivision style={{ display: "flex", width: "800px" }}>
-              <TextSideDivision>
-                <TextContainer
-                  textAlign="left"
-                  align="center"
-                  justifyContent="center"
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Pink}
-                    fontSize={16}
-                  >
-                    Nossas contas são auditadas anualmente por auditorias
-                    independentes. Em 2022, a Singolare Consultoria e Auditoria
-                    realizou este trabalho.
-                  </Typography>
-                </TextContainer>
-              </TextSideDivision>
-              <TextSideDivision>
-                <TextContainer
-                  textAlign="left"
-                  align="center"
-                  justifyContent="center"
-                >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.Black}
-                    fontSize={12}
-                  >
-                    * Em 2016, o evento Gala Doutores da Alegria mobilizou
-                    empresas e pessoas, gerando recursos pela venda de convites,
-                    cotas de patrocínio e leilão. Os recursos foram utilizados
-                    na produção do próprio evento e seu superávit foi
-                    integralmente aplicado nos projetos da associação.
-                  </Typography>
-                </TextContainer>
-              </TextSideDivision>
-            </TextDivision>
 
             <TextDivision>
               <TextSideDivision style={{ width: "1300px" }}>
@@ -297,6 +259,28 @@ export const AccountabilityTree: React.FC = () => {
                       justifyContent="flex-start"
                       align="flex-start"
                       marginBottom={27}
+                      chooseWidth={130}
+                    >
+                      <PercentSquareDesktop
+                        chooseWidth={54}
+                        chooseBackgroundColor={DalegriaColorsEnum.LightBlue}
+                        chooseTextColor={DalegriaColorsEnum.Black}
+                        number={30.4}
+                      />
+                      <Typography
+                        fontFamily={DalegriaFontesEnum.StdLight}
+                        textColor={DalegriaColorsEnum.White}
+                        lineHeight={1}
+                        fontSize={18}
+                      >
+                        {t("retrospective.accountability.operational.item_08")}
+                      </Typography>
+                    </TextContainer>
+                    <TextContainer
+                      textAlign="left"
+                      justifyContent="flex-start"
+                      align="flex-start"
+                      marginBottom={27}
                       chooseWidth={110}
                     >
                       <PercentSquareDesktop
@@ -454,28 +438,6 @@ export const AccountabilityTree: React.FC = () => {
                       chooseWidth={130}
                     >
                       <PercentSquareDesktop
-                        chooseWidth={52}
-                        chooseBackgroundColor={DalegriaColorsEnum.LightBlue}
-                        chooseTextColor={DalegriaColorsEnum.Black}
-                        number={30.4}
-                      />
-                      <Typography
-                        fontFamily={DalegriaFontesEnum.StdLight}
-                        textColor={DalegriaColorsEnum.White}
-                        lineHeight={1}
-                        fontSize={18}
-                      >
-                        {t("retrospective.accountability.operational.item_08")}
-                      </Typography>
-                    </TextContainer>
-                    <TextContainer
-                      textAlign="left"
-                      justifyContent="flex-start"
-                      align="flex-start"
-                      marginBottom={27}
-                      chooseWidth={130}
-                    >
-                      <PercentSquareDesktop
                         chooseWidth={44}
                         chooseBackgroundColor={DalegriaColorsEnum.Red}
                         chooseTextColor={DalegriaColorsEnum.White}
@@ -557,7 +519,6 @@ export const AccountabilityTree: React.FC = () => {
                 </TextDivision>
               </TextSideDivision>
             </TextDivision>
-
           </AccountabilityContainerDesktop>
         </GlobalContainer>
       ) : (
@@ -749,6 +710,28 @@ export const AccountabilityTree: React.FC = () => {
                   justifyContent="flex-start"
                   align="flex-start"
                   marginBottom={27}
+                  chooseWidth={130}
+                >
+                  <PercentSquareDesktop
+                    chooseWidth={52}
+                    chooseBackgroundColor={DalegriaColorsEnum.LightBlue}
+                    chooseTextColor={DalegriaColorsEnum.Black}
+                    number={30.4}
+                  />
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdLight}
+                    textColor={DalegriaColorsEnum.White}
+                    lineHeight={1}
+                    fontSize={18}
+                  >
+                    {t("retrospective.accountability.operational.item_08")}
+                  </Typography>
+                </TextContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={27}
                   chooseWidth={110}
                 >
                   <PercentSquareDesktop
@@ -898,28 +881,7 @@ export const AccountabilityTree: React.FC = () => {
                     {t("retrospective.accountability.operational.item_07")}
                   </Typography>
                 </TextContainer>
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="flex-start"
-                  align="flex-start"
-                  marginBottom={27}
-                  chooseWidth={130}
-                >
-                  <PercentSquareDesktop
-                    chooseWidth={52}
-                    chooseBackgroundColor={DalegriaColorsEnum.LightBlue}
-                    chooseTextColor={DalegriaColorsEnum.Black}
-                    number={30.4}
-                  />
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdLight}
-                    textColor={DalegriaColorsEnum.White}
-                    lineHeight={1}
-                    fontSize={18}
-                  >
-                    {t("retrospective.accountability.operational.item_08")}
-                  </Typography>
-                </TextContainer>
+
                 <TextContainer
                   textAlign="left"
                   justifyContent="flex-start"

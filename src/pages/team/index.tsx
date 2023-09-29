@@ -280,14 +280,14 @@ export const Team: React.FC = () => {
                         textTransform="uppercase"
                         fontSize={16}
                       >
-                        Morgana Masetti (até fevereiro)
+                        pesquisa e escola
                       </Typography>
                       <Typography
                         fontFamily={DalegriaFontesEnum.StdLight}
                         textColor={DalegriaColorsEnum.Black}
                         fontSize={14}
                       >
-                        Regina Leite
+                        Morgana Masetti (até fevereiro)
                       </Typography>
                     </TextContainer>
 
@@ -303,7 +303,7 @@ export const Team: React.FC = () => {
                         textTransform="uppercase"
                         fontSize={16}
                       >
-                        Imprensa
+                        Tecnologia da informação
                       </Typography>
                       {ti.map((names) => (
                         <Typography
@@ -539,14 +539,14 @@ export const Team: React.FC = () => {
                     textTransform="uppercase"
                     fontSize={16}
                   >
-                    Morgana Masetti (até fevereiro)
+                    pesquisa e escola
                   </Typography>
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdLight}
                     textColor={DalegriaColorsEnum.Black}
                     fontSize={14}
                   >
-                    Regina Leite
+                    Morgana Masetti (até fevereiro)
                   </Typography>
                 </TextContainer>
 
@@ -562,7 +562,7 @@ export const Team: React.FC = () => {
                     textTransform="uppercase"
                     fontSize={16}
                   >
-                    Imprensa
+                    Tecnologia da informação
                   </Typography>
                   {ti.map((names) => (
                     <Typography

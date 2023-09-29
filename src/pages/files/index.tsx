@@ -31,22 +31,21 @@ import {
 import jokerFourteen from "../../../public/assets/jokersPng/mobile-recortes14.png";
 import heart from "../../../public/assets/PNGS/Outros/coração-vermelho-e-azul.png";
 
-
 export const Files: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/fim")
+    navigate("/fim");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/parceiros")
+    navigate("/parceiros");
     window.scrollTo(0, 0);
-  }
-  
+  };
+
   return (
     <>
       {isDesktop ? (
@@ -77,10 +76,24 @@ export const Files: React.FC = () => {
                     marginBottom={16}
                     chooseGap={40}
                     style={{
-                      marginBottom: '-100px'
+                      marginBottom: "-80px",
                     }}
                   >
                     <HeartRed src={heart} />
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.Black}
+                      fontSize={16}
+                      textTransform="uppercase"
+                      style={{
+                        writingMode: "vertical-lr",
+                        marginBottom: "80px",
+                        marginRight: "-32px",
+                        transform: "rotate(180deg)",
+                      }}
+                    >
+                      foto lana pinho
+                    </Typography>
                     <JokerImage src={jokerFourteen} />
                   </TextContainer>
                 </TextSideDivision>
@@ -259,7 +272,7 @@ export const Files: React.FC = () => {
                           textTransform="uppercase"
                           fontSize={14}
                         >
-                          piffer print
+                          Elyon Gráfica
                         </Typography>
                       </TextContainer>
 
@@ -702,7 +715,7 @@ export const Files: React.FC = () => {
                     textTransform="uppercase"
                     fontSize={12}
                   >
-                    piffer print
+                    Elyon Gráfica
                   </Typography>
                 </TextContainer>
 

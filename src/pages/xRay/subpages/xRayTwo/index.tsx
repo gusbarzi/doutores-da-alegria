@@ -258,7 +258,7 @@ export const XRayTwo: React.FC = () => {
         <Caveira
           width={120}
           height={120}
-          style={{ position: "absolute", bottom: "-930px" }}
+          style={{ display: "flex", marginTop: "-60px" }}
         />
 
         <ButtonContainer>

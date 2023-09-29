@@ -12,7 +12,7 @@ import {
   RightText,
   TextDirection,
 } from "./retrospectiveTwo.styles";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   DalegriaContainer,
@@ -41,14 +41,14 @@ export const RetrospectiveTwo: React.FC = () => {
   const newsFontSize = isDesktop ? 60 : 44;
 
   const handleNext = () => {
-    navigate("/restrospectiva-03")
+    navigate("/restrospectiva-03");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-01")
+    navigate("/restrospectiva-01");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -129,69 +129,71 @@ export const RetrospectiveTwo: React.FC = () => {
                     </TextContainer>
                   </RetroLeftSide>
                   <RetroRightSide>
-                    <SquareColored
-                      type="outlined"
-                      borderColor={DalegriaColorsEnum.LightBlue}
-                    >
-                      <TextContainer
-                        textAlign="left"
-                        justifyContent="flex-start"
-                        align="flex-start"
-                        marginBottom={4}
+                    <Link to="https://www.instagram.com/p/Cb4wQ5hj6ZQ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D" style={{ textDecoration: 'none'}}>
+                      <SquareColored
+                        type="outlined"
+                        borderColor={DalegriaColorsEnum.LightBlue}
                       >
-                        <Typography
-                          fontFamily={DalegriaFontesEnum.StdBold}
-                          textColor={DalegriaColorsEnum.Black}
-                          fontSize={18}
-                        >
-                          {t("retrospective.season")}
-                        </Typography>
-                      </TextContainer>
-                      <TextContainer
-                        textAlign="left"
-                        justifyContent="flex-start"
-                        align="flex-start"
-                        marginBottom={20}
-                      >
-                        <Typography
-                          fontFamily={DalegriaFontesEnum.StdLight}
-                          textColor={DalegriaColorsEnum.Gray}
-                          fontSize={14}
-                        >
-                          {t("retrospective.date_01")}
-                        </Typography>
-                      </TextContainer>
-
-                      <TextDirection>
                         <TextContainer
                           textAlign="left"
                           justifyContent="flex-start"
                           align="flex-start"
-                          chooseWidth={250}
-                        >
-                          <Typography
-                            fontFamily={DalegriaFontesEnum.ManualBasic}
-                            textColor={DalegriaColorsEnum.LightBlue}
-                            fontSize={28}
-                          >
-                            {t("retrospective.many_people")}
-                          </Typography>
-                        </TextContainer>
-                        <TextContainer
-                          textAlign="left"
-                          justifyContent="flex-start"
-                          align="flex-start"
+                          marginBottom={4}
                         >
                           <Typography
                             fontFamily={DalegriaFontesEnum.StdBold}
-                            textColor={DalegriaColorsEnum.LightBlue}
-                            fontSize={16}
+                            textColor={DalegriaColorsEnum.Black}
+                            fontSize={18}
                           >
-                            {t("retrospective.see_show")}
+                            {t("retrospective.season")}
                           </Typography>
                         </TextContainer>
-                      </TextDirection>
-                    </SquareColored>
+                        <TextContainer
+                          textAlign="left"
+                          justifyContent="flex-start"
+                          align="flex-start"
+                          marginBottom={20}
+                        >
+                          <Typography
+                            fontFamily={DalegriaFontesEnum.StdLight}
+                            textColor={DalegriaColorsEnum.Gray}
+                            fontSize={14}
+                          >
+                            {t("retrospective.date_01")}
+                          </Typography>
+                        </TextContainer>
+
+                        <TextDirection>
+                          <TextContainer
+                            textAlign="left"
+                            justifyContent="flex-start"
+                            align="flex-start"
+                            chooseWidth={250}
+                          >
+                            <Typography
+                              fontFamily={DalegriaFontesEnum.ManualBasic}
+                              textColor={DalegriaColorsEnum.LightBlue}
+                              fontSize={28}
+                            >
+                              {t("retrospective.many_people")}
+                            </Typography>
+                          </TextContainer>
+                          <TextContainer
+                            textAlign="left"
+                            justifyContent="flex-start"
+                            align="flex-start"
+                          >
+                            <Typography
+                              fontFamily={DalegriaFontesEnum.StdBold}
+                              textColor={DalegriaColorsEnum.LightBlue}
+                              fontSize={16}
+                            >
+                              {t("retrospective.see_show")}
+                            </Typography>
+                          </TextContainer>
+                        </TextDirection>
+                      </SquareColored>
+                    </Link>
                   </RetroRightSide>
                 </RetrospectiveHiperContainerDesktop>
               </BackgroundContainer>
@@ -242,7 +244,7 @@ export const RetrospectiveTwo: React.FC = () => {
                   {t("retrospective.march_april")}
                 </Typography>
               </TextContainer>
-              <img src={OriginalArt1} width={325} height={200} />
+              <img src={OriginalArt1} width={310} height={200} />
               <TextContainer
                 textAlign="left"
                 justifyContent="flex-start"
@@ -284,7 +286,7 @@ export const RetrospectiveTwo: React.FC = () => {
                   <Typography
                     fontFamily={DalegriaFontesEnum.StdBold}
                     textColor={DalegriaColorsEnum.Black}
-                    fontSize={14}
+                    fontSize={13}
                   >
                     {t("retrospective.season")}
                   </Typography>
@@ -332,6 +334,7 @@ export const RetrospectiveTwo: React.FC = () => {
                       textColor={DalegriaColorsEnum.LightBlue}
                       height={14}
                       fontSize={14}
+                      style={{ width: "160px" }}
                     >
                       {t("retrospective.see_show")}
                     </Typography>

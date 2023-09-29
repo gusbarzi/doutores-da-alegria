@@ -134,7 +134,7 @@ export const AccountabilityOne: React.FC = () => {
               fontFamily={DalegriaFontesEnum.StdLight}
               textColor={DalegriaColorsEnum.Yellow}
               lineHeight={1}
-              fontSize={14}
+              fontSize={16}
             >
               {t("retrospective.accountability.period")}
             </Typography>

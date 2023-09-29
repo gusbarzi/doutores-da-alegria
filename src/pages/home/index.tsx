@@ -5,7 +5,10 @@ import {
   Left,
   LogoContainer,
   LogoImage,
+  LogoImageMobile,
+  MobileContainer,
   Right,
+  SuperContainer,
   TwentyImage,
 } from "./home.styles";
 
@@ -34,19 +37,20 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
+  const isMobile = useMediaQuery(breakpoints.lowerThan("desktop"));
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleNext = () => {
-    navigate("/abertura")
+    navigate("/abertura");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
-      <HomeContainer>
+      <SuperContainer>
         <HeaderContainer>
           <div>
             {!isOpen && (
@@ -57,28 +61,44 @@ export const Home: React.FC = () => {
             <SidebarMenu isOpen={isOpen} toggleMenu={toggleMenu} />
           </div>
         </HeaderContainer>
-        <LogoContainer>
-          <Division>
-            <Left>
-              <Typography
-                fontFamily={DalegriaFontesEnum.ManualBasic}
-                textColor={DalegriaColorsEnum.White}
-                fontSize={isDesktop ? 48 : 24}
-                style={{ width: isDesktop ?  "450px" : "250px" }}
-              >
-                Balanço anual - 2022
-              </Typography>
+        <HomeContainer>
+          <LogoContainer>
+            <Division>
+              <Left>
+                {!isDesktop ? (
+                  <MobileContainer>
+                    <LogoImageMobile src={logo} />
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.ManualBasic}
+                      textColor={DalegriaColorsEnum.White}
+                      fontSize={24}
+                      style={{ width: isDesktop ? "450px" : "250px" }}
+                    >
+                      Balanço anual - 2022
+                    </Typography>
+                  </MobileContainer>
+                ) : (
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.White}
+                    fontSize={48}
+                    style={{ width: isDesktop ? "450px" : "250px" }}
+                  >
+                    Balanço anual - 2022
+                  </Typography>
+                )}
 
-              <TwentyImage src={twentyTwo} />
-            </Left>
-            {isDesktop && (
-              <Right>
-                <LogoImage src={logo} />
-              </Right>
-            )}
-          </Division>
-        </LogoContainer>
-      </HomeContainer>
+                <TwentyImage src={twentyTwo} />
+              </Left>
+              {isDesktop && (
+                <Right>
+                  <LogoImage src={logo} />
+                </Right>
+              )}
+            </Division>
+          </LogoContainer>
+        </HomeContainer>
+      </SuperContainer>
       <ButtonContainerTwo>
         <GlobalNextButton onClick={handleNext}>
           <NextButton width={50} height={50} />

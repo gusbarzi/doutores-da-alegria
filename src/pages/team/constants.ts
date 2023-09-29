@@ -118,7 +118,7 @@ export const dropdownContent: IDropdownConstent[] = [
   {
     width: "1000px",
     mobileWidth: "100%",
-    title: "Gestão estatuária gestão 2022/23",
+    title: "Diretoria Estatutária - Gestão 2022/23",
     img: diretoriaEstatuaria,
     imgWidth: 400,
     imgWidthMobile: 350,

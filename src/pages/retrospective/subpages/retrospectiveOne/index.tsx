@@ -43,7 +43,6 @@ import { ArtboardImage } from "../../../opening/opening.styles";
 import artImage from "../../../../../public/assets/PNGS/Outros/Artboard 7.png";
 import jokerEigth from "../../../../../public/assets/jokersPng/mobile-recortes8.png";
 
-
 export const RetrospectiveOne: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -52,14 +51,14 @@ export const RetrospectiveOne: React.FC = () => {
   const pushBack = isDesktop ? "/raio-x-01" : "/raio-x-02";
 
   const handleNext = () => {
-    navigate("/restrospectiva-02")
+    navigate("/restrospectiva-02");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate(pushBack)
+    navigate(pushBack);
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <GlobalContainer>
@@ -70,6 +69,20 @@ export const RetrospectiveOne: React.FC = () => {
               <RetrospectiveOneBannerDetailsContainer>
                 <Division>
                   <Left>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdLight}
+                      textColor={DalegriaColorsEnum.Black}
+                      fontSize={16}
+                      textTransform="uppercase"
+                      style={{
+                        writingMode: "vertical-lr",
+                        marginBottom: "16px",
+                        marginRight: "4px",
+                        transform: "rotate(180deg)",
+                      }}
+                    >
+                      foto lana pinho
+                    </Typography>
                     <JokerImage src={jokerEigth} />
                   </Left>
                   <Right>

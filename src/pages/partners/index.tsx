@@ -36,14 +36,14 @@ export const Partners: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/expedientes")
+    navigate("/expedientes");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/equipe")
+    navigate("/equipe");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -57,6 +57,7 @@ export const Partners: React.FC = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
+                  marginTop: "60px",
                   gap: "32px",
                 }}
               >
@@ -93,6 +94,7 @@ export const Partners: React.FC = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   flexDirection: "column",
+                  marginTop: "60px",
                   gap: "32px",
                 }}
               >
@@ -1038,7 +1040,10 @@ export const Partners: React.FC = () => {
                   </Typography>
                 </TextContainer>
               </GridItemTwo>
-              <GridItemTree>
+            </GridContainer>
+
+            <GridContainer>
+              <GridItemOne>
                 <TextContainer
                   textAlign="left"
                   justifyContent="flex-start"
@@ -1231,8 +1236,49 @@ export const Partners: React.FC = () => {
                     {t("retrospective.partners.list_08.item_02")}
                   </Typography>
                 </TextContainer>
-              </GridItemTree>
+              </GridItemOne>
+
+              <GridItemTwo>
+                <div style={{ height: "60px" }} />
+
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.Red}
+                    lineHeight={1.25}
+                    fontSize={14}
+                  >
+                    {t("retrospective.partners.titles.thirteen")}
+                  </Typography>
+                </TextContainer>
+                <TextContainer
+                  textAlign="left"
+                  justifyContent="flex-start"
+                  align="flex-start"
+                  marginBottom={16}
+                >
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Red}
+                    fontSize={16}
+                  >
+                    {t("retrospective.partners.list_08.item_01")}
+                  </Typography>
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.ManualBasic}
+                    textColor={DalegriaColorsEnum.Red}
+                    fontSize={16}
+                  >
+                    {t("retrospective.partners.list_08.item_02")}
+                  </Typography>
+                </TextContainer>
+              </GridItemTwo>
             </GridContainer>
+            
           </PartnersContainer>
         </>
       )}

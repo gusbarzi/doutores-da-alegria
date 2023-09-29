@@ -10,17 +10,21 @@ export const FilteredListContainer = styled.div`
 
 export const InputContainer = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 `;
 
 export const Input = styled.input`
   padding: 10px;
-  margin-bottom: 20px;
   font-size: 16px;
   width: 800px;
   border: 1px solid ${DalegriaColorsEnum.Purple};
   border-radius: 4px;
+
+  ${breakpoints.higherThan("desktop")} {
+    margin-bottom: 20px;
+  }
 `;
 
 export const ListContainer = styled.div`
@@ -28,7 +32,7 @@ export const ListContainer = styled.div`
   flex-direction: column;
   width: 800px;
 
-  ${breakpoints.higherThan('desktop')} {
+  ${breakpoints.higherThan("desktop")} {
     flex-direction: row;
     width: 100%;
   }

@@ -29,7 +29,7 @@ export const HeaderContainer = styled.div`
     opacity: 0.3;
     z-index: 1;
 
-    ${breakpoints.higherThan('desktop')} {
+    ${breakpoints.higherThan("desktop")} {
       background-size: contain;
       background-position: center;
       background-repeat: repeat;
@@ -42,12 +42,17 @@ export const HeaderTitleContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-right: 24px;
 `;
 
 export const HeaderTitle = styled.span`
   font-family: ${DalegriaFontesEnum.SimplesBasic};
   color: ${DalegriaColorsEnum.White};
-  font-size: 24px;
+  font-size: 20px;
+
+  ${breakpoints.higherThan("desktop")} {
+    font-size: 24px;
+  }
 `;
 
 export const Logo = styled.div`

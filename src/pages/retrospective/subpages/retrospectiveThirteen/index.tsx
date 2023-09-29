@@ -27,6 +27,7 @@ import {
   TextSideDivision,
 } from "../retrospectiveFive/retrospectiveFive.styles";
 import { OriginalArtTwo } from "../retrospectiveFour/retrospectiveFour.styles";
+import { LinkPersonal } from "../retrospectiveTen/retrospectiveTen.styles";
 
 export const RetrospectiveThirteen: React.FC = () => {
   const { t } = useTranslation();
@@ -34,14 +35,14 @@ export const RetrospectiveThirteen: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/restrospectiva-14")
+    navigate("/restrospectiva-14");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-12")
+    navigate("/restrospectiva-12");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -87,7 +88,7 @@ export const RetrospectiveThirteen: React.FC = () => {
                   fontSize={18}
                   textTransform="uppercase"
                 >
-                  {t("retrospective.january_to_abril")}
+                  Junho
                 </Typography>
               </TextContainer>
               <BackgroundBlueContainer>
@@ -289,18 +290,26 @@ export const RetrospectiveThirteen: React.FC = () => {
                         textColor={DalegriaColorsEnum.White}
                         fontSize={24}
                       >
-                        {t(
-                          "retrospective.retrospective_thirteen.background_container.doctors_school.stanza_01"
-                        )}
+                        Comemoramos o São João nos hospitais, mas com ações que
+                        envolveram menos palhaços. Em Recife, trios de palhaços
+                        foram acompanhados pelo sanfoneiro Dudu do Acordeon nas
+                        visitas especiais.{" "}
+                        <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                          Veja aqui
+                        </LinkPersonal>
                       </Typography>
                       <Typography
                         fontFamily={DalegriaFontesEnum.StdLight}
                         textColor={DalegriaColorsEnum.White}
                         fontSize={24}
                       >
-                        {t(
-                          "retrospective.retrospective_thirteen.background_container.doctors_school.stanza_02"
-                        )}
+                        Em São Paulo, o São Joãozinho teve vários formatos:
+                        alguns hospitais receberam cinco palhaços, outros
+                        tiveram trios ou a própria dupla que já atendia o
+                        hospital puxou o forró, a pescaria e o correio elegante.{" "}
+                        <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                          Confira!
+                        </LinkPersonal>
                       </Typography>
                     </TextContainer>
                     <OriginalArtTwo
@@ -366,8 +375,8 @@ export const RetrospectiveThirteen: React.FC = () => {
             <BackgroundBlueContainer>
               <img
                 src={OriginalArt10}
-                width={380}
-                height={250}
+                width={330}
+                height={220}
                 style={{ marginBottom: "16px" }}
               />
               <TextContainer
@@ -393,24 +402,33 @@ export const RetrospectiveThirteen: React.FC = () => {
                 justifyContent="flex-start"
                 align="flex-start"
                 marginBottom={12}
+                chooseGap={16}
               >
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
                   textColor={DalegriaColorsEnum.White}
                   fontSize={16}
                 >
-                  {t(
-                    "retrospective.retrospective_thirteen.background_container.doctors_school.stanza_01"
-                  )}
+                  Comemoramos o São João nos hospitais, mas com ações que
+                  envolveram menos palhaços. Em Recife, trios de palhaços foram
+                  acompanhados pelo sanfoneiro Dudu do Acordeon nas visitas
+                  especiais.{" "}
+                  <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                    Veja aqui
+                  </LinkPersonal>
                 </Typography>
                 <Typography
                   fontFamily={DalegriaFontesEnum.StdLight}
                   textColor={DalegriaColorsEnum.White}
                   fontSize={16}
                 >
-                  {t(
-                    "retrospective.retrospective_thirteen.background_container.doctors_school.stanza_02"
-                  )}
+                  Em São Paulo, o São Joãozinho teve vários formatos: alguns
+                  hospitais receberam cinco palhaços, outros tiveram trios ou a
+                  própria dupla que já atendia o hospital puxou o forró, a
+                  pescaria e o correio elegante.{" "}
+                  <LinkPersonal to="https://www.instagram.com/p/CaXpBfGp_xw/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                    Confira!
+                  </LinkPersonal>
                 </Typography>
               </TextContainer>
 

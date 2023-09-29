@@ -219,7 +219,7 @@ export const RetrospectiveFour: React.FC = () => {
                   {t("retrospective.november")}
                 </Typography>
               </TextContainer>
-              <img src={OriginalArt2} width={325} height={200} />
+              <img src={OriginalArt2} width={312} height={200} />
 
               <TextContainer
                 textAlign="left"
@@ -271,15 +271,14 @@ export const RetrospectiveFour: React.FC = () => {
                   </TextContainer>
                   <TextContainer
                     textAlign="left"
-                    justifyContent="flex-end"
                     align="flex-end"
-                    chooseWidth={600}
                   >
                     <Typography
                       fontFamily={DalegriaFontesEnum.StdBold}
                       textColor={DalegriaColorsEnum.LightBlue}
                       height={16}
-                      fontSize={14}
+                      width={190}
+                      fontSize={13}
                     >
                       {t("retrospective.watch_place")}
                     </Typography>

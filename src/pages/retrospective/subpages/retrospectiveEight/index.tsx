@@ -34,14 +34,14 @@ export const RetrospectiveEight: React.FC = () => {
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
 
   const handleNext = () => {
-    navigate("/restrospectiva-09")
+    navigate("/restrospectiva-09");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-07")
+    navigate("/restrospectiva-07");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -112,7 +112,8 @@ export const RetrospectiveEight: React.FC = () => {
                         2022, 5 edições do espetáculo “Conta Causos”, com
                         histórias de hospital foram aos palcos. No primeiro
                         semestre, os palhaços levaram o espetáculo para as
-                        Fábricas de Cultura
+                        Fábricas de Cultura Sapopemba, Cidade Tiradentes e Itaim
+                        Paulista
                       </Typography>
                     </TextContainer>
                   </TextSideDivision>
@@ -129,9 +130,8 @@ export const RetrospectiveEight: React.FC = () => {
                         textColor={DalegriaColorsEnum.White}
                         fontSize={20}
                       >
-                        Sapopemba, Cidade Tiradentes e Itaim Paulista, e no
-                        segundo semestre,foram para as Fábricas de Cultura São
-                        Bernardo do Campo e Parque Belém, espaços de cultura
+                        e no segundo semestre, foram para as Fábricas de Cultura
+                        São Bernardo do Campo e Parque Belém, espaços de cultura
                         promovidos pelo governo do Estado de São Paulo.
                       </Typography>
                     </TextContainer>
@@ -153,7 +153,7 @@ export const RetrospectiveEight: React.FC = () => {
                 <SquareColored
                   type="primary"
                   backgroundColor={DalegriaColorsEnum.LightBlue}
-                  style={{ width: "400px" }}
+                  style={{ width: "400px", display: "flex", }}
                 >
                   <TextDivision>
                     <TextSideDivision>
@@ -164,23 +164,23 @@ export const RetrospectiveEight: React.FC = () => {
                         marginBottom={12}
                       >
                         <Typography
-                          fontFamily={DalegriaFontesEnum.StdLight}
+                          fontFamily={DalegriaFontesEnum.StdBold}
                           textColor={DalegriaColorsEnum.White}
-                          fontSize={20}
+                          fontSize={16}
                         >
                           EM 2022, REALIZAMOS
                         </Typography>
                         <Typography
                           fontFamily={DalegriaFontesEnum.ManualBasic}
                           textColor={DalegriaColorsEnum.White}
-                          fontSize={20}
+                          fontSize={24}
                         >
                           6 edições
                         </Typography>
                         <Typography
-                          fontFamily={DalegriaFontesEnum.StdLight}
+                          fontFamily={DalegriaFontesEnum.StdBold}
                           textColor={DalegriaColorsEnum.White}
-                          fontSize={20}
+                          fontSize={16}
                         >
                           DO CONTA CAUSOS
                         </Typography>
@@ -196,21 +196,21 @@ export const RetrospectiveEight: React.FC = () => {
                         <Typography
                           fontFamily={DalegriaFontesEnum.ManualBasic}
                           textColor={DalegriaColorsEnum.White}
-                          fontSize={20}
+                          fontSize={24}
                         >
                           1.015 pessoas
                         </Typography>
                         <Typography
-                          fontFamily={DalegriaFontesEnum.StdLight}
+                          fontFamily={DalegriaFontesEnum.StdBold}
                           textColor={DalegriaColorsEnum.White}
-                          fontSize={20}
+                          fontSize={16}
                         >
                           ASSISTIRAM AO
                         </Typography>
                         <Typography
-                          fontFamily={DalegriaFontesEnum.StdLight}
+                          fontFamily={DalegriaFontesEnum.StdBold}
                           textColor={DalegriaColorsEnum.White}
-                          fontSize={20}
+                          fontSize={16}
                         >
                           ESPETÁCULO
                         </Typography>
@@ -300,9 +300,9 @@ export const RetrospectiveEight: React.FC = () => {
                   marginBottom: "-100px",
                   display: "flex",
                   flexDirection: "row",
-                  justifyContent: 'center',
+                  justifyContent: "center",
                   alignItems: "center",
-                  gap: "16px"
+                  gap: "16px",
                 }}
               >
                 <TextContainer

@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import breakpoints from "../../../../utils/breakpoints";
 
 export const RetrospectiveContainer = styled.div`
   display: flex;
@@ -23,5 +24,9 @@ export const RetroRightSide = styled.div`
 `;
 
 export const JokerImage = styled.img`
-  width: 560px;
+  width: 100%;
+
+  ${breakpoints.higherThan('desktop')} {
+    width: 560px;
+  }
 `;

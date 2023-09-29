@@ -62,7 +62,7 @@ export const Division = styled.div`
 export const Left = styled.div`
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
 `;
 
 export const Right = styled.div`

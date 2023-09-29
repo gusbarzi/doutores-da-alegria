@@ -8,7 +8,7 @@ import {
   TextDivision,
   TextSideDivision,
 } from "./retrospectiveFive.styles";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ButtonContainer,
   DalegriaContainer,
@@ -146,14 +146,14 @@ export const RetrospectiveFive: React.FC = () => {
   ];
 
   const handleNext = () => {
-    navigate("/restrospectiva-06")
+    navigate("/restrospectiva-06");
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/restrospectiva-04")
+    navigate("/restrospectiva-04");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -504,52 +504,54 @@ export const RetrospectiveFive: React.FC = () => {
                     </SquareColored>
                   </TextSideDivision>
                   <TextSideDivision chooseWidth={600}>
-                    <SquareColored
-                      backgroundColor={DalegriaColorsEnum.Yellow}
-                      type="primary"
-                      style={{ height: "154px" }}
-                    >
-                      <TextContainer
-                        textAlign="center"
-                        justifyContent="center"
-                        align="center"
-                        marginBottom={16}
-                        chooseGap={4}
+                    <Link to="https://doutoresdaalegria.org.br/blog/" style={{ textDecoration: 'none'}}>
+                      <SquareColored
+                        backgroundColor={DalegriaColorsEnum.Yellow}
+                        type="primary"
+                        style={{ height: "154px" }}
                       >
-                        <Typography
-                          fontFamily={DalegriaFontesEnum.StdBold}
-                          textColor={DalegriaColorsEnum.Black}
-                          fontSize={20}
-                          textTransform="uppercase"
+                        <TextContainer
+                          textAlign="center"
+                          justifyContent="center"
+                          align="center"
+                          marginBottom={16}
+                          chooseGap={4}
                         >
-                          leia as
-                        </Typography>
-                        <Typography
-                          fontFamily={DalegriaFontesEnum.StdBold}
-                          textColor={DalegriaColorsEnum.Black}
-                          fontSize={20}
-                          textTransform="uppercase"
-                        >
-                          histórias de
-                        </Typography>
-                        <Typography
-                          fontFamily={DalegriaFontesEnum.StdBold}
-                          textColor={DalegriaColorsEnum.Black}
-                          fontSize={20}
-                          textTransform="uppercase"
-                        >
-                          hospital no
-                        </Typography>
-                        <Typography
-                          fontFamily={DalegriaFontesEnum.StdBold}
-                          textColor={DalegriaColorsEnum.Black}
-                          fontSize={20}
-                          textTransform="uppercase"
-                        >
-                          nosso blog
-                        </Typography>
-                      </TextContainer>
-                    </SquareColored>
+                          <Typography
+                            fontFamily={DalegriaFontesEnum.StdBold}
+                            textColor={DalegriaColorsEnum.Black}
+                            fontSize={20}
+                            textTransform="uppercase"
+                          >
+                            leia as
+                          </Typography>
+                          <Typography
+                            fontFamily={DalegriaFontesEnum.StdBold}
+                            textColor={DalegriaColorsEnum.Black}
+                            fontSize={20}
+                            textTransform="uppercase"
+                          >
+                            histórias de
+                          </Typography>
+                          <Typography
+                            fontFamily={DalegriaFontesEnum.StdBold}
+                            textColor={DalegriaColorsEnum.Black}
+                            fontSize={20}
+                            textTransform="uppercase"
+                          >
+                            hospital no
+                          </Typography>
+                          <Typography
+                            fontFamily={DalegriaFontesEnum.StdBold}
+                            textColor={DalegriaColorsEnum.Black}
+                            fontSize={20}
+                            textTransform="uppercase"
+                          >
+                            nosso blog
+                          </Typography>
+                        </TextContainer>
+                      </SquareColored>
+                    </Link>
                   </TextSideDivision>
                 </TextDivision>
               </PinkBackgroundDesktop>
@@ -879,33 +881,39 @@ export const RetrospectiveFive: React.FC = () => {
                   </Typography>
                 </TextContainer>
               </SquareColored>
-              <SquareColored
-                type="primary"
-                backgroundColor={DalegriaColorsEnum.Yellow}
-                style={{ height: "38px", marginBottom: "-50px", marginTop: "10px"}}
-              >
-                <TextContainer
-                  textAlign="left"
-                  justifyContent="flex-start"
-                  flexDirection="row"
-                  align="center"
-                  marginBottom={12}
-                  chooseGap={4}
+              <Link to="https://doutoresdaalegria.org.br/blog/" style={{ textDecoration: 'none'}}>
+                <SquareColored
+                  type="primary"
+                  backgroundColor={DalegriaColorsEnum.Yellow}
+                  style={{
+                    height: "38px",
+                    marginBottom: "-50px",
+                    marginTop: "10px",
+                  }}
                 >
-                  <Typography
-                    fontFamily={DalegriaFontesEnum.StdBold}
-                    textColor={DalegriaColorsEnum.Black}
-                    width={320}
-                    fontSize={14}
+                  <TextContainer
+                    textAlign="left"
+                    justifyContent="flex-start"
+                    flexDirection="row"
+                    align="center"
+                    marginBottom={12}
+                    chooseGap={4}
                   >
-                    LEIAS AS HISTÓRIAS DE HOSPITAL NO NOSSO BLOG
-                  </Typography>
-                </TextContainer>
-              </SquareColored>
+                    <Typography
+                      fontFamily={DalegriaFontesEnum.StdBold}
+                      textColor={DalegriaColorsEnum.Black}
+                      width={320}
+                      fontSize={14}
+                    >
+                      LEIAS AS HISTÓRIAS DE HOSPITAL NO NOSSO BLOG
+                    </Typography>
+                  </TextContainer>
+                </SquareColored>
+              </Link>
             </BackgroundPinkContainer>
-            <div 
+            <div
               style={{
-                height: "20px"
+                height: "20px",
               }}
             />
           </DalegriaContainer>

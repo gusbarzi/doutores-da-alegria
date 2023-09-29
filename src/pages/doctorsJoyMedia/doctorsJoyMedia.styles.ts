@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { DalegriaColorsEnum } from "../../utils/colors";
 import breakpoints from "../../utils/breakpoints";
+import { Link } from "react-router-dom";
 
 export const DoctorsJoyMediaContainer = styled.div`
   display: flex;
@@ -95,6 +96,16 @@ export const JokerImageTwo = styled.img`
   width: 100%;
 
   ${breakpoints.higherThan('desktop')} {
-    width: 50%;
+    width: 100%;
+  }
+`;
+
+export const LinkPersonalNaMidia = styled(Link)`
+  text-decoration: none;
+  color: ${DalegriaColorsEnum.Black};
+
+  &:hover {
+    color: ${DalegriaColorsEnum.Pink};
+    text-decoration: underline;
   }
 `;

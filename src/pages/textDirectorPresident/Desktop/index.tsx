@@ -22,6 +22,7 @@ import {
 } from "../../retrospective/subpages/retrospectiveFive/retrospectiveFive.styles";
 import { SquareColored } from "../../../components/SquareColored";
 import jokerTwo from "../../../../public/assets/jokersPng/mobile-recortes4.png";
+import { Link } from "react-router-dom";
 
 export const TextDirectorPresidentDesktop: React.FC = () => {
   const { t } = useTranslation();
@@ -29,10 +30,7 @@ export const TextDirectorPresidentDesktop: React.FC = () => {
   return (
     <GlobalContainer>
       <BannerContainerDesktop>
-        <TextContainer
-          justifyContent="flex-start"
-          align="flex-start"
-        >
+        <TextContainer justifyContent="flex-start" align="flex-start">
           <BlueFlag>
             <Typography
               fontFamily={DalegriaFontesEnum.ManualBasic}
@@ -119,6 +117,20 @@ export const TextDirectorPresidentDesktop: React.FC = () => {
               }}
             >
               <JokerImage src={jokerTwo} />
+              <Typography
+                fontFamily={DalegriaFontesEnum.StdLight}
+                textColor={DalegriaColorsEnum.Black}
+                fontSize={16}
+                textTransform="uppercase"
+                style={{
+                  writingMode: "vertical-lr",
+                  marginBottom: "32px",
+                  marginRight: "4px",
+                  transform: "rotate(180deg)",
+                }}
+              >
+                foto lana pinho
+              </Typography>
             </TextSideDivision>
           </BannerDetailsContainer>
         </BannerContentDesktop>
@@ -136,26 +148,31 @@ export const TextDirectorPresidentDesktop: React.FC = () => {
             justifyContent="flex-start"
             marginLeft={100}
           >
-            <SquareColored
-              type="primary"
-              backgroundColor={DalegriaColorsEnum.Pink}
-              chooseWidth={400}
+            <Link
+              to="https://doutoresdaalegria.org.br/blog/o-compromisso-com-a-cultura-e-a-defesa-do-seu-financiamento-como-enfrentamos-os-desafios-dos-ultimos-anos/"
+              style={{ textDecoration: "none" }}
             >
-              <TextContainer
-                align="center"
-                textAlign="center"
-                justifyContent="flex-end"
+              <SquareColored
+                type="primary"
+                backgroundColor={DalegriaColorsEnum.Pink}
+                chooseWidth={400}
               >
-                <Typography
-                  fontFamily={DalegriaFontesEnum.StdBold}
-                  textColor={DalegriaColorsEnum.White}
-                  lineHeight={1}
-                  fontSize={20}
+                <TextContainer
+                  align="center"
+                  textAlign="center"
+                  justifyContent="flex-end"
                 >
-                  confira o link
-                </Typography>
-              </TextContainer>
-            </SquareColored>
+                  <Typography
+                    fontFamily={DalegriaFontesEnum.StdBold}
+                    textColor={DalegriaColorsEnum.White}
+                    lineHeight={1}
+                    fontSize={20}
+                  >
+                    confira o link
+                  </Typography>
+                </TextContainer>
+              </SquareColored>
+            </Link>
           </TextContainer>
         </TextSideDivision>
       </TextDivision>

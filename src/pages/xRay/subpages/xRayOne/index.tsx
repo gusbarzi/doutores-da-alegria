@@ -228,14 +228,14 @@ export const XRayOne: React.FC = () => {
   ];
 
   const handleNext = () => {
-    navigate(push)
+    navigate(push);
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleBack = () => {
-    navigate("/de-dentro-para-fora")
+    navigate("/de-dentro-para-fora");
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -287,10 +287,24 @@ export const XRayOne: React.FC = () => {
                   justifyContent: "flex-end",
                   alignItems: "flex-end",
                   marginTop: "-140px",
-                  marginLeft: "-90px",
+                  marginLeft: "-30px",
                 }}
               >
                 <JokerImage src={jokerSeven} />
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdLight}
+                  textColor={DalegriaColorsEnum.Black}
+                  fontSize={16}
+                  textTransform="uppercase"
+                  style={{
+                    writingMode: "vertical-lr",
+                    marginBottom: "16px",
+                    marginRight: "4px",
+                    transform: "rotate(180deg)",
+                  }}
+                >
+                  foto lana pinho
+                </Typography>
               </TextSideDivision>
             </ColorideBackgroundDesktop>
           </XRayHiperContainer>
@@ -396,7 +410,7 @@ export const XRayOne: React.FC = () => {
             <Caveira
               width={120}
               height={120}
-              style={{ position: "absolute", bottom: "-380px" }}
+              style={{ display: "flex", marginTop: "-60px" }}
             />
           </DalegriaContainer>
         </>

@@ -29,6 +29,20 @@ export const InsideOutDesktop: React.FC = () => {
           <InsideOutBannerDetailsContainer>
             <Division>
               <Left>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdLight}
+                  textColor={DalegriaColorsEnum.Black}
+                  fontSize={16}
+                  textTransform="uppercase"
+                  style={{
+                    writingMode: "vertical-lr",
+                    marginBottom: "16px",
+                    marginRight: "4px",
+                    transform: "rotate(180deg)",
+                  }}
+                >
+                  foto lana pinho
+                </Typography>
                 <JokerImage src={jokerSix} />
               </Left>
               <Right>

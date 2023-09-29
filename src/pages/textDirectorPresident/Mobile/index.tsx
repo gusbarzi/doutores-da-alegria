@@ -10,6 +10,7 @@ import { DalegriaFontesEnum } from "../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../utils/colors";
 import { SquareColored } from "../../../components/SquareColored";
 import textDirectorArt from "../../../../public/assets/PNGS/Outros/artboard-3.png";
+import { Link } from "react-router-dom";
 
 export const TextDirectorPresidentMobile: React.FC = () => {
   const { t } = useTranslation();
@@ -30,26 +31,31 @@ export const TextDirectorPresidentMobile: React.FC = () => {
           justifyContent="flex-end"
           chooseWidth={390}
         >
-          <SquareColored
-            type="primary"
-            backgroundColor={DalegriaColorsEnum.Pink}
-            chooseWidth={350}
+          <Link
+            to="https://doutoresdaalegria.org.br/blog/o-compromisso-com-a-cultura-e-a-defesa-do-seu-financiamento-como-enfrentamos-os-desafios-dos-ultimos-anos/"
+            style={{ textDecoration: "none" }}
           >
-            <TextContainer
-              align="center"
-              textAlign="center"
-              justifyContent="flex-end"
+            <SquareColored
+              type="primary"
+              backgroundColor={DalegriaColorsEnum.Pink}
+              chooseWidth={350}
             >
-              <Typography
-                fontFamily={DalegriaFontesEnum.StdBold}
-                textColor={DalegriaColorsEnum.White}
-                lineHeight={1}
-                fontSize={20}
+              <TextContainer
+                align="center"
+                textAlign="center"
+                justifyContent="flex-end"
               >
-                confira o link
-              </Typography>
-            </TextContainer>
-          </SquareColored>
+                <Typography
+                  fontFamily={DalegriaFontesEnum.StdBold}
+                  textColor={DalegriaColorsEnum.White}
+                  lineHeight={1}
+                  fontSize={20}
+                >
+                  confira o link
+                </Typography>
+              </TextContainer>
+            </SquareColored>
+          </Link>
         </TextContainer>
       </TextDirectorPresidentContainer>
     </>

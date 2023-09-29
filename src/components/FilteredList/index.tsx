@@ -51,7 +51,7 @@ export const FilteredList: React.FC<IFilteredListProps> = ({ data }) => {
       </InputContainer>
       <ListContainer>
         <Column>
-          {column1.map((name, index) => (
+          {column1.map((name) => (
             <TextContainer textAlign="left" justifyContent="flex-start" align="flex-start">
               <Typography
                 fontFamily={DalegriaFontesEnum.StdLight}
@@ -59,7 +59,7 @@ export const FilteredList: React.FC<IFilteredListProps> = ({ data }) => {
                 lineHeight={1.5}
                 textTransform="uppercase"
                 fontSize={16}
-                key={index}
+                key={name}
               >
                 {name}
               </Typography>
