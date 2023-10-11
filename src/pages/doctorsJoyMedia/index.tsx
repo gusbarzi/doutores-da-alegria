@@ -37,7 +37,6 @@ import {
 import { SquareColored } from "../../components/SquareColored";
 import jokerFiveteen from "../../../public/assets/jokersPng/mobile-recortes15.png";
 import jokerTen from "../../../public/assets/jokersPng/mobile-recortes10.png";
-import { LinkPersonal } from "../retrospective/subpages/retrospectiveTen/retrospectiveTen.styles";
 
 export const DoctorsJoyMedia: React.FC = () => {
   const { t } = useTranslation();

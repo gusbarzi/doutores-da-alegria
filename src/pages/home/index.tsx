@@ -37,7 +37,6 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const isDesktop = useMediaQuery(breakpoints.higherThan("desktop"));
-  const isMobile = useMediaQuery(breakpoints.lowerThan("desktop"));
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
