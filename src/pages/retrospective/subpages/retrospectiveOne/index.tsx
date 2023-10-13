@@ -10,7 +10,7 @@ import {
   TextContainer,
   Typography,
 } from "../../../../styles/global.styles";
-import heart from "../../../../../public/assets/PNGS/Outros/coração.png";
+import heart from "../../../../../public/assets/PNGS/Outros/coracao.png";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
 import { DalegriaColorsEnum } from "../../../../utils/colors";
