@@ -24,7 +24,7 @@ import {
 } from "../../../../styles/global.styles";
 import { ReactComponent as NextButton } from "../../../../../public/assets/setinha-direita.svg";
 import { ReactComponent as BlueHeart } from "../../../../../public/assets/coração-azul.svg";
-import BlueHeartPng from "../../../../../public/assets/PNGS/Outros/coração-azul.png";
+import BlueHeartPng from "../../../../../public/assets/PNGS/Outros/coração-azul.png";
 import OriginalArt1 from "../../../../../public/assets/photos/originalart-1.png";
 import { RetrospectiveHeader } from "../../components/retrospectiveHeader";
 import { DalegriaFontesEnum } from "../../../../utils/fontes";
